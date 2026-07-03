@@ -1,0 +1,48 @@
+---
+title: "PREDICTS Metadata Extraction Pipeline"
+toc: true
+format: html
+---
+
+# Introduction
+
+This project extracts metadata from ecological papers to help populate the PREDICTS PV07 form.
+
+# Pipeline overview
+
+The extractor uses several sources of evidence:
+
+| Source | Purpose |
+|---|---|
+| PDF text | Title, abstract, methods, dates, regions |
+| Docling tables | Study sites, species counts, sampling information |
+| OCR | Maps, figures, scanned tables |
+| Vision model | Map/table interpretation |
+| Repository downloads | CSV, Excel, ZIP and supplementary data |
+| LLM fallback | Fill missing fields only when deterministic extraction fails |
+
+# Example: Jarrett et al. 2021
+
+## Input
+
+Scientific paper on bird communities in African cocoa agroforestry.
+
+## Extracted fields
+
+| Field | Extracted value |
+|---|---|
+| Country | Cameroon; Equatorial Guinea |
+| Region | Southern Cameroon |
+| Sites | 83 |
+| Dates | 1990–2020 |
+| Sampling method | Mist-netting |
+
+# Output
+
+The pipeline produces:
+
+- metadata JSON
+- filled PREDICTS PDF form
+- downloaded data files
+- extracted tables
+- OCR and vision evidence
