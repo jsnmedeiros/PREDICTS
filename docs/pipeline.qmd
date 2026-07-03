@@ -2,7 +2,7 @@
 title: "PREDICTS Metadata Extraction Pipeline"
 format:
   html:
-    theme: flatly
+    theme: darkly
     toc: true
     toc-location: left
     code-fold: true

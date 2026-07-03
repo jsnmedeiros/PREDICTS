@@ -1,0 +1,8 @@
+*.zip
+*.7z
+*.pdf
+*.xlsx
+Papers2Test/
+Papers2Test_old/
+Test/
+Database files of the 15 papers shared for testing/
