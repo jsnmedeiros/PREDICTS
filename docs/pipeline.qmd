@@ -1,7 +1,13 @@
 ---
 title: "PREDICTS Metadata Extraction Pipeline"
-toc: true
-format: html
+format:
+  html:
+    theme: flatly
+    toc: true
+    toc-location: left
+    code-fold: true
+    number-sections: false
+    smooth-scroll: true
 ---
 
 # Introduction
