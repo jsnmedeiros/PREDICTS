@@ -95,21 +95,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#example-1-jarrett-et-al.-2021" id="toc-example-1-jarrett-et-al.-2021" class="nav-link" data-scroll-target="#example-1-jarrett-et-al.-2021">Example 1: Jarrett et al.&nbsp;2021</a>
   <ul class="collapse">
   <li><a href="#why-this-example-matters" id="toc-why-this-example-matters" class="nav-link" data-scroll-target="#why-this-example-matters">Why this example matters</a></li>
-  <li><a href="#paper-metadata" id="toc-paper-metadata" class="nav-link" data-scroll-target="#paper-metadata">Paper metadata</a></li>
-  <li><a href="#current-extracted-pv07-style-metadata" id="toc-current-extracted-pv07-style-metadata" class="nav-link" data-scroll-target="#current-extracted-pv07-style-metadata">Current extracted PV07-style metadata</a></li>
-  <li><a href="#downloaded-data-evidence" id="toc-downloaded-data-evidence" class="nav-link" data-scroll-target="#downloaded-data-evidence">Downloaded data evidence</a></li>
-  <li><a href="#audit-notes" id="toc-audit-notes" class="nav-link" data-scroll-target="#audit-notes">Audit notes</a></li>
-  <li><a href="#visual-evidence" id="toc-visual-evidence" class="nav-link" data-scroll-target="#visual-evidence">Visual evidence</a></li>
+  <li><a href="#extracted-metadata-summary" id="toc-extracted-metadata-summary" class="nav-link" data-scroll-target="#extracted-metadata-summary">Extracted metadata summary</a></li>
+  <li><a href="#qc-points" id="toc-qc-points" class="nav-link" data-scroll-target="#qc-points">QC points</a></li>
   </ul></li>
   <li><a href="#example-2-kingazi-et-al.-2024" id="toc-example-2-kingazi-et-al.-2024" class="nav-link" data-scroll-target="#example-2-kingazi-et-al.-2024">Example 2: Kingazi et al.&nbsp;2024</a>
   <ul class="collapse">
   <li><a href="#why-this-example-matters-1" id="toc-why-this-example-matters-1" class="nav-link" data-scroll-target="#why-this-example-matters-1">Why this example matters</a></li>
-  <li><a href="#paper-metadata-1" id="toc-paper-metadata-1" class="nav-link" data-scroll-target="#paper-metadata-1">Paper metadata</a></li>
-  <li><a href="#current-extracted-pv07-style-metadata-1" id="toc-current-extracted-pv07-style-metadata-1" class="nav-link" data-scroll-target="#current-extracted-pv07-style-metadata-1">Current extracted PV07-style metadata</a></li>
-  <li><a href="#downloaded-data-evidence-1" id="toc-downloaded-data-evidence-1" class="nav-link" data-scroll-target="#downloaded-data-evidence-1">Downloaded data evidence</a></li>
-  <li><a href="#dryad-archive-structure" id="toc-dryad-archive-structure" class="nav-link" data-scroll-target="#dryad-archive-structure">Dryad archive structure</a></li>
-  <li><a href="#visual-evidence-1" id="toc-visual-evidence-1" class="nav-link" data-scroll-target="#visual-evidence-1">Visual evidence</a></li>
-  <li><a href="#quality-control-interpretation" id="toc-quality-control-interpretation" class="nav-link" data-scroll-target="#quality-control-interpretation">Quality-control interpretation</a></li>
+  <li><a href="#extracted-metadata-summary-1" id="toc-extracted-metadata-summary-1" class="nav-link" data-scroll-target="#extracted-metadata-summary-1">Extracted metadata summary</a></li>
+  <li><a href="#dryad-archive-evidence" id="toc-dryad-archive-evidence" class="nav-link" data-scroll-target="#dryad-archive-evidence">Dryad archive evidence</a></li>
+  <li><a href="#important-site-count-interpretation" id="toc-important-site-count-interpretation" class="nav-link" data-scroll-target="#important-site-count-interpretation">Important site-count interpretation</a></li>
   </ul></li>
   <li><a href="#filled-pv07-form-example" id="toc-filled-pv07-form-example" class="nav-link" data-scroll-target="#filled-pv07-form-example">Filled PV07 form example</a></li>
   <li><a href="#cross-example-comparison" id="toc-cross-example-comparison" class="nav-link" data-scroll-target="#cross-example-comparison">Cross-example comparison</a></li>
@@ -127,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">PREDICTS Metadata Extraction Pipeline</h1>
-<p class="subtitle lead">Auditable extraction from ecological papers into PV07 metadata</p>
+<p class="subtitle lead">Audit-first extraction from ecological papers into PV07 metadata</p>
 </div>
 
 
@@ -146,141 +140,133 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <style>
 .hero {
-  padding: 1.4rem 1.6rem;
+  background: linear-gradient(135deg, #173f42, #243c32);
+  border: 1px solid #3c6061;
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(0,188,212,.22), rgba(105,240,174,.10));
-  border: 1px solid rgba(255,255,255,.14);
-  margin-bottom: 1.6rem;
+  padding: 2rem;
+  margin: 1.5rem 0 2rem 0;
 }
 .hero h1, .hero h2, .hero h3 { margin-top: 0; }
-.grid-cards {
+.status-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: .85rem;
-  margin: 1rem 0 1.4rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem 0;
 }
-.card {
-  padding: 1rem;
+.status-card {
+  border: 1px solid #555;
   border-radius: 14px;
-  background: rgba(255,255,255,.055);
-  border: 1px solid rgba(255,255,255,.12);
+  padding: 1.1rem;
+  background: #2b2b2b;
 }
-.card .big {
-  font-size: 1.9rem;
-  font-weight: 750;
-  line-height: 1;
+.status-card .big {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
 }
-.card .label {
-  opacity: .82;
-  margin-top: .35rem;
+.status-card .label {
+  color: #ccc;
+  font-size: 0.95rem;
 }
-.good { color: #69f0ae; font-weight: 700; }
-.warn { color: #ffd166; font-weight: 700; }
-.bad { color: #ff8a80; font-weight: 700; }
-.small { font-size: .92rem; opacity: .9; }
-.pdf-frame {
+.flow {
+  border: 1px solid #555;
+  border-radius: 14px;
+  padding: 1rem;
+  background: #2b2b2b;
+  font-size: 1rem;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid #777;
+  margin: 0.15rem;
+  background: #303030;
+}
+iframe.pdf-preview {
   width: 100%;
-  height: 760px;
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 12px;
+  height: 850px;
+  border: 1px solid #666;
+  border-radius: 10px;
   background: white;
 }
-.workflow {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: 14px;
-  padding: 1rem;
-  white-space: pre-wrap;
-}
 </style>
-<section id="what-this-page-shows" class="level2 hero">
-<h2 class="anchored" data-anchor-id="what-this-page-shows">What this page shows</h2>
-<p>This page documents the current <strong>prototype</strong> pipeline for extracting metadata from ecological papers and preparing PREDICTS PV07 forms. The key aim is <strong>auditability</strong>: each filled field should be traceable to evidence from the paper text, methods, tables, maps, OCR/vision output, or downloaded repository data.</p>
-<p>The pipeline is not presented as fully automatic yet. It is an audit-first workflow where difficult fields such as <strong>site counts, species counts, dates, coordinates and study splitting</strong> are flagged for human validation.</p>
+<section id="what-this-page-shows" class="level1">
+<h1>What this page shows</h1>
+<div class="hero">
+<p>This page documents the current prototype pipeline for extracting metadata from ecological papers and preparing PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) PV07 forms.</p>
+<p>The main aim is <strong>auditability</strong>: each filled field should be traceable to evidence from the paper text, Methods section, tables, maps, OCR/vision output, or downloaded repository data.</p>
+<p>This is <strong>not presented as fully automatic yet</strong>. It is an audit-first workflow where difficult fields such as <strong>site counts, species counts, dates, coordinates and study splitting</strong> are flagged for human validation.</p>
+</div>
 </section>
 <section id="current-status" class="level1">
 <h1>Current status</h1>
-<div class="grid-cards">
-<div class="card">
-<pre><code>&lt;div class="big"&gt;58&lt;/div&gt;
-&lt;div class="label"&gt;test PDFs in the working batch&lt;/div&gt;</code></pre>
+<div class="status-grid">
+<div class="status-card">
+<div class="big">
+58
 </div>
-<div class="card">
-<pre><code>&lt;div class="big"&gt;2&lt;/div&gt;
-&lt;div class="label"&gt;worked examples documented here&lt;/div&gt;</code></pre>
-</div>
-<div class="card">
-<pre><code>&lt;div class="big"&gt;11&lt;/div&gt;
-&lt;div class="label"&gt;pipeline stages with saved evidence&lt;/div&gt;</code></pre>
-</div>
-<div class="card">
-<pre><code>&lt;div class="big"&gt;PV07&lt;/div&gt;
-&lt;div class="label"&gt;filled PDF output target&lt;/div&gt;</code></pre>
+<div class="label">
+test PDFs in the current batch
 </div>
 </div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Component</th>
-<th>Current state</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PDF text extraction</td>
-<td><span class="good">Working</span> for searchable PDFs using <code>pdfplumber</code>.</td>
-</tr>
-<tr class="even">
-<td>Article tables</td>
-<td><span class="good">Working</span> with Docling table export, but still needs table relevance filtering.</td>
-</tr>
-<tr class="odd">
-<td>OCR / page images</td>
-<td><span class="good">Working</span> as supporting evidence for maps, figures and scanned tables.</td>
-</tr>
-<tr class="even">
-<td>Vision model</td>
-<td><span class="warn">Optional</span>; useful for audit evidence, not trusted as sole source.</td>
-</tr>
-<tr class="odd">
-<td>Repository downloads</td>
-<td><span class="warn">Improving</span>; Dryad DOI and Dryad share-link cases now documented as key failure modes.</td>
-</tr>
-<tr class="even">
-<td>PV07 form filling</td>
-<td><span class="good">Working</span> once metadata fields are extracted.</td>
-</tr>
-<tr class="odd">
-<td>Metadata correctness</td>
-<td><span class="warn">Requires validation</span>, especially for sites, species, coordinates, dates and multi-study papers.</td>
-</tr>
-</tbody>
-</table>
+<div class="status-card">
+<div class="big">
+2
+</div>
+<div class="label">
+worked examples documented here
+</div>
+</div>
+<div class="status-card">
+<div class="big">
+11
+</div>
+<div class="label">
+pipeline stages with audit outputs
+</div>
+</div>
+<div class="status-card">
+<div class="big">
+PV07
+</div>
+<div class="label">
+filled PDF form generated per paper
+</div>
+</div>
+</div>
+<p>The current workflow demonstrates:</p>
+<ul>
+<li>PDF text extraction;</li>
+<li>DOI and citation extraction;</li>
+<li>Docling table extraction;</li>
+<li>OCR and optional vision-model evidence;</li>
+<li>repository download handling, including Dryad ZIPs;</li>
+<li>nested archive extraction;</li>
+<li>metadata JSON production;</li>
+<li>filled PREDICTS PV07 PDF form generation.</li>
+</ul>
+<p>The main remaining work is quality control: the pipeline must still be checked for <strong>site counts, species counts, dates, coordinates, country names and whether a paper should be split into multiple PV07 studies</strong>.</p>
 </section>
 <section id="why-this-pipeline-is-needed" class="level1">
 <h1>Why this pipeline is needed</h1>
-<p>PREDICTS metadata extraction is difficult because ecological papers rarely report all PV07 fields in one clean table. Important information may be split across:</p>
+<p>Ecological papers rarely report all PV07 fields in one clean table. Important information is often split across:</p>
 <ul>
-<li>title page and abstract;</li>
-<li>Materials and Methods;</li>
-<li>study-site maps and figure captions;</li>
-<li>result tables;</li>
-<li>supplementary tables;</li>
-<li>repository ZIP files;</li>
+<li>the title page;</li>
+<li>abstract;</li>
+<li>Methods and study-area sections;</li>
+<li>maps and figure captions;</li>
+<li>model/result tables;</li>
+<li>supplementary files;</li>
 <li>data availability statements;</li>
 <li>README files inside downloaded archives.</li>
 </ul>
-<p>A robust workflow therefore needs to combine deterministic extraction rules, repository download logic, table parsing, OCR/vision evidence, and cautious LLM fallback. The LLM is used only for missing or weak fields and should not overwrite stronger deterministic evidence.</p>
+<p>A robust workflow therefore needs to combine deterministic extraction rules, repository download logic, table parsing, OCR/vision evidence and cautious LLM fallback. The LLM is used only for missing or weak fields and should not overwrite stronger deterministic evidence.</p>
 </section>
 <section id="pipeline-at-a-glance" class="level1">
 <h1>Pipeline at a glance</h1>
-<div class="workflow">
-<p>PDF paper ↓ 1. Extract text and DOI/citation metadata ↓ 2. Extract Docling tables from the article PDF ↓ 3. Discover supplementary/data links and repository DOIs ↓ 4. Download files and recursively unzip archives ↓ 5. Parse CSV/XLSX/TXT/JSON/PDF supplementary evidence ↓ 6. Export useful pages as images ↓ 7. OCR and optional vision analysis for maps/figures/scanned tables ↓ 8. Deterministic metadata extraction ↓ 9. Optional LLM fallback for missing/weak fields only ↓ 10. Save master JSON + evidence workbook ↓ 11. Fill the PREDICTS PV07 PDF form</p>
+<div class="flow">
+<p>PDF paper → extract text and DOI/citation metadata → extract Docling tables → discover supplementary/data links → download files and recursively unzip archives → parse CSV/XLSX/TXT/JSON/PDF evidence → export useful pages as images → OCR and optional vision analysis → deterministic metadata extraction → optional LLM fallback for missing/weak fields → save master JSON and evidence workbook → fill the PREDICTS PV07 PDF form</p>
 </div>
 </section>
 <section id="evidence-sources" class="level1">
@@ -301,45 +287,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td>Main PDF text</td>
-<td>Highest-value source for study design, Methods, dates and descriptions.</td>
-<td>Title, abstract, country, study description, sampling method, dates.</td>
+<td>Highest-value source for study design, Methods, dates and location descriptions</td>
+<td>title, abstract, country, study description, sampling method, dates</td>
 </tr>
 <tr class="even">
-<td>Article tables</td>
-<td>Captures structured information embedded in the PDF.</td>
-<td>Site tables, species tables, sampling units, model/table evidence.</td>
-</tr>
-<tr class="odd">
-<td>Repository downloads</td>
-<td>Often contains the actual sampling data.</td>
-<td>Site IDs, species columns, coordinates, years, abundance units.</td>
-</tr>
-<tr class="even">
-<td>ZIP extraction</td>
-<td>Many datasets are nested inside repository ZIP files.</td>
-<td>CSV/XLSX files inside archives.</td>
+<td>Docling tables</td>
+<td>Extracts structured tables embedded in the article PDF</td>
+<td>site counts, species/group counts, metric/unit evidence</td>
 </tr>
 <tr class="odd">
 <td>OCR</td>
-<td>Recovers text from maps, image-only pages and scanned figure panels.</td>
-<td>Coordinates, site labels, captions.</td>
+<td>Reads text embedded in page images, maps and scanned tables</td>
+<td>coordinates, site labels, captions, map text</td>
 </tr>
 <tr class="even">
 <td>Vision model</td>
-<td>Optional audit support for maps and complex visual tables.</td>
-<td>Approximate map interpretation and visual evidence summaries.</td>
+<td>Optional interpretation of visual maps/plots/tables</td>
+<td>coordinate ranges, map-derived site evidence</td>
 </tr>
 <tr class="odd">
+<td>Repository downloads</td>
+<td>Reads CSV, Excel, ZIP, TXT, JSON, PDF and README files</td>
+<td>site counts, species counts, coordinates, years, abundance units</td>
+</tr>
+<tr class="even">
 <td>LLM fallback</td>
-<td>Only fills gaps after deterministic extraction.</td>
-<td>Ambiguous text fields and comments, subject to validation.</td>
+<td>Only used when deterministic evidence is missing or weak</td>
+<td>ambiguous descriptions and comments</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="output-produced-per-paper" class="level1">
 <h1>Output produced per paper</h1>
-<p>Each paper receives a paper-specific output directory. The important outputs are:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -348,124 +328,71 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <thead>
 <tr class="header">
 <th>Output</th>
-<th>Purpose</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><code>text_metadata.json</code></td>
-<td>Page-aware PDF text and text-derived metadata.</td>
+<td>Page-aware PDF text extraction and text-derived evidence</td>
 </tr>
 <tr class="even">
 <td><code>doi_metadata.json</code></td>
-<td>DOI and citation extraction.</td>
+<td>DOI and citation extraction</td>
 </tr>
 <tr class="odd">
 <td><code>pdf_tables/</code></td>
-<td>Docling tables as CSV/XLSX/HTML.</td>
+<td>Docling tables exported as CSV/XLSX/HTML</td>
 </tr>
 <tr class="even">
 <td><code>supplementary_files/</code></td>
-<td>Downloaded repository or publisher supplementary files.</td>
+<td>Downloaded repository or publisher files</td>
 </tr>
 <tr class="odd">
 <td><code>extracted_data/</code></td>
-<td>Parsed and sampled downloaded tables, including unzipped files.</td>
+<td>Parsed tables from downloaded files and unzipped archives</td>
 </tr>
 <tr class="even">
 <td><code>pdf_images/</code></td>
-<td>Page images selected for OCR/vision.</td>
+<td>Page images selected for OCR/vision</td>
 </tr>
 <tr class="odd">
 <td><code>image_extracted_data/</code></td>
-<td>OCR text, vision JSON and map/coordinate evidence.</td>
+<td>OCR text, vision JSON, map/coordinate CSV evidence</td>
 </tr>
 <tr class="even">
 <td><code>evidence_used_for_form.xlsx</code></td>
-<td>Human-readable evidence workbook.</td>
+<td>Human-readable evidence workbook</td>
 </tr>
 <tr class="odd">
 <td><code>master_metadata.json</code></td>
-<td>Final metadata object used to fill PV07.</td>
+<td>Final metadata object used for filling</td>
 </tr>
 <tr class="even">
 <td><code>*_filled_predicts.pdf</code></td>
-<td>Filled PV07 form.</td>
+<td>Filled PV07 PDF form</td>
+</tr>
+<tr class="odd">
+<td><code>field_map.json</code></td>
+<td>Mapping between metadata fields and PDF form fields</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="repository-download-logic" class="level1">
 <h1>Repository download logic</h1>
-<p>The repository downloader is deliberately redundant because ecological papers and publishers use inconsistent formats. URLs and DOIs are often broken across lines in PDFs, and repository landing pages do not always directly expose the data file.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Source</th>
-<th>Current handling</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dryad DOI datasets</td>
-<td>Detect <code>10.5061/dryad.*</code>, open Dryad landing/API pages and resolve file-stream/download links.</td>
-</tr>
-<tr class="even">
-<td>Dryad share links</td>
-<td>Detect <code>datadryad.org/stash/share/...</code> links and scrape the share landing page for downloadable files.</td>
-</tr>
-<tr class="odd">
-<td>Figshare</td>
-<td>Use Figshare article/file API when an article ID or DOI is found.</td>
-</tr>
-<tr class="even">
-<td>Zenodo</td>
-<td>Use records/files API where possible.</td>
-</tr>
-<tr class="odd">
-<td>EIDC/CEH</td>
-<td>Resolve UUID-style <code>10.5285/*</code> package links.</td>
-</tr>
-<tr class="even">
-<td>OSF</td>
-<td>Scrape storage/download URLs.</td>
-</tr>
-<tr class="odd">
-<td>Publisher supplementary material</td>
-<td>Scrape article HTML for supplement/mediaobject/download anchors.</td>
-</tr>
-<tr class="even">
-<td>Nested ZIP files</td>
-<td>Recursively unzip and parse CSV/XLSX files inside archives.</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Important limitation
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A downloaded file is not automatically the correct evidence for every field. For example, a repository may contain historical records, trait tables, model summaries, or treatment-level data. Site/species counts must be interpreted against the paper Methods.</p>
-</div>
-</div>
+<p>The downloader is deliberately redundant because publisher PDFs often break URLs or repository DOIs across lines.</p>
+<p><span class="badge">Dryad</span> <span class="badge">Figshare</span> <span class="badge">Zenodo</span> <span class="badge">EIDC/CEH</span> <span class="badge">OSF</span> <span class="badge">publisher supplements</span> <span class="badge">Crossref related links</span></p>
+<p>For Dryad, the key requirement is to avoid stopping at the landing page. The code must resolve the dataset page to actual file downloads, save ZIP files, recursively unzip them, and parse the CSV/XLSX files inside.</p>
 </section>
 <section id="example-1-jarrett-et-al.-2021" class="level1">
 <h1>Example 1: Jarrett et al.&nbsp;2021</h1>
 <section id="why-this-example-matters" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-example-matters">Why this example matters</h2>
-<p>Jarrett is useful because it tests a common PREDICTS problem: the repository data contains large CSV files with several possible counting units. The pipeline must not blindly use the largest unique count if the paper defines the study design differently.</p>
+<p>Jarrett tests whether the pipeline can use large repository CSV files and handle conflicts between article-level design counts and downloaded table counts.</p>
 </section>
-<section id="paper-metadata" class="level2">
-<h2 class="anchored" data-anchor-id="paper-metadata">Paper metadata</h2>
+<section id="extracted-metadata-summary" class="level2">
+<h2 class="anchored" data-anchor-id="extracted-metadata-summary">Extracted metadata summary</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -474,7 +401,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <thead>
 <tr class="header">
 <th>Field</th>
-<th>Value</th>
+<th>Extracted value</th>
 </tr>
 </thead>
 <tbody>
@@ -487,37 +414,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>2021</td>
 </tr>
 <tr class="odd">
-<td>Title</td>
-<td>Bird communities in African cocoa agroforestry are diverse but lack specialized insectivores</td>
+<td>Study system</td>
+<td>African cocoa agroforestry bird communities</td>
 </tr>
 <tr class="even">
-<td>Journal</td>
-<td>Journal of Applied Ecology</td>
-</tr>
-<tr class="odd">
-<td>DOI</td>
-<td><code>10.1111/1365-2664.13864</code></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="current-extracted-pv07-style-metadata" class="level2">
-<h2 class="anchored" data-anchor-id="current-extracted-pv07-style-metadata">Current extracted PV07-style metadata</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Field</th>
-<th>Current value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
 <td>Countries</td>
 <td>Cameroon; Equatorial Guinea</td>
-</tr>
-<tr class="even">
-<td>Region</td>
-<td>Southern Cameroon; Northern Equatorial Guinea</td>
 </tr>
 <tr class="odd">
 <td>Sampling method</td>
@@ -528,60 +430,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>83</td>
 </tr>
 <tr class="odd">
-<td>Study date range</td>
-<td>1990–2020</td>
+<td>Repository evidence</td>
+<td><code>CaptureDataset.csv</code>, <code>CocoaFarmTreeCover.csv</code>, <code>BirdCharacteristics.csv</code></td>
 </tr>
 <tr class="even">
-<td>Abundance metric</td>
-<td>abundance</td>
-</tr>
-<tr class="odd">
-<td>Abundance unit</td>
-<td>individuals</td>
-</tr>
-<tr class="even">
-<td>Sampling effort unit</td>
-<td>net</td>
+<td>Date evidence</td>
+<td>repository year column, 1990–2020</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="downloaded-data-evidence" class="level2">
-<h2 class="anchored" data-anchor-id="downloaded-data-evidence">Downloaded data evidence</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 40%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>File</th>
-<th style="text-align: right;">Rows</th>
-<th>Evidence extracted</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>CaptureDataset.csv</code></td>
-<td style="text-align: right;">22,368</td>
-<td>Species, year, season, site, country, region and habitat columns.</td>
-</tr>
-<tr class="even">
-<td><code>CocoaFarmTreeCover.csv</code></td>
-<td style="text-align: right;">38</td>
-<td>Farm IDs and latitude/longitude columns.</td>
-</tr>
-<tr class="odd">
-<td><code>BirdCharacteristics.csv</code></td>
-<td style="text-align: right;">259</td>
-<td>Species traits and feeding guild information.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="audit-notes" class="level2">
-<h2 class="anchored" data-anchor-id="audit-notes">Audit notes</h2>
+<section id="qc-points" class="level2">
+<h2 class="anchored" data-anchor-id="qc-points">QC points</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -591,48 +451,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <thead>
 <tr class="header">
 <th>Issue</th>
-<th>Why it matters</th>
-<th>Current interpretation</th>
+<th>Interpretation</th>
+<th>Action</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Site counts differ between article text and supplementary tables.</td>
-<td>Different files encode different sampling units.</td>
-<td>Prefer the article Methods count when it defines the design; keep repository counts as audit evidence.</td>
+<td>Repository tables give different site/species counts</td>
+<td>Different files represent different sampling units and historical datasets</td>
+<td>Keep article design count, but log repository counts as evidence</td>
 </tr>
 <tr class="even">
-<td>Species counts differ between capture records and trait tables.</td>
-<td>Trait tables may not equal sampled abundance records.</td>
-<td>Keep a conflict flag and avoid silent overwrite.</td>
+<td>Country field can appear as “Multiple countries”</td>
+<td>PV07 may need explicit names or comments</td>
+<td>Record Cameroon and Equatorial Guinea in comments/evidence</td>
 </tr>
 <tr class="odd">
-<td>Countries may need explicit listing.</td>
-<td>PV07 may need country names or separate studies depending on final curation.</td>
-<td>Store Cameroon and Equatorial Guinea clearly in comments/evidence.</td>
+<td>Species count conflict</td>
+<td>Repository species columns may be stronger than generic PDF phrases</td>
+<td>Flag for human review before final PV07 entry</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="visual-evidence" class="level2">
-<h2 class="anchored" data-anchor-id="visual-evidence">Visual evidence</h2>
-<p><img src="assets/jarrett_page3.jpg" class="img-fluid" alt="Exported page image from Jarrett et al. used as audit evidence."></p>
-<p><img src="assets/jarrett_page4.jpg" class="img-fluid" alt="Exported page image from Jarrett et al. used as OCR or visual evidence."></p>
 </section>
 </section>
 <section id="example-2-kingazi-et-al.-2024" class="level1">
 <h1>Example 2: Kingazi et al.&nbsp;2024</h1>
 <section id="why-this-example-matters-1" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-example-matters-1">Why this example matters</h2>
-<p>Kingazi is useful because it exposed two important failure modes:</p>
-<ol type="1">
-<li>the data availability link goes to a Dryad landing page containing a ZIP file;</li>
-<li>the site count can be misread if the extractor confuses treatment types, plot IDs and paired design.</li>
-</ol>
-<p>The corrected interpretation is that the paper reports <strong>16 paired sampling blocks/sites</strong>, with 16 agroforestry plots paired with 16 non-agroforestry plots. The repository data also contains 32 plot IDs because each pair has two plot types.</p>
+<p>Kingazi tests two common failure modes: a Dryad page with a downloadable ZIP, and a paired sampling design that can be misread as either one broad study area or two treatments.</p>
 </section>
-<section id="paper-metadata-1" class="level2">
-<h2 class="anchored" data-anchor-id="paper-metadata-1">Paper metadata</h2>
+<section id="extracted-metadata-summary-1" class="level2">
+<h2 class="anchored" data-anchor-id="extracted-metadata-summary-1">Extracted metadata summary</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -641,7 +491,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <thead>
 <tr class="header">
 <th>Field</th>
-<th>Value</th>
+<th>Extracted value</th>
 </tr>
 </thead>
 <tbody>
@@ -666,36 +516,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td><code>10.1111/1365-2664.14629</code></td>
 </tr>
 <tr class="even">
-<td>Repository</td>
-<td>Dryad dataset DOI <code>10.5061/dryad.3tx95x6pd</code></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="current-extracted-pv07-style-metadata-1" class="level2">
-<h2 class="anchored" data-anchor-id="current-extracted-pv07-style-metadata-1">Current extracted PV07-style metadata</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Field</th>
-<th>Current value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
 <td>Country</td>
 <td>Tanzania</td>
 </tr>
-<tr class="even">
-<td>Continent/region</td>
-<td>Africa</td>
-</tr>
 <tr class="odd">
-<td>Location</td>
+<td>Study area</td>
 <td>Eastern lower slopes of Mount Kilimanjaro; Kilimanjaro Region; Northern Tanzania; Chagga home gardens</td>
 </tr>
 <tr class="even">
@@ -703,132 +528,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Fixed plots/quadrats</td>
 </tr>
 <tr class="odd">
-<td>Number of sites</td>
-<td>16 paired blocks/sites</td>
+<td>Site count used in filled form</td>
+<td>16 paired sampling sites/replicates</td>
 </tr>
 <tr class="even">
-<td>Plot records in repository</td>
-<td>32 plot IDs</td>
+<td>Plot-level repository evidence</td>
+<td>32 plot IDs in pollinator/NMDS files</td>
 </tr>
 <tr class="odd">
-<td>Number of species/taxa</td>
-<td>45</td>
-</tr>
-<tr class="even">
 <td>Study dates</td>
 <td>March–May 2022</td>
 </tr>
-<tr class="odd">
-<td>Abundance metric</td>
-<td>abundance</td>
-</tr>
 <tr class="even">
-<td>Abundance unit</td>
-<td>individuals</td>
-</tr>
-<tr class="odd">
-<td>Sampling effort unit</td>
-<td>plot</td>
+<td>Number of species</td>
+<td>45</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="downloaded-data-evidence-1" class="level2">
-<h2 class="anchored" data-anchor-id="downloaded-data-evidence-1">Downloaded data evidence</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 40%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>File</th>
-<th style="text-align: right;">Rows</th>
-<th>Evidence extracted</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>Bean yield data.csv</code></td>
-<td style="text-align: right;">120</td>
-<td>Yield records by plot, pair, habitat type and pollination treatment.</td>
-</tr>
-<tr class="even">
-<td><code>Insect pollinator data.csv</code></td>
-<td style="text-align: right;">32</td>
-<td>Pollinator abundance/richness/visitation rate by plot and pair.</td>
-</tr>
-<tr class="odd">
-<td><code>NMDS_Data.csv</code></td>
-<td style="text-align: right;">32</td>
-<td>Taxon-by-plot matrix with plot IDs and habitat type.</td>
-</tr>
-</tbody>
-</table>
+<section id="dryad-archive-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="dryad-archive-evidence">Dryad archive evidence</h2>
+<p>Kingazi has a Dryad data page with one ZIP. Inside that ZIP are the usable CSV files:</p>
+<ul>
+<li><code>Bean yield data.csv</code></li>
+<li><code>Insect pollinator data.csv</code></li>
+<li><code>NMDS_Data.csv</code></li>
+</ul>
+<p>The downloader must save the ZIP, unzip it, and parse the CSVs inside. A shallow downloader will incorrectly report zero usable data files.</p>
 </section>
-<section id="dryad-archive-structure" class="level2">
-<h2 class="anchored" data-anchor-id="dryad-archive-structure">Dryad archive structure</h2>
-<pre class="text"><code>supplementary_files/
-└── 10.5061_dryad.3tx95x6pd_dataset.zip
-
-extracted_data/
-├── 10.5061_dryad.3tx95x6pd_dataset_unzipped/
-│   ├── Data_Kingazi_et_al..zip
-│   └── README.csv
-└── Data_Kingazi_et_al._unzipped/
-    └── Data/
-        ├── Bean yield data.csv
-        ├── Insect pollinator data.csv
-        └── NMDS_Data.csv</code></pre>
-</section>
-<section id="visual-evidence-1" class="level2">
-<h2 class="anchored" data-anchor-id="visual-evidence-1">Visual evidence</h2>
-<p>Page 3 contains the study map and example agroforestry/non-agroforestry plots.</p>
-<p><img src="assets/kingazi_page3.jpg" class="img-fluid" alt="Kingazi et al. page 3 with study map and example agroforestry/non-agroforestry plots."></p>
-<p>Page 4 contains the experimental design and sampling details.</p>
-<p><img src="assets/kingazi_page4.jpg" class="img-fluid" alt="Kingazi et al. page 4 with experimental design and pollinator sampling methods."></p>
-</section>
-<section id="quality-control-interpretation" class="level2">
-<h2 class="anchored" data-anchor-id="quality-control-interpretation">Quality-control interpretation</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Field</th>
-<th>Risk</th>
-<th>Correct handling</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Number of sites</td>
-<td>The extractor may confuse one broad study area, two treatments, 16 pairs, or 32 plot IDs.</td>
-<td>Use <strong>16 paired blocks/sites</strong> for PV07 site count, and record 32 plot IDs as supporting repository evidence.</td>
-</tr>
-<tr class="even">
-<td>Sampling design</td>
-<td>Two treatment types are not two sites.</td>
-<td>Treat agroforestry and non-agroforestry as paired plot types within the design.</td>
-</tr>
-<tr class="odd">
-<td>Repository download</td>
-<td>A shallow downloader may stop at the Dryad page and miss the ZIP.</td>
-<td>Resolve the Dryad DOI to the ZIP and recursively extract CSVs.</td>
-</tr>
-</tbody>
-</table>
+<section id="important-site-count-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="important-site-count-interpretation">Important site-count interpretation</h2>
+<p>For the PV07 form, this example currently records <strong>16</strong> sites/paired sampling replicates, because the article describes <strong>16 agroforestry plots paired with 16 non-agroforestry plots</strong>. The downloaded data also contains 32 plot-level records, representing the two treatment plots within the 16 paired design.</p>
+<p>This distinction is important: the pipeline should not mistake the two treatment classes for two sites, and it should not collapse the whole study map into one site.</p>
 </section>
 </section>
 <section id="filled-pv07-form-example" class="level1">
 <h1>Filled PV07 form example</h1>
-<p>The embedded PDF below is the filled PV07 form for the Kingazi example.</p>
 <p><a href="examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf">Open the filled Kingazi PV07 PDF</a></p>
-<iframe class="pdf-frame" src="examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf">
+<iframe class="pdf-preview" src="examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf">
 </iframe>
 </section>
 <section id="cross-example-comparison" class="level1">
@@ -863,24 +600,24 @@ extracted_data/
 <td>Tanzania</td>
 </tr>
 <tr class="even">
-<td>Repository challenge</td>
-<td>Multiple large CSV files with different sampling units.</td>
-<td>Dryad DOI points to a ZIP containing nested data files.</td>
+<td>Main repository challenge</td>
+<td>Multiple large CSV files; counts differ by file purpose</td>
+<td>Dryad ZIP containing nested usable CSV files</td>
 </tr>
 <tr class="odd">
 <td>Strongest evidence for dates</td>
-<td>Repository year column and article text.</td>
-<td>Methods and data files: March–May 2022.</td>
+<td>Repository year column</td>
+<td>Methods and data files</td>
 </tr>
 <tr class="even">
 <td>Strongest evidence for sites</td>
-<td>Article Methods: 83 sites.</td>
-<td>Article Methods: 16 paired blocks/sites; repository has 32 plot IDs.</td>
+<td>Article Methods/design statement</td>
+<td>Methods: 16 paired sampling units; repository: 32 plot IDs</td>
 </tr>
 <tr class="odd">
 <td>Main QC risk</td>
-<td>Conflicting species/site counts across files.</td>
-<td>Treatment/plot count mistaken for site count.</td>
+<td>Species/site counts from different files conflict</td>
+<td>Treatment/plot count mistaken for site count</td>
 </tr>
 </tbody>
 </table>
@@ -900,32 +637,32 @@ extracted_data/
 </thead>
 <tbody>
 <tr class="odd">
-<td>Prefer explicit Methods design counts over generic counts found in result tables.</td>
-<td>Model tables often contain treatment levels, not sites.</td>
+<td>Prefer explicit Methods design counts over generic counts found in result tables</td>
+<td>Model tables often contain treatments, not sites</td>
 </tr>
 <tr class="even">
-<td>Keep repository-derived counts as evidence, not automatic truth.</td>
-<td>Repository files may encode visits, farms, records, traits or historical datasets.</td>
+<td>Prefer repository coordinates over map OCR when coordinate columns exist</td>
+<td>CSV coordinates are usually more precise</td>
 </tr>
 <tr class="odd">
-<td>Prefer downloaded coordinates over map OCR when coordinate columns exist.</td>
-<td>Repository coordinates are usually more precise and machine-readable.</td>
+<td>Do not overwrite article-reported site counts with unrelated unique IDs unless the table is clearly the sampling-unit table</td>
+<td>Unique IDs can represent visits, plots, farms, stations or records</td>
 </tr>
 <tr class="even">
-<td>Never silently overwrite a field when PDF text, tables and repository data disagree.</td>
-<td>Conflicts should be visible in the evidence workbook.</td>
+<td>Keep a conflict log when PDF text, tables and repository data disagree</td>
+<td>Human review is essential for PREDICTS</td>
 </tr>
 <tr class="odd">
-<td>Recursively unzip archives and parse nested files.</td>
-<td>Many repositories package data in nested folders or ZIPs.</td>
+<td>Recursively unzip archives</td>
+<td>Many repositories package files in nested folders or ZIPs</td>
 </tr>
 <tr class="even">
-<td>Treat LLM output as fallback only.</td>
-<td>Prevents hallucinated fields and invalid PV07 dropdown entries.</td>
+<td>Treat LLM output as fallback only</td>
+<td>Prevents hallucinated fields and invalid dropdown values</td>
 </tr>
 <tr class="odd">
-<td>Save both final value and evidence source.</td>
-<td>Makes the filled PDF auditable.</td>
+<td>Store final field value plus source evidence</td>
+<td>Makes the filled PDF auditable</td>
 </tr>
 </tbody>
 </table>
@@ -939,30 +676,34 @@ extracted_data/
 </colgroup>
 <thead>
 <tr class="header">
-<th>Issue</th>
-<th>Status</th>
+<th>Issue found during testing</th>
+<th>Current fix/status</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Some papers still fail repository download because they use non-standard share links.</td>
-<td>Being patched with repository-specific handlers.</td>
+<td>Dryad DOI landing pages were found but the actual ZIP was not downloaded</td>
+<td>Dryad resolver patched to follow dataset/download/file-stream links</td>
 </tr>
 <tr class="even">
-<td>Excel audit output can fail when OCR text contains illegal characters.</td>
-<td>Patched by stripping characters that <code>openpyxl</code> cannot write.</td>
+<td>Dryad share links, such as Betemariyam, were not downloaded</td>
+<td>Share-link handling added separately</td>
 </tr>
 <tr class="odd">
-<td>Site counts remain the highest-risk field.</td>
-<td>Needs a conflict log and <code>site_count_source</code> field.</td>
+<td>Illegal OCR characters crashed Excel evidence workbook writing</td>
+<td>Excel sanitisation added</td>
 </tr>
 <tr class="even">
-<td>Species counts can be overwritten by weak evidence.</td>
-<td>Needs stricter priority rules and species-count provenance.</td>
+<td>Kingazi site count was misread</td>
+<td>Paired-design logic added; currently records 16 paired sampling replicates</td>
 </tr>
 <tr class="odd">
-<td>Some visual/OCR evidence is noisy.</td>
-<td>Keep it as supporting evidence, not as primary evidence when text/repository data are stronger.</td>
+<td>Repository-derived species counts can conflict with PDF-derived counts</td>
+<td>Needs explicit QC flags and source-priority rules</td>
+</tr>
+<tr class="even">
+<td>Multi-country or multi-study papers may need splitting</td>
+<td>Needs human validation and future study-splitting logic</td>
 </tr>
 </tbody>
 </table>
@@ -970,45 +711,29 @@ extracted_data/
 <section id="recommended-next-steps" class="level1">
 <h1>Recommended next steps</h1>
 <ol type="1">
-<li>Add <code>qc_flags</code> to <code>master_metadata.json</code>.</li>
-<li>Add <code>site_count_source</code>, <code>species_count_source</code>, <code>date_source</code> and <code>coordinate_source</code>.</li>
-<li>Produce a one-page HTML audit summary per paper.</li>
-<li>Add regression tests for known examples: Kingazi, Jarrett, Klinkovská, Guenat, Geldenhuys and Betemariyam.</li>
-<li>Add unit tests for Dryad DOI, Dryad share-link, Figshare, Zenodo, EIDC and OSF download functions.</li>
-<li>Decide with the PREDICTS team how paired designs should be represented consistently in PV07.</li>
+<li>Add <code>qc_flags</code> to <code>master_metadata.json</code> for site/species/date/coordinate conflicts.</li>
+<li>Add <code>site_count_source</code>, <code>species_count_source</code> and <code>date_source</code> fields.</li>
+<li>Add a compact HTML report per paper showing final metadata, evidence files and QC flags.</li>
+<li>Add unit tests for repository download functions using known Dryad, Figshare, Zenodo, EIDC and OSF examples.</li>
+<li>Agree with the NHM/PREDICTS team how paired designs should be recorded in PV07: paired replicate count, plot count, or separate studies.</li>
 </ol>
 </section>
 <section id="minimal-command-line-example" class="level1">
 <h1>Minimal command-line example</h1>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Batch command used for the test set
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ../Papers2Test <span class="at">-iname</span> <span class="st">"*.pdf"</span> <span class="kw">|</span> <span class="cf">while</span> <span class="bu">read</span> <span class="va">paper</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">python</span> predicts_form.py <span class="dt">\</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">--paper</span> <span class="st">"</span><span class="va">$paper</span><span class="st">"</span> <span class="dt">\</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">--form</span> PREDICTS_Form_v07.pdf <span class="dt">\</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compiler-first</span> Joana <span class="dt">\</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compiler-last</span> Medeiros <span class="dt">\</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compiler-id</span> JM1 <span class="dt">\</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compiler-email</span> j.medeiros@pgr.reading.ac.uk <span class="dt">\</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">--download-dir</span> ./downloaded_data <span class="dt">\</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">--model</span> gemma3:4b <span class="dt">\</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">--vision-model</span> moondream <span class="dt">\</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">--vision-max-pages</span> 15 <span class="dt">\</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">--max-ocr-pages</span> 15</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ../Papers2Test <span class="at">-iname</span> <span class="st">"*.pdf"</span> <span class="kw">|</span> <span class="cf">while</span> <span class="bu">read</span> <span class="va">paper</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">python</span> predicts_form.py <span class="dt">\</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">--paper</span> <span class="st">"</span><span class="va">$paper</span><span class="st">"</span> <span class="dt">\</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">--form</span> PREDICTS_Form_v07.pdf <span class="dt">\</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compiler-first</span> Joana <span class="dt">\</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compiler-last</span> Medeiros <span class="dt">\</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compiler-id</span> JM1 <span class="dt">\</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">--compiler-email</span> j.medeiros@pgr.reading.ac.uk <span class="dt">\</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">--download-dir</span> ./downloaded_data <span class="dt">\</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">--model</span> gemma3:4b <span class="dt">\</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">--vision-model</span> moondream <span class="dt">\</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">--vision-max-pages</span> 15 <span class="dt">\</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">--max-ocr-pages</span> 15</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 
 </main>
