@@ -338,3 +338,12 @@ find ../Papers2Test -iname "*.pdf" | while read paper; do
   python predicts_form_fixed_dryad.py     --paper "$paper"     --form PREDICTS_Form_v07.pdf     --compiler-first Joana     --compiler-last Medeiros     --compiler-id JM1     --compiler-email j.medeiros@pgr.reading.ac.uk     --download-dir ./downloaded_data     --model gemma3:4b     --vision-model moondream     --vision-max-pages 15     --max-ocr-pages 15
  done
 ```
+## Filled PV07 form example
+
+[Open the filled Kingazi PV07 PDF](examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf)
+
+<iframe 
+  src="examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf" 
+  width="100%" 
+  height="800px">
+</iframe>

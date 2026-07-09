@@ -131,7 +131,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#cross-example-comparison" id="toc-cross-example-comparison" class="nav-link" data-scroll-target="#cross-example-comparison">Cross-example comparison</a></li>
   <li><a href="#suggested-validation-rules-before-filling-pv07" id="toc-suggested-validation-rules-before-filling-pv07" class="nav-link" data-scroll-target="#suggested-validation-rules-before-filling-pv07">Suggested validation rules before filling PV07</a></li>
   <li><a href="#recommended-next-improvements" id="toc-recommended-next-improvements" class="nav-link" data-scroll-target="#recommended-next-improvements">Recommended next improvements</a></li>
-  <li><a href="#minimal-command-line-example" id="toc-minimal-command-line-example" class="nav-link" data-scroll-target="#minimal-command-line-example">Minimal command-line example</a></li>
+  <li><a href="#minimal-command-line-example" id="toc-minimal-command-line-example" class="nav-link" data-scroll-target="#minimal-command-line-example">Minimal command-line example</a>
+  <ul class="collapse">
+  <li><a href="#filled-pv07-form-example" id="toc-filled-pv07-form-example" class="nav-link" data-scroll-target="#filled-pv07-form-example">Filled PV07 form example</a></li>
+  </ul></li>
   </ul>
 </nav>
 </div>
@@ -1300,6 +1303,12 @@ extracted_data/
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ../Papers2Test <span class="at">-iname</span> <span class="st">"*.pdf"</span> <span class="kw">|</span> <span class="cf">while</span> <span class="bu">read</span> <span class="va">paper</span><span class="kw">;</span> <span class="cf">do</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">python</span> predicts_form_fixed_dryad.py     <span class="at">--paper</span> <span class="st">"</span><span class="va">$paper</span><span class="st">"</span>     <span class="at">--form</span> PREDICTS_Form_v07.pdf     <span class="at">--compiler-first</span> Joana     <span class="at">--compiler-last</span> Medeiros     <span class="at">--compiler-id</span> JM1     <span class="at">--compiler-email</span> j.medeiros@pgr.reading.ac.uk     <span class="at">--download-dir</span> ./downloaded_data     <span class="at">--model</span> gemma3:4b     <span class="at">--vision-model</span> moondream     <span class="at">--vision-max-pages</span> 15     <span class="at">--max-ocr-pages</span> 15</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="filled-pv07-form-example" class="level2">
+<h2 class="anchored" data-anchor-id="filled-pv07-form-example">Filled PV07 form example</h2>
+<p><a href="examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf">Open the filled Kingazi PV07 PDF</a></p>
+<iframe src="examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf" width="100%" height="800px">
+</iframe>
+</section>
 </section>
 
 </main>
