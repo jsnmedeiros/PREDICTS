@@ -16,119 +16,198 @@ execute:
   message: false
 ---
 
-# Introduction
+<style>
+.hero {
+  padding: 1.4rem 1.6rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(0,188,212,.22), rgba(105,240,174,.10));
+  border: 1px solid rgba(255,255,255,.14);
+  margin-bottom: 1.6rem;
+}
+.hero h1, .hero h2, .hero h3 { margin-top: 0; }
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: .85rem;
+  margin: 1rem 0 1.4rem 0;
+}
+.card {
+  padding: 1rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.12);
+}
+.card .big {
+  font-size: 1.9rem;
+  font-weight: 750;
+  line-height: 1;
+}
+.card .label {
+  opacity: .82;
+  margin-top: .35rem;
+}
+.good { color: #69f0ae; font-weight: 700; }
+.warn { color: #ffd166; font-weight: 700; }
+.bad { color: #ff8a80; font-weight: 700; }
+.small { font-size: .92rem; opacity: .9; }
+.pdf-frame {
+  width: 100%;
+  height: 760px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 12px;
+  background: white;
+}
+.workflow {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+</style>
 
-This repository documents a reproducible pipeline for extracting metadata from ecological papers and preparing the information needed to populate the PREDICTS PV07 form. The pipeline is designed for auditability rather than blind automation: every filled field should be traceable to a source such as the main PDF text, a Docling table, OCR/vision evidence, or downloaded repository data.
+<div class="hero">
 
-The current script is `predicts_form.py`. It was tested here with 58 papers. 2 of them as example below:
+## What this page shows
 
-- **Jarrett et al. (2021)** — bird communities in African cocoa agroforestry.
-- **Kingazi et al. (2024)** — tropical agroforestry, insect pollinators and bean yield.
+This page documents the current **prototype** pipeline for extracting metadata from ecological papers and preparing PREDICTS PV07 forms. The key aim is **auditability**: each filled field should be traceable to evidence from the paper text, methods, tables, maps, OCR/vision output, or downloaded repository data.
 
-These examples are useful because they test different failure modes: Jarrett uses large CSV supplementary files, while Kingazi has a Dryad landing page with one downloadable ZIP that contains the actual CSV files.
+The pipeline is not presented as fully automatic yet. It is an audit-first workflow where difficult fields such as **site counts, species counts, dates, coordinates and study splitting** are flagged for human validation.
+
+</div>
+
+# Current status
+
+<div class="grid-cards">
+  <div class="card">
+    <div class="big">58</div>
+    <div class="label">test PDFs in the working batch</div>
+  </div>
+  <div class="card">
+    <div class="big">2</div>
+    <div class="label">worked examples documented here</div>
+  </div>
+  <div class="card">
+    <div class="big">11</div>
+    <div class="label">pipeline stages with saved evidence</div>
+  </div>
+  <div class="card">
+    <div class="big">PV07</div>
+    <div class="label">filled PDF output target</div>
+  </div>
+</div>
+
+| Component | Current state |
+|---|---|
+| PDF text extraction | <span class="good">Working</span> for searchable PDFs using `pdfplumber`. |
+| Article tables | <span class="good">Working</span> with Docling table export, but still needs table relevance filtering. |
+| OCR / page images | <span class="good">Working</span> as supporting evidence for maps, figures and scanned tables. |
+| Vision model | <span class="warn">Optional</span>; useful for audit evidence, not trusted as sole source. |
+| Repository downloads | <span class="warn">Improving</span>; Dryad DOI and Dryad share-link cases now documented as key failure modes. |
+| PV07 form filling | <span class="good">Working</span> once metadata fields are extracted. |
+| Metadata correctness | <span class="warn">Requires validation</span>, especially for sites, species, coordinates, dates and multi-study papers. |
 
 # Why this pipeline is needed
 
-PREDICTS metadata extraction is difficult as ecological papers rarely report all PREDICTS fields in one clean table. Important information may be split across the title page, abstract, Methods, maps, table captions, supplementary files, data availability statements and repository ZIP files. A robust workflow therefore needs to combine deterministic rules, repository download logic, table parsing, image evidence and cautious LLM fallback.
+PREDICTS metadata extraction is difficult because ecological papers rarely report all PV07 fields in one clean table. Important information may be split across:
 
-# Pipeline overview
+- title page and abstract;
+- Materials and Methods;
+- study-site maps and figure captions;
+- result tables;
+- supplementary tables;
+- repository ZIP files;
+- data availability statements;
+- README files inside downloaded archives.
 
-## Evidence sources
+A robust workflow therefore needs to combine deterministic extraction rules, repository download logic, table parsing, OCR/vision evidence, and cautious LLM fallback. The LLM is used only for missing or weak fields and should not overwrite stronger deterministic evidence.
 
-| Source | Purpose | Typical PV07 fields supported |
+# Pipeline at a glance
+
+<div class="workflow">
+PDF paper
+   ↓
+1. Extract text and DOI/citation metadata
+   ↓
+2. Extract Docling tables from the article PDF
+   ↓
+3. Discover supplementary/data links and repository DOIs
+   ↓
+4. Download files and recursively unzip archives
+   ↓
+5. Parse CSV/XLSX/TXT/JSON/PDF supplementary evidence
+   ↓
+6. Export useful pages as images
+   ↓
+7. OCR and optional vision analysis for maps/figures/scanned tables
+   ↓
+8. Deterministic metadata extraction
+   ↓
+9. Optional LLM fallback for missing/weak fields only
+   ↓
+10. Save master JSON + evidence workbook
+   ↓
+11. Fill the PREDICTS PV07 PDF form
+</div>
+
+# Evidence sources
+
+| Evidence source | Why it is used | Example PV07 fields |
 |---|---|---|
-| Main PDF text | Title, abstract, DOI, study area, sampling design, dates, methods | Citation, country, region, dates, study description, sampling method |
-| Docling tables | Tables embedded in the article PDF | Study sites, species/group counts, model/table evidence, sampling units |
-| OCR | Text embedded in page images, maps, figure panels and scanned tables | Coordinates, site labels, table headings, captions |
-| Vision model | Optional interpretation of maps, plots and visual tables | Coordinate ranges, site counts, figure-derived metadata |
-| Repository downloads | CSV, Excel, ZIP, TXT, JSON, PDF and README files | Site counts, species counts, coordinates, years, abundance units |
-| LLM fallback | Only fills missing or weak fields after deterministic extraction | Ambiguous methods, cleaned descriptions, notes |
+| Main PDF text | Highest-value source for study design, Methods, dates and descriptions. | Title, abstract, country, study description, sampling method, dates. |
+| Article tables | Captures structured information embedded in the PDF. | Site tables, species tables, sampling units, model/table evidence. |
+| Repository downloads | Often contains the actual sampling data. | Site IDs, species columns, coordinates, years, abundance units. |
+| ZIP extraction | Many datasets are nested inside repository ZIP files. | CSV/XLSX files inside archives. |
+| OCR | Recovers text from maps, image-only pages and scanned figure panels. | Coordinates, site labels, captions. |
+| Vision model | Optional audit support for maps and complex visual tables. | Approximate map interpretation and visual evidence summaries. |
+| LLM fallback | Only fills gaps after deterministic extraction. | Ambiguous text fields and comments, subject to validation. |
 
-## Execution stages
+# Output produced per paper
 
-The script prints an eleven-step audit trail:
+Each paper receives a paper-specific output directory. The important outputs are:
 
-
-1. Extract PDF text with `pdfplumber` and write page-aware text evidence.
-2. Write DOI/citation metadata JSON.
-3. Extract real PDF tables with Docling from `result.document.tables`.
-4. Discover supplementary/data links from explicit URLs, DOI contexts, repository landing pages and Crossref related links.
-5. Download and unpack tabular data, including nested ZIP files.
-6. Export useful PDF pages as images for maps, figures and scanned/visual tables.
-7. Run OCR on selected image pages.
-8. Optionally run a local Ollama vision model on maps/plots/visual tables.
-9. Combine deterministic extraction with optional LLM fallback for missing/weak fields only.
-10. Save a master metadata JSON and an evidence workbook.
-11. Fill the PREDICTS PV07 AcroForm.
-
-
-## Output folders
-
-Each paper receives a paper-specific output directory. Later versions will incorporate an option to download desired papers from https links. Important files include:
-
-| Output | Description |
+| Output | Purpose |
 |---|---|
-| `text_metadata.json` | Page-aware PDF text extraction and text-derived metadata. |
+| `text_metadata.json` | Page-aware PDF text and text-derived metadata. |
 | `doi_metadata.json` | DOI and citation extraction. |
-| `pdf_tables/` | Docling-exported tables as CSV, XLSX and/or HTML. |
-| `supplementary_files/` | Files downloaded from repositories or publisher supplementary links. |
-| `extracted_data/` | Parsed and sampled tables from downloaded files and unzipped archives. |
-| `pdf_images/` | Exported page images selected for OCR/vision. |
-| `image_extracted_data/` | OCR text, vision JSON, map/coordinate CSV evidence. |
+| `pdf_tables/` | Docling tables as CSV/XLSX/HTML. |
+| `supplementary_files/` | Downloaded repository or publisher supplementary files. |
+| `extracted_data/` | Parsed and sampled downloaded tables, including unzipped files. |
+| `pdf_images/` | Page images selected for OCR/vision. |
+| `image_extracted_data/` | OCR text, vision JSON and map/coordinate evidence. |
 | `evidence_used_for_form.xlsx` | Human-readable evidence workbook. |
-| `master_metadata.json` | Final metadata object used for filling. |
-| `*_filled_predicts.pdf` | Filled PV07 PDF form. |
-| `field_map.json` | Mapping between metadata fields and PDF form fields. |
-
-# Script architecture
-
-The pipeline is modular. The main functional groups are:
-
-| Module area | Main functions | Role |
-|---|---|---|
-| PDF text | `extract_pdf_pages`, `full_text_from_pages`, `section_text` | Extract and clean page-aware article text. |
-| Tables | `export_docling_tables` | Export only real Docling `result.document.tables`. |
-| Images | `export_useful_page_images` | Select pages likely to contain maps, plots, figures or tables. |
-| Vision | `analyse_page_images_with_vision`, `ollama_vision_json` | Create auditable JSON/CSV from visual evidence. |
-| Repository discovery | `find_links_and_dois`, `doi_urls_from_data_availability_context`, `scrape_supplementary_links` | Find data availability links and repository DOIs. |
-| Repository-specific download | `dryad_urls_from_identifier`, `_dryad_file_links_from_landing`, `figshare_api_urls_from_identifier`, `zenodo_urls_from_identifier`, `eidc_urls_from_identifier`, `osf_urls_from_identifier` | Convert landing pages/DOIs into direct file downloads. |
-| Data parsing | `summarize_downloaded_tables`, ZIP extraction helpers | Parse downloaded CSV/XLSX/ZIP contents and summarize evidence. |
-| Metadata extraction | deterministic rules plus `ollama_llm_fallback` | Populate PV07 metadata fields with evidence. |
-| Form filling | PDF field mapping and visible form fill | Write the final PV07 PDF. |
+| `master_metadata.json` | Final metadata object used to fill PV07. |
+| `*_filled_predicts.pdf` | Filled PV07 form. |
 
 # Repository download logic
 
-The repository downloader is deliberately redundant because ecological papers use different repository platforms and publisher PDFs often break URLs/DOIs across lines.
+The repository downloader is deliberately redundant because ecological papers and publishers use inconsistent formats. URLs and DOIs are often broken across lines in PDFs, and repository landing pages do not always directly expose the data file.
 
-## Supported sources
-
-| Repository/source | Handling strategy |
+| Source | Current handling |
 |---|---|
-| Dryad | Detect `10.5061/dryad.*`, open Dryad landing/API pages, identify direct file-stream/download links, prioritise ZIP files when present. |
-| Figshare | Use Figshare API from article DOI or landing page identifier. |
-| Zenodo | Use records API and `/files/` URLs. |
-| EIDC/CEH | Resolve UUID-style `10.5285/*` data package links. |
+| Dryad DOI datasets | Detect `10.5061/dryad.*`, open Dryad landing/API pages and resolve file-stream/download links. |
+| Dryad share links | Detect `datadryad.org/stash/share/...` links and scrape the share landing page for downloadable files. |
+| Figshare | Use Figshare article/file API when an article ID or DOI is found. |
+| Zenodo | Use records/files API where possible. |
+| EIDC/CEH | Resolve UUID-style `10.5285/*` package links. |
 | OSF | Scrape storage/download URLs. |
 | Publisher supplementary material | Scrape article HTML for supplement/mediaobject/download anchors. |
-| Crossref | Search related links for datasets or supplementary materials. |
+| Nested ZIP files | Recursively unzip and parse CSV/XLSX files inside archives. |
 
-## Dryad fix tested by Kingazi
+::: {.callout-warning}
+## Important limitation
 
-Kingazi et al. has a Dryad data availability link:
-
-`https://datadryad.org/dataset/doi:10.5061/dryad.3tx95x6pd`
-
-The landing page contains a single ZIP, `Data_Kingazi_et_al..zip`. Inside that ZIP are the usable data files:
-
-- `Bean yield data.csv`
-- `Insect pollinator data.csv`
-- `NMDS_Data.csv`
-
-The downloader must therefore not stop at the landing page and must not treat random reference links as the data source. It needs to resolve the Dryad DOI to a real file download, save the ZIP, unzip it, and parse the CSVs inside.
+A downloaded file is not automatically the correct evidence for every field. For example, a repository may contain historical records, trait tables, model summaries, or treatment-level data. Site/species counts must be interpreted against the paper Methods.
+:::
 
 # Example 1: Jarrett et al. 2021
 
-## Paper
+## Why this example matters
+
+Jarrett is useful because it tests a common PREDICTS problem: the repository data contains large CSV files with several possible counting units. The pipeline must not blindly use the largest unique count if the paper defines the study design differently.
+
+## Paper metadata
 
 | Field | Value |
 |---|---|
@@ -138,66 +217,53 @@ The downloader must therefore not stop at the landing page and must not treat ra
 | Journal | Journal of Applied Ecology |
 | DOI | `10.1111/1365-2664.13864` |
 
-## Extracted PV07-style metadata
+## Current extracted PV07-style metadata
 
-| Field | Extracted value |
+| Field | Current value |
 |---|---|
-| Country | Multiple countries |
-| Continent/region | Multiple regions |
-| Location description | Southern Cameroon; Northern Equatorial Guinea |
+| Countries | Cameroon; Equatorial Guinea |
+| Region | Southern Cameroon; Northern Equatorial Guinea |
 | Sampling method | Mist-netting |
-| Number of sites | 83 |
-| Number of species in final metadata | 4 |
-| Study dates | 1990–2020 |
+| Article-reported sites | 83 |
+| Study date range | 1990–2020 |
 | Abundance metric | abundance |
 | Abundance unit | individuals |
 | Sampling effort unit | net |
 
 ## Downloaded data evidence
 
-| File                    |   Rows | Important columns                                                              | Evidence extracted                                                                                             |
-|:------------------------|-------:|:-------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
-| CaptureDataset.csv      |  22368 | species, year, season, site, country, region…                                  | unique species: 515; unique sites: 177; date range: 1990–2020                                                  |
-| CocoaFarmTreeCover.csv  |     38 | farm, habitat, lat, long, canopy_fisheye, landscape_cover                      | unique sites: 38; bbox: {'lat_min': 2.771069007, 'lat_max': 5.08295, 'lon_min': 9.402371, 'lon_max': 12.74924} |
-| BirdCharacteristics.csv |    259 | species, forest_specialist, primary_food, insectivore, frugivore, nectarivore… | unique species: 259                                                                                            |
+| File | Rows | Evidence extracted |
+|---|---:|---|
+| `CaptureDataset.csv` | 22,368 | Species, year, season, site, country, region and habitat columns. |
+| `CocoaFarmTreeCover.csv` | 38 | Farm IDs and latitude/longitude columns. |
+| `BirdCharacteristics.csv` | 259 | Species traits and feeding guild information. |
 
-## Example supplementary rows
+## Audit notes
 
-### CaptureDataset.csv
-
-| species             |   year | season   | site   | country   | region   | habitat   |   ID_confirm |
-|:--------------------|-------:|:---------|:-------|:----------|:---------|:----------|-------------:|
-| Ispidina lecontei   |   2006 | dry      | Akok   | Cameroon  | south    | cacao     |            1 |
-| Eurillas virens     |   2006 | dry      | Akok   | Cameroon  | south    | cacao     |            1 |
-| Cyanomitra olivacea |   2006 | dry      | Akok   | Cameroon  | south    | cacao     |            1 |
-
-### CocoaFarmTreeCover.csv
-
-| farm     | habitat   |     lat |     long |   canopy_fisheye |   landscape_cover |
-|:---------|:----------|--------:|---------:|-----------------:|------------------:|
-| BADU003  | cacao     | 4.83992 |  9.45138 |              nan |           20.3693 |
-| BADU005  | cacao     | 4.83352 |  9.45303 |              nan |           19.5374 |
-| BAKOA003 | cacao     | 4.56451 | 11.1626  |              nan |           10.4868 |
-
-## Image/map evidence
-
-The pipeline exported page images because the paper contains figures and map-like visual evidence. These images are stored so the user can audit what OCR/vision saw.
-
-![](assets/jarrett_page3.jpg){fig-alt="Exported page image from Jarrett et al. showing the study context and figure evidence."}
-
-![](assets/jarrett_page4.jpg){fig-alt="Exported page image from Jarrett et al. used as visual/OCR evidence."}
-
-## Quality-control notes
-
-| Issue | Why it matters | Recommended action |
+| Issue | Why it matters | Current interpretation |
 |---|---|---|
-| Final metadata says `number_of_species = 4`, but `CaptureDataset.csv` contains 515 unique species and `BirdCharacteristics.csv` contains 259 unique species. | This indicates that the final field was probably overwritten or extracted from a narrower phrase/table rather than the repository data. | Prefer repository-derived unique species counts when the downloaded capture/species table is present. Flag conflicts in `evidence_used_for_form.xlsx`. |
-| Final metadata says `country = Multiple countries`, while repository coordinate data spans Cameroon and Equatorial Guinea. | PV07 may require explicit country names or separate study records depending on how the form is completed. | Store `Cameroon; Equatorial Guinea` in comments or split studies if needed. |
-| Site counts differ by source: abstract/methods mention 83 sites; `CocoaFarmTreeCover.csv` has 38 farms; `CaptureDataset.csv` has 177 unique site values. | Different files represent different sampling units or historical datasets. | Keep the article-reported 83 sites when it is the study design number, but record downloaded-file counts as audit evidence. |
+| Site counts differ between article text and supplementary tables. | Different files encode different sampling units. | Prefer the article Methods count when it defines the design; keep repository counts as audit evidence. |
+| Species counts differ between capture records and trait tables. | Trait tables may not equal sampled abundance records. | Keep a conflict flag and avoid silent overwrite. |
+| Countries may need explicit listing. | PV07 may need country names or separate studies depending on final curation. | Store Cameroon and Equatorial Guinea clearly in comments/evidence. |
+
+## Visual evidence
+
+![](assets/jarrett_page3.jpg){fig-alt="Exported page image from Jarrett et al. used as audit evidence."}
+
+![](assets/jarrett_page4.jpg){fig-alt="Exported page image from Jarrett et al. used as OCR or visual evidence."}
 
 # Example 2: Kingazi et al. 2024
 
-## Paper
+## Why this example matters
+
+Kingazi is useful because it exposed two important failure modes:
+
+1. the data availability link goes to a Dryad landing page containing a ZIP file;
+2. the site count can be misread if the extractor confuses treatment types, plot IDs and paired design.
+
+The corrected interpretation is that the paper reports **16 paired sampling blocks/sites**, with 16 agroforestry plots paired with 16 non-agroforestry plots. The repository data also contains 32 plot IDs because each pair has two plot types.
+
+## Paper metadata
 
 | Field | Value |
 |---|---|
@@ -206,73 +272,33 @@ The pipeline exported page images because the paper contains figures and map-lik
 | Title | Tropical agroforestry supports insect pollinators and improves bean yield |
 | Journal | Journal of Applied Ecology |
 | DOI | `10.1111/1365-2664.14629` |
+| Repository | Dryad dataset DOI `10.5061/dryad.3tx95x6pd` |
 
-## Extracted PV07-style metadata
+## Current extracted PV07-style metadata
 
-| Field | Extracted value |
+| Field | Current value |
 |---|---|
 | Country | Tanzania |
 | Continent/region | Africa |
-| Location description | Eastern lower slopes of Mount Kilimanjaro; Kilimanjaro Region; Northern Tanzania; Chagga home gardens |
+| Location | Eastern lower slopes of Mount Kilimanjaro; Kilimanjaro Region; Northern Tanzania; Chagga home gardens |
 | Sampling method | Fixed plots/quadrats |
-| Number of sites in final metadata | 16 |
-| Number of species | 45 |
-| Study dates | 2022–2022 |
+| Number of sites | 16 paired blocks/sites |
+| Plot records in repository | 32 plot IDs |
+| Number of species/taxa | 45 |
+| Study dates | March–May 2022 |
 | Abundance metric | abundance |
 | Abundance unit | individuals |
 | Sampling effort unit | plot |
 
 ## Downloaded data evidence
 
-| File                       |   Rows | Important columns                                                                                                                                                | Evidence extracted   |
-|:---------------------------|-------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
-| Bean yield data.csv        |    120 | Plot ID, PairID, Habitat type, Pollination treatment, Plant ID in a plot, Pods…                                                                                  | unique sites: 12     |
-| Insect pollinator data.csv |     32 | Farming system, PairID, PlotID, Flower visitors abundance (Insect pollinator abundance), Flower visitors richness (Insect pollinator richness), Visitation rate… |                      |
-| NMDS_Data.csv              |     32 | Plot id, Habitat, Amegilla calens, Amegilla zonata, Anthophora vestita, Apis mellifera…                                                                          | unique sites: 32     |
-
-## Example supplementary rows
-
-### Insect pollinator data.csv
-
-| Farming system   |   PairID | PlotID   |   Flower visitors abundance (Insect pollinator abundance) |   Flower visitors richness (Insect pollinator richness) |   Visitation rate |   Wood cover |   Flower richness |   Flower abundance (x10) |   Overall plant richness |   Overall plant abundance |
-|:-----------------|---------:|:---------|----------------------------------------------------------:|--------------------------------------------------------:|------------------:|-------------:|------------------:|-------------------------:|-------------------------:|--------------------------:|
-| Agroforestry     |        1 | P1A      |                                                        41 |                                                      15 |           2.05919 |       25.731 |                21 |                     2365 |                       45 |                       511 |
-| Agroforestry     |        2 | P2A      |                                                        47 |                                                      15 |           2.74284 |       32.937 |                17 |                     3145 |                       52 |                       605 |
-| Agroforestry     |        3 | P3A      |                                                        27 |                                                      14 |           4.7258  |       22.825 |                 9 |                     2500 |                       46 |                       482 |
-
-### Bean yield data.csv
-
-| Plot ID   |   PairID | Habitat type   | Pollination treatment   | Plant ID in a plot   |   Pods |   Number of seed per pod |   Yield quantity (g) |
-|:----------|---------:|:---------------|:------------------------|:---------------------|-------:|-------------------------:|---------------------:|
-| P1A       |        1 | Agroforestry   | Open                    | P1                   |     11 |                      6.3 |                25.3  |
-| P1A       |        1 | Agroforestry   | Open                    | P2                   |     11 |                      5   |                20.17 |
-| P1A       |        1 | Agroforestry   | Open                    | P3                   |     14 |                      6.8 |                34.83 |
-
-### NMDS_Data.csv
-
-| Plot id   | Habitat      |   Amegilla calens |   Amegilla zonata |   Anthophora vestita |   Apis mellifera |   Belenois creona  |   Borbo cinnara |   Senaspis macquart |   Hypotrigona gribodoi |   Ischiodon aegyptius |   Lithurgus pullatus  |   Meliponula ferruginea |   Pachymelus festivus |   Phytomia varians |   Synagris analis |   Xylocopa caffra |   Xylocopa calens |   Xylocopa erythrina |   Xylocopa flavorufa |   Xylocopa lugubris |   Xylocopa nigrita |   Xylocopa scioensis |
-|:----------|:-------------|------------------:|------------------:|---------------------:|-----------------:|-------------------:|----------------:|--------------------:|-----------------------:|----------------------:|----------------------:|------------------------:|----------------------:|-------------------:|------------------:|------------------:|------------------:|---------------------:|---------------------:|--------------------:|-------------------:|---------------------:|
-| P10A      | Agroforestry |                 9 |                 0 |                    0 |               13 |                  0 |               0 |                   0 |                      0 |                     0 |                     0 |                       1 |                     0 |                  0 |                 2 |                 4 |                 2 |                    0 |                    1 |                   0 |                  1 |                    0 |
-| P11A      | Agroforestry |                 0 |                 0 |                    0 |                4 |                  5 |               0 |                   2 |                      0 |                     0 |                     0 |                       0 |                     0 |                  0 |                 0 |                 8 |                 0 |                    0 |                    6 |                   0 |                  1 |                    0 |
-| P12A      | Agroforestry |                 1 |                 0 |                    0 |                8 |                  1 |               0 |                   0 |                      0 |                     4 |                     0 |                       0 |                     0 |                  0 |                 0 |                 9 |                 1 |                    1 |                    3 |                   0 |                  2 |                    0 |
-
-## Main PDF table evidence
-
-The article PDF contained three Docling tables. The exported table samples include model outputs for pollinator abundance/species richness/visitation rate, floral and plant resources, and bean yield/pollination treatments. These are not always direct PV07 fields, but they are useful audit evidence and can support metric/unit interpretation.
-
-## Image/map evidence
-
-Page 3 contains the study map and example plot photographs. This is particularly useful for location context and for checking whether the extraction should treat the study as a single study area or multiple plots.
-
-![](assets/kingazi_page3.jpg){fig-alt="Kingazi et al. page 3 with study map and example agroforestry/non-agroforestry plots."}
-
-Page 4 contains methods text about the paired 50 × 50 m plots, the March–May 2022 monitoring period, and sampling details.
-
-![](assets/kingazi_page4.jpg){fig-alt="Kingazi et al. page 4 with experimental design and pollinator sampling methods."}
+| File | Rows | Evidence extracted |
+|---|---:|---|
+| `Bean yield data.csv` | 120 | Yield records by plot, pair, habitat type and pollination treatment. |
+| `Insect pollinator data.csv` | 32 | Pollinator abundance/richness/visitation rate by plot and pair. |
+| `NMDS_Data.csv` | 32 | Taxon-by-plot matrix with plot IDs and habitat type. |
 
 ## Dryad archive structure
-
-The successful extraction created the following structure:
 
 ```text
 supplementary_files/
@@ -289,13 +315,34 @@ extracted_data/
         └── NMDS_Data.csv
 ```
 
-## Quality-control notes
+## Visual evidence
 
-| Issue | Why it matters | Recommended action |
+Page 3 contains the study map and example agroforestry/non-agroforestry plots.
+
+![](assets/kingazi_page3.jpg){fig-alt="Kingazi et al. page 3 with study map and example agroforestry/non-agroforestry plots."}
+
+Page 4 contains the experimental design and sampling details.
+
+![](assets/kingazi_page4.jpg){fig-alt="Kingazi et al. page 4 with experimental design and pollinator sampling methods."}
+
+## Quality-control interpretation
+
+| Field | Risk | Correct handling |
 |---|---|---|
-| Final metadata said `number_of_sites = 2`, but the Methods report 16 paired agroforestry/non-agroforestry plots, i.e. 32 plots, and the downloaded data uses 32 plot IDs. | `2` likely came from the two treatment types rather than the number of sites/plots. | Add a rule that recognises paired plot designs: `16 pairs × 2 treatments = 32 plots/sites`, while recording treatment count separately. |
-| The paper uses pollinator visits, species richness and visitation rates, but PV07 needs abundance metric/unit and sampling effort unit. | These are related but not identical. | Use `abundance`, `individuals`, and `plot`/observation effort consistently, with comments on the 10-min observations and five 1 m² subplots. |
-| The Dryad landing page contains a ZIP, and the ZIP contains another ZIP plus README. | A shallow downloader will report zero usable supplementary files. | Always recursively unzip archives and parse CSVs inside nested ZIP files. |
+| Number of sites | The extractor may confuse one broad study area, two treatments, 16 pairs, or 32 plot IDs. | Use **16 paired blocks/sites** for PV07 site count, and record 32 plot IDs as supporting repository evidence. |
+| Sampling design | Two treatment types are not two sites. | Treat agroforestry and non-agroforestry as paired plot types within the design. |
+| Repository download | A shallow downloader may stop at the Dryad page and miss the ZIP. | Resolve the Dryad DOI to the ZIP and recursively extract CSVs. |
+
+# Filled PV07 form example
+
+The embedded PDF below is the filled PV07 form for the Kingazi example.
+
+[Open the filled Kingazi PV07 PDF](examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf)
+
+<iframe 
+  class="pdf-frame"
+  src="examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf">
+</iframe>
 
 # Cross-example comparison
 
@@ -304,46 +351,61 @@ extracted_data/
 | Taxon/group | Birds | Insect pollinators and bean yield |
 | Study system | Cocoa agroforestry | Chagga home gardens / bean plots |
 | Countries | Cameroon; Equatorial Guinea | Tanzania |
-| Main repository/data challenge | Multiple large CSV files; counts differ by file purpose | Dryad DOI points to one ZIP; CSVs are inside nested archive |
-| Strongest evidence for dates | Repository table year column: 1990–2020 | Methods and data files: 2022 |
-| Strongest evidence for sites | Article text: 83 sites, plus downloaded site columns | Methods: 16 paired plots = 32 plots; downloaded PlotID column |
-| Strongest evidence for coordinates | `CocoaFarmTreeCover.csv` latitude/longitude columns | Map/page evidence and plot-level data; no direct lat/lon columns in the parsed CSV samples |
-| Main QC risk | Species/site counts from different tables conflict | Treatment count mistaken for site count |
+| Repository challenge | Multiple large CSV files with different sampling units. | Dryad DOI points to a ZIP containing nested data files. |
+| Strongest evidence for dates | Repository year column and article text. | Methods and data files: March–May 2022. |
+| Strongest evidence for sites | Article Methods: 83 sites. | Article Methods: 16 paired blocks/sites; repository has 32 plot IDs. |
+| Main QC risk | Conflicting species/site counts across files. | Treatment/plot count mistaken for site count. |
 
-# Suggested validation rules before filling PV07
+# Validation rules before filling PV07
 
 | Rule | Rationale |
 |---|---|
 | Prefer explicit Methods design counts over generic counts found in result tables. | Model tables often contain treatment levels, not sites. |
-| Prefer downloaded repository coordinates over map OCR when coordinate columns exist. | Repository CSV coordinates are usually more precise and machine-readable. |
-| Do not overwrite article-reported site count with unique values from unrelated supplementary tables unless the table is clearly the sampling-unit table. | Unique site IDs can represent visits, farms, mist-net stations, species records, or historical datasets. |
-| Keep a conflict log when PDF text, Docling tables and repository data disagree. | Human review is essential for PREDICTS. |
-| Recursively unzip archives and parse nested CSV/XLSX files. | Many repositories package data in nested folders or ZIPs. |
-| Treat LLM output as fallback only and validate against PV07 allowed options. | Prevents hallucinated fields and invalid dropdown values. |
-| Store both the final field value and the evidence source used. | Makes the filled PDF auditable. |
+| Keep repository-derived counts as evidence, not automatic truth. | Repository files may encode visits, farms, records, traits or historical datasets. |
+| Prefer downloaded coordinates over map OCR when coordinate columns exist. | Repository coordinates are usually more precise and machine-readable. |
+| Never silently overwrite a field when PDF text, tables and repository data disagree. | Conflicts should be visible in the evidence workbook. |
+| Recursively unzip archives and parse nested files. | Many repositories package data in nested folders or ZIPs. |
+| Treat LLM output as fallback only. | Prevents hallucinated fields and invalid PV07 dropdown entries. |
+| Save both final value and evidence source. | Makes the filled PDF auditable. |
 
-# Recommended next improvements
+# Known issues and fixes in progress
 
-1. Add a `qc_flags` section to `master_metadata.json` for conflicts such as species count, site count and country naming.
-2. Add a `site_count_source` field so the final number can be traced to Methods, repository data, or map evidence.
-3. Add a `species_count_source` field and prioritise repository species columns when available.
-4. Add treatment-aware logic for paired designs so that two treatments are not misread as two sites.
-5. Add a small HTML summary page per paper with the final metadata table, downloaded files table, extracted evidence images and QC flags.
-6. Add unit tests for repository download functions using known URLs: Dryad, Figshare, Zenodo, EIDC and OSF.
+| Issue | Status |
+|---|---|
+| Some papers still fail repository download because they use non-standard share links. | Being patched with repository-specific handlers. |
+| Excel audit output can fail when OCR text contains illegal characters. | Patched by stripping characters that `openpyxl` cannot write. |
+| Site counts remain the highest-risk field. | Needs a conflict log and `site_count_source` field. |
+| Species counts can be overwritten by weak evidence. | Needs stricter priority rules and species-count provenance. |
+| Some visual/OCR evidence is noisy. | Keep it as supporting evidence, not as primary evidence when text/repository data are stronger. |
+
+# Recommended next steps
+
+1. Add `qc_flags` to `master_metadata.json`.
+2. Add `site_count_source`, `species_count_source`, `date_source` and `coordinate_source`.
+3. Produce a one-page HTML audit summary per paper.
+4. Add regression tests for known examples: Kingazi, Jarrett, Klinkovská, Guenat, Geldenhuys and Betemariyam.
+5. Add unit tests for Dryad DOI, Dryad share-link, Figshare, Zenodo, EIDC and OSF download functions.
+6. Decide with the PREDICTS team how paired designs should be represented consistently in PV07.
 
 # Minimal command-line example
 
+::: {.callout-note collapse="true"}
+## Batch command used for the test set
+
 ```bash
 find ../Papers2Test -iname "*.pdf" | while read paper; do
-  python predicts_form_fixed_dryad.py     --paper "$paper"     --form PREDICTS_Form_v07.pdf     --compiler-first Joana     --compiler-last Medeiros     --compiler-id JM1     --compiler-email j.medeiros@pgr.reading.ac.uk     --download-dir ./downloaded_data     --model gemma3:4b     --vision-model moondream     --vision-max-pages 15     --max-ocr-pages 15
- done
+  python predicts_form.py \
+    --paper "$paper" \
+    --form PREDICTS_Form_v07.pdf \
+    --compiler-first Joana \
+    --compiler-last Medeiros \
+    --compiler-id JM1 \
+    --compiler-email j.medeiros@pgr.reading.ac.uk \
+    --download-dir ./downloaded_data \
+    --model gemma3:4b \
+    --vision-model moondream \
+    --vision-max-pages 15 \
+    --max-ocr-pages 15
+done
 ```
-## Filled PV07 form example
-
-[Open the filled Kingazi PV07 PDF](examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf)
-
-<iframe 
-  src="examples/JM1_2024__Kingazi/JM1_2024__Kingazi_filled_predicts.pdf" 
-  width="100%" 
-  height="800px">
-</iframe>
+:::
