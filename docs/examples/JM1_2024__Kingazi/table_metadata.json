@@ -1,0 +1,257 @@
+{
+  "source": "docling_result_document_tables",
+  "n_tables": 3,
+  "tables": [
+    {
+      "index": 1,
+      "rows": 7,
+      "columns": [
+        "Model",
+        "Variables",
+        "Estimates ± standard error",
+        "z -value",
+        "p -value",
+        "R 2 m / R 2 c"
+      ],
+      "csv": "downloaded_data/_tmp_f3a47db217/pdf_tables/table_001.csv",
+      "xlsx": "downloaded_data/_tmp_f3a47db217/pdf_tables/table_001.xlsx",
+      "html": "downloaded_data/_tmp_f3a47db217/pdf_tables/table_001.html",
+      "sample": [
+        {
+          "Model": "Insect pollinator abundance",
+          "Variables": "Intercept",
+          "Estimates ± standard error": "2.94 ± 0.89",
+          "z -value": "15.60",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.72/0.72"
+        },
+        {
+          "Model": "",
+          "Variables": "Farming system (non-agroforestry)",
+          "Estimates ± standard error": "-0.34 ± 0.09",
+          "z -value": "-3.68",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": ""
+        },
+        {
+          "Model": "",
+          "Variables": "Landscape-level wood cover",
+          "Estimates ± standard error": "0.03 ± 0.01",
+          "z -value": "3.35",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": ""
+        },
+        {
+          "Model": "Insect pollinator species richness",
+          "Variables": "Intercept",
+          "Estimates ± standard error": "2.59 ± 0.07",
+          "z -value": "38.08",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.45/0.45"
+        },
+        {
+          "Model": "Insect pollinator species richness",
+          "Variables": "Farming system (non-agroforestry)",
+          "Estimates ± standard error": "-0.53 ± 0.1",
+          "z -value": "-4.72",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": ""
+        },
+        {
+          "Model": "Visitation rate",
+          "Variables": "Intercept",
+          "Estimates ± standard error": "1.23 ± 0.06",
+          "z -value": "18.73",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.51/0.71"
+        },
+        {
+          "Model": "Visitation rate",
+          "Variables": "Farming system (non-agroforestry)",
+          "Estimates ± standard error": "-0.49 ± 0.07",
+          "z -value": "-7.50",
+          "p -value": "< 0.01",
+          "R 2 m / R 2 c": ""
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "rows": 8,
+      "columns": [
+        "Model",
+        "Variables",
+        "Estimates ± standard error",
+        "z -value",
+        "p -value",
+        "R 2 m / R 2 c"
+      ],
+      "csv": "downloaded_data/_tmp_f3a47db217/pdf_tables/table_002.csv",
+      "xlsx": "downloaded_data/_tmp_f3a47db217/pdf_tables/table_002.xlsx",
+      "html": "downloaded_data/_tmp_f3a47db217/pdf_tables/table_002.html",
+      "sample": [
+        {
+          "Model": "Insect pollinator abundance",
+          "Variables": "Intercept",
+          "Estimates ± standard error": "2.87 ± 0.07",
+          "z -value": "43.54",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.71/0.71"
+        },
+        {
+          "Model": "",
+          "Variables": "Flower abundance",
+          "Estimates ± standard error": "0.0002 ± 0.00005",
+          "z -value": "3.22",
+          "p -value": "0.001",
+          "R 2 m / R 2 c": ""
+        },
+        {
+          "Model": "",
+          "Variables": "Overall plant richness",
+          "Estimates ± standard error": "0.007 ± 0.002",
+          "z -value": "3.27",
+          "p -value": "0.001",
+          "R 2 m / R 2 c": ""
+        },
+        {
+          "Model": "Insect pollinator species richness",
+          "Variables": "Intercept",
+          "Estimates ± standard error": "1.955 ± 0.114",
+          "z -value": "16.423",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.45/0.45"
+        },
+        {
+          "Model": "",
+          "Variables": "Flower abundance",
+          "Estimates ± standard error": "0.0002 ± 0.00006",
+          "z -value": "3.578",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": ""
+        },
+        {
+          "Model": "",
+          "Variables": "Flower richness",
+          "Estimates ± standard error": "0.0179 ± 0.013",
+          "z -value": "0.576",
+          "p -value": "0.565",
+          "R 2 m / R 2 c": ""
+        },
+        {
+          "Model": "Visitation rate",
+          "Variables": "Intercept",
+          "Estimates ± standard error": "0.59 ± 0.07",
+          "z -value": "7.91",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.43/0.68"
+        },
+        {
+          "Model": "",
+          "Variables": "Overall plant richness",
+          "Estimates ± standard error": "0.011 ± 0.0017",
+          "z -value": "6.27",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": ""
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "rows": 12,
+      "columns": [
+        "Model",
+        "Variables",
+        "Estimates ± standard error",
+        "z -value",
+        "p -value",
+        "R 2 m / R 2 c"
+      ],
+      "csv": "downloaded_data/_tmp_f3a47db217/pdf_tables/table_003.csv",
+      "xlsx": "downloaded_data/_tmp_f3a47db217/pdf_tables/table_003.xlsx",
+      "html": "downloaded_data/_tmp_f3a47db217/pdf_tables/table_003.html",
+      "sample": [
+        {
+          "Model": "Pods per plant",
+          "Variables": "Intercept",
+          "Estimates ± standard error": "2.06 ± 0.07",
+          "z -value": "28.28",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.28/0.33"
+        },
+        {
+          "Model": "Pods per plant",
+          "Variables": "Farming system (non-agroforestry)",
+          "Estimates ± standard error": "-0.28 ± 0.09",
+          "z -value": "3.24",
+          "p -value": "0.001",
+          "R 2 m / R 2 c": "0.28/0.33"
+        },
+        {
+          "Model": "Pods per plant",
+          "Variables": "Pollination treatment (unbagged)",
+          "Estimates ± standard error": "0.34 ± 0.08",
+          "z -value": "4.35",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.28/0.33"
+        },
+        {
+          "Model": "Pods per plant",
+          "Variables": "Farming system (non-agroforestry): Pollination treatment (unbagged)",
+          "Estimates ± standard error": "-0.13 ± 0.13",
+          "z -value": "0.98",
+          "p -value": "0.33",
+          "R 2 m / R 2 c": "0.28/0.33"
+        },
+        {
+          "Model": "Seeds per pod",
+          "Variables": "Intercept",
+          "Estimates ± standard error": "4.56 ± 0.12",
+          "z -value": "38.93",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.40/0.41"
+        },
+        {
+          "Model": "Seeds per pod",
+          "Variables": "Farming system (non-agroforestry)",
+          "Estimates ± standard error": "-0.47 ± 0.16",
+          "z -value": "-2.98",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.40/0.41"
+        },
+        {
+          "Model": "Seeds per pod",
+          "Variables": "Pollination treatment (unbagged)",
+          "Estimates ± standard error": "0.87 ± 0.16",
+          "z -value": "5.50",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.40/0.41"
+        },
+        {
+          "Model": "Seeds per pod",
+          "Variables": "Farming system (non-agroforestry): Pollination treatment (unbagged)",
+          "Estimates ± standard error": "-0.57 ± 0.22",
+          "z -value": "-2.55",
+          "p -value": "0.01",
+          "R 2 m / R 2 c": "0.40/0.41"
+        },
+        {
+          "Model": "Yield quantity",
+          "Variables": "Intercept",
+          "Estimates ± standard error": "17.74 ± 0.88",
+          "z -value": "20.05",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.60/0.64"
+        },
+        {
+          "Model": "Yield quantity",
+          "Variables": "Farming system (non-agroforestry)",
+          "Estimates ± standard error": "-8.79 ± 0.94",
+          "z -value": "9.27",
+          "p -value": "< 0.001",
+          "R 2 m / R 2 c": "0.60/0.64"
+        }
+      ]
+    }
+  ]
+}

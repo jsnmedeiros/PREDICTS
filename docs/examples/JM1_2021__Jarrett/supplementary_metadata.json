@@ -1,0 +1,104 @@
+{
+  "source": "supplementary_downloads",
+  "downloaded_files": [
+    "downloaded_data/_tmp_2fd8d0c939/supplementary_files/CaptureDataset.csv",
+    "downloaded_data/_tmp_2fd8d0c939/supplementary_files/CocoaFarmTreeCover.csv",
+    "downloaded_data/_tmp_2fd8d0c939/supplementary_files/BirdCharacteristics.csv"
+  ],
+  "summaries": [
+    {
+      "rows": 22368,
+      "columns": [
+        "species",
+        "year",
+        "season",
+        "site",
+        "country",
+        "region",
+        "habitat",
+        "ID_confirm"
+      ],
+      "lat_cols": [],
+      "lon_cols": [],
+      "species_cols": [
+        "species"
+      ],
+      "site_cols": [
+        "site"
+      ],
+      "date_cols": [
+        "year"
+      ],
+      "unique_species": 515,
+      "unique_sites": 177,
+      "date_range": {
+        "start": "1990",
+        "end": "2020",
+        "evidence": "min/max year parsed from downloaded tabular date columns: year"
+      },
+      "file": "downloaded_data/_tmp_2fd8d0c939/supplementary_files/CaptureDataset.csv",
+      "sample_csv": "downloaded_data/_tmp_2fd8d0c939/extracted_data/CaptureDataset_sample.csv"
+    },
+    {
+      "rows": 38,
+      "columns": [
+        "farm",
+        "habitat",
+        "lat",
+        "long",
+        "canopy_fisheye",
+        "landscape_cover"
+      ],
+      "lat_cols": [
+        "lat"
+      ],
+      "lon_cols": [
+        "long"
+      ],
+      "species_cols": [],
+      "site_cols": [
+        "farm"
+      ],
+      "date_cols": [],
+      "bbox": {
+        "lat_min": 2.771069007,
+        "lat_max": 5.08295,
+        "lon_min": 9.402371,
+        "lon_max": 12.74924
+      },
+      "center": {
+        "lat": 3.8307132889736835,
+        "lon": 11.303828158947368
+      },
+      "unique_sites": 38,
+      "file": "downloaded_data/_tmp_2fd8d0c939/supplementary_files/CocoaFarmTreeCover.csv",
+      "sample_csv": "downloaded_data/_tmp_2fd8d0c939/extracted_data/CocoaFarmTreeCover_sample.csv"
+    },
+    {
+      "rows": 259,
+      "columns": [
+        "species",
+        "forest_specialist",
+        "primary_food",
+        "insectivore",
+        "frugivore",
+        "nectarivore",
+        "granivore",
+        "ant_follower",
+        "mixed_species_flock",
+        "iucn_status",
+        "endemic_CongoBasin"
+      ],
+      "lat_cols": [],
+      "lon_cols": [],
+      "species_cols": [
+        "species"
+      ],
+      "site_cols": [],
+      "date_cols": [],
+      "unique_species": 259,
+      "file": "downloaded_data/_tmp_2fd8d0c939/supplementary_files/BirdCharacteristics.csv",
+      "sample_csv": "downloaded_data/_tmp_2fd8d0c939/extracted_data/BirdCharacteristics_sample.csv"
+    }
+  ]
+}

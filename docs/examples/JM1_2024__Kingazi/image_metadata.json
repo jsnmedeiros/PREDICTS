@@ -1,0 +1,405 @@
+{
+  "source": "pdf_images_ocr_vision",
+  "exported_images": [
+    {
+      "page": 1,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_001.jpg"
+    },
+    {
+      "page": 2,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_002.jpg"
+    },
+    {
+      "page": 3,
+      "kind": "map",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_003.jpg"
+    },
+    {
+      "page": 4,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_004.jpg"
+    },
+    {
+      "page": 5,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_005.jpg"
+    },
+    {
+      "page": 6,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_006.jpg"
+    },
+    {
+      "page": 7,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_007.jpg"
+    },
+    {
+      "page": 8,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_008.jpg"
+    },
+    {
+      "page": 9,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_009.jpg"
+    },
+    {
+      "page": 10,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_010.jpg"
+    },
+    {
+      "page": 11,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_011.jpg"
+    },
+    {
+      "page": 13,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_013.jpg"
+    },
+    {
+      "page": 14,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_f3a47db217/pdf_images/page_014.jpg"
+    }
+  ],
+  "ocr_summaries": [
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_001_ocr.txt",
+      "source": "image_ocr",
+      "page": 1,
+      "visual_type": "figure",
+      "text_sample": "rect tor uprates,\n\nec 16 uy 2023 | Accepted: 19 Febeuney 2024\nDor soxnsy6s.asea 14629\n\nTropical agroforestry supports insect pollinators and improves\nbean yield\n\n|. Mattias Jonsson')\n\nNanyika Kingazi?*@ | Ruwa-AichiTemu'® | Agnes Sirima*\n\n'esis Reseach School in Fores\nSciences REFOREST, Caeseot Foret, | Abstract\n\n'it and Town Satine Unversity\" | 4. Polinatign services contribute to crop productivity worldwide, but insect pollina-\n\n'Coumetracin¥aatena acim, | tf are decining in most agricultural landscapes, mainly ue to agricultural exSeine avery Agee SUA. pansion and an increase in intensive apicltra practices. To reduce the negative\nSeaton Viena — effects of agricultural expansion and intensification, farmers can adopt ecologi-\nquomtoenee Calinterventions, such as ivestyingagrcutural systems through agroforestry.\n'Depa' oy Sih However, there have been variable results on the effectiveness of agroforestry in\n\neo ttt om enhancing polnators an polination services. Furthermore, most ofthe informa\n\ntion has been generated in temperate regions while the impact of agroforestry in\n\ntropical East Africa is largely unknown,\nEma ranyatingstéSgmalleon 2. Using common beans (Phaseolus vulgaris L) as the focal crop, this study tested\nWess amd whether a tropical agroforestry system called Chagga home gardens supports\nSwed international Development pollinator communities and improves polination and crop yield. We examined 16\n\noperation Agony Sl Grant Award\n\nacme agroforestry plots paired with 16 non-agroforestry plots located along a gradient\n\n'of woody (trees and shrubs) cover within a 1-km radius to document the abun\ndance, species richness and visitation rates of polinating insects on bean flowers\nand how they contributed to bean yield\n\n3, The beans planted inthe agroforestry plots had almost twice the abundance of\nInsect pollinators, three times the richness of the species and almost twice the\nvisitation rates than those planted in non-agroforestry plots. We also found asig-\nnificant positive effect of woody coverin the surrounding landscape on insect pol-\nlinator abundances, but not on species richness and visitation rates. Additionally,\nthe abundance and richness of insect pollinators increased significantly with\nflower abundance, while the overall plant richness in a plot significantly increased\ninsect pollinator abundance and thei visitation rate. The difference in bean yield\nbetween unbagged flowers (in which insect pollinators were allowed to access\nbean flowers) and bagged flowers and the total yield were higher in agroforestry\nthan in non-agroforestry plots.\n\n4. Synthesis and opplicatios. This study showed that. compared to monocul-\nture, agroforestry generally promotes pollination services in a tropical context.\nFurthermore, we found that agroforestry is likely to be particularly helpful for\n\nHanding Etor: Morne nase\n\n{S203 The Authors Jura el Aspe ology 6 202 Beh Eagles Soc.\n\nTip ia BAO, 'wiser con/onalipe | 3087",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_002_ocr.txt",
+      "source": "image_ocr",
+      "page": 2,
+      "visual_type": "figure",
+      "text_sample": "pollinators when it increases flower abundance and plant richness and if it is co-\n'ordinated so that woody cover also increases atthe landscape scale.\n\nKeYWoRDS\n\n'Chagas home gardens, lower abundance, flower richness, insect plinator abundance. insect\npolinator species richness. insect polinatorwstation rates. ndscapetevel wood cover,\n\npolination service\n\n1 | INTRODUCTION\n\n(One-third of human fod is obtained fem plant species that depend\nonpolinators for production Garitald et l.2011: Kitt tal. 2013\n'in eta, 2007). Of al plinators, sects represent the most\nportant sroup and ae the main crop pollinators in most agroeco-\nsystems (Abou-Shanra, 2036; Paiclo-Raberta & Campos, 2014),\nUnfortunately, a sgnifieant dedine in these cruel Insects has\nbeen observed globally as a result of agricultural Intenstcation,\nclimate change and loss of habitat (Outhwaite et al, 2022; Potts\netal, 2010; Sdocher Bayo & Wyckhuys. 2019: Wagner et al. 2021)\nConsequently, this has negatively affected global food production\nad security (Centeno-Alvarado etal 2023; Grab et al, 2019; Potts\netal, 2016) nrecene years, there has been an effort to reverse this\nnegative trend mainy by implementing eclogcatintervetions that\nim at diverting agricultural landscapes (eg. agroforestry Hower\nstrips Dicks eta, 2016; IPRES, 2016; Pots et al, 2016; Vanbergen,\net a, 2020) they are assumed benefit polnating insect (bell,\ntt a, 2017; Kovies Hostyinski eta, 2017) Studies have shown\nthat these ecological interventions usually but not always have\npostive eects on insect poliators (bell et al. 2017; Scheper\netal, 2019,\n\nAgroforestry, which involves the integration of woody plants\n(trees and shrubs) with crops and/or livestock on the same piece\nland, san eclogiea intervention that has the potenti to sup-\nport potinators (Bentrup et at. 2019), Agroforestry Increases the\n'overall plant diversity and structural complexity In the landscape\nthat provides adtional food and nesting resources to insect pol\nlnators (ose, 2008). Woody plants In agrofeesty systems pro-\nvide alternative forage for insect polinators when crops are notin\nloom or attract pollinators towards unattractive crops (Kremen\nfetal, 2007; Martins Salinas etal. 2022, Woody plants can also\nprovide shelter against environmental extremes and agricultural\nlsturbances (Bentrup et a, 2019: Centeno-Alvarado etal, 2023)\nSome studies have shown that agroforestry Increases the versity\nand abundance of insect poinators, because it offers more food\nand nesting resources for insect pollinators Hoch et al, 2010; Siva\n[Neto et a. 2024; Varah at al, 2020). At the same time, athe stud\nles found no effect of agroforestry on polinator diversity Knowlton\ntal. 2019; Tarigan etal 2021) and occasionally evenalower polina-\ntor abundance tha conventional agree (Galbraith et al, 2020}\nMost studies predicting the impact of agroforestry on insect pol\nInators have been conducted in temperate Europe and America\n(Centeno-Alvarado etal, 2028;Timberake & Morgan, 2018), which\n\n'sunkely to be globally representative and feaves the impact of\n_agrofrests in troplca East Ate arely unknown,\n\n'There are several potential reasons why agroforestry does not\nsways effectively support poliators. One is that tree diversity\n{in many agroforestey systems i low or ayofotestry may be prac-\nticed on 2 too-small spatial scale, and therefore, the amoust of\nfloral resources or nest sites may not increase much compared to\n'non-agrotorestry farms (Knowiton etal. 2019: Tagan et al, 202%),\nAnother reason may be the composition of surrounding landscapes\n\nwhereby landscape homogenization, s well as fragmentation and\nlose of natural habitat. has been shown to affect the abundance\nand versity of insect polinstors: ait reduces thele food and\nnest resources availabilty (Dainese et al, 2019; Klein etal. 2012\n'Therefore, the lndscape context san important factor to consider\nwhen evaluating the effect of ecological interventions such 35a\n{oestry on insect pollinators\n\nHere. we assess whether agroforestry practices in tropical East\n'Avica support insect polinators and thus polination services. We\n{focus on Chages home gardens on the slopes of Mount Kilimanjaro\nJn northern Tanzania, which are characterizes by high diversity\n'of woody plants that farmers retain or plant on thee faminds for\n<iferet purposes including timber production. boundary making,\nshade and fodder provision Hemp, 2005: Mbeyale& Mehar, 2022),\nWe compared insect poliator communities in 16 paired agrofor:\nestry and non-agroforestry plots with very few or no woody plants)\n'that were located along gradient of wood coverin the surrounding\nlandscape. We documented the abundance, species richness and\nVisitation ate ofineects that vis bean Phaseolus wugori Lowers\n'ee wellas the bean yield\n\n'We further assessed the potential mechanisms why agroforestry\n'systems may suppert higher pelinator abundance, richness and vs:\nItation rates than non-agsoforestry systems using floral resource\nsundance and dversty as wel",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_003_ocr.txt",
+      "source": "image_ocr",
+      "page": 3,
+      "visual_type": "map",
+      "text_sample": "43, There would he higher ved on beans where insects were allowed,\nto visit the lowers {untagged plans) than on beans where poll\nratos were excluded bagged plats and thatthe bean vel gap\nbetween untogsed and bageed plants would be higher in arofer\ncestry than in non-agroforesty pots due to improved polinator\n\n2 | MATERIALS AND METHODS\n2A | Study site\nThe study was cared out on the eastern lower slopes (windward\nside) of Mount Kilmaniaro in northern Tanzania (Figure 1, The el\n\n'mates tropical with an average dally temperature range between 18,\n\n@\n\nand 26°C depending on elevation Lasway et al, 2022) The area has\n'wo dlstinctrainy season: along one from March to Mayanda short,\n'one that usualy occurs in Novernber and December (Gebrechothos\n'et al. 2019) The elevation in the study area ranges between 600,\nand 1400m above Sea level (ash) Agrofoesty is the dominant\naaricuitural system, practiced traditionally as Chagea home ge\nens (Fernandes eta. 1985; Hemp, 2005: Hemp & Hemp, 2008),\n'Azroforestry plots are characterized bya high diversity of trees and\nshrubs that farmers cultivate according to ther preferences. Common\ntree species include, but are nt lined t, Albis sehimperona,\nCorda afcana Persea americana and Grvilea robusta (em, 2005),\nTrees and subs in most agroforestry plots are located inside and\nsone the margin ofthe plots and in some cases, only i the fd\n'margin as boundary marks. The average sizeof Chages home ga\ndens is 0.68 witha range from 0.20 4.2ha (Herp, 2005) and they\n\nFIGURE 1. ()Location ofthe stody area and stody lots within the study area, Agroforestry pots are indicated with green square dots\nand non-agroforestry pots with yellow square dots, b) Example ofan agroforestry pt (eft anda non-agroforesty pt right\n\ni\ni\ni",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_004_ocr.txt",
+      "source": "image_ocr",
+      "page": 4,
+      "visual_type": "figure",
+      "text_sample": "ae srown with cash crops such as colle 8 wel as fod erops such\n2s beans, bananas, maze, sunflower, potato, sweet potato taro to\nmato and yams, Non-agrofoestry farming systems with very few of\nwithout wood plants) ae aso practiced in the study area, especialy\nIn the lower elevations Research permit was obtained from Tanzania\nComission for Science and Technology (COSTECH). No ethical ap-\nproval was requied\n\n2.2 | Experimental design\n\n'The study of whether agroforestry wil benefit insect polinators and\npolation services was carried aut using paired plots under agofor\nsty ocnonagroforestry management (Varah eta, 2020), Sixteen\nrs of agroforestry pots versus non-agroforestry plots (50x50\neach) were selected. Al plot pars were located ata mioimum dis\ntance of 2hm from eachother (Watson etal, 2081 (Figure 1a while\nthe distance between the two plots within a pair ranged fom 400,\nte 500m (Campbeet al, 2017; Varah etal, 2020) The stance\nbetween pars was generally lager than the typical ying distance\nof most bee species [Lasway et al, 20221 Common bean (Phaseolus\n'gos (Canar, Yellow} was used 2 he focal crop therefor, all\nplots were planted with beans. Beans are set polnated, but their\neld increases with arimalpolination especialy by bees (Arnold\ntal, 2021; Elsante eta, 2020)\n\n2.3 | Datacollection\n\n2.3.1 | Insect pollinator abundances, species\nrichness and visitation rates\n\nInsect poinator vit to beans were monitored between Marchand\nMay 2022 on days with low wind speed and no of very low fai\nfal (Lawoy et al, 2022), Monitoring sesslons were held between\n(09:00-1200, 12009-15,00 and 16:00-18.00h, casted as morn-\ning, afternoon and evening, respectively, when most insect poll\nnator are active (Classen eta, 2020), Each pot was visited three\ntimes during the blooming period to cover all monitoring sessions\n'once (klein eta 2022. Five (A) subplots were randomly estab\nlsbed within each 50350m agrofoestry and non-agroforestry plot\nWithin each subplot, our intl task involved tallying the numberof\nopen bean lowers present. Fellowing this, a 10-min observation pe-\nFed commenced during which two observers tracked insect polina-\ntorsthatintracted with the open lowers in each sampling rea. The\ncumulative observation time foreach pt during a sampling round,\namounted 50min, resutnginatatal observation time 4800min,\nfor the whole study. A flower visit was defined as having occurred\nwen the pollinator body comes into contact withthe reproductive\npart of» flower and does not just land on or fly overt (undgren\nft al, 2013: Tucker & Rehan, 2017), Approximately 80% of insect\npoliaators ho visited bean lowers in subplots were captured using\na sweep net and temporally stored in 70% ethanol before being\n\n'mounted and identified in the laboratory (Lasway et al, 2025; Stein\netal, 2018), Insect potinators trom Lepidoptera and Coleoptera\nwere collected even though they are not recognized as efiientpol-\nJinators for bean plants (Paling etal. 2023) Their inclusion in our\nstudy was motivated by our emphasis on compatng pollinator as-\n'semblages between agroforestry and non agroforestry farming sys\ntems. Apis melfra were intentionally not captured since they were\neasly recognized inthe fel. The abundance of insect polinators\nper plot was calculated a the total number of individuals recorded\nalting bean flowers within the five subplots in all three sampling\nrounds. The species richness per plot was calculated 25 the total\n'umber a insect polnator tna that vied bean lowers within the\nfive subpltsacros al three sampling rounds (Lasway et al, 2022),\nhile the visitation rate was calculated asthe total number of vs-\nIts per flower per observation time (Dauber eta, 2010; Delaney\netal, 2020),\n\n2.3.2 | Pollination services\n\n'To determine the contibution of insect polation to bean yield,\nwe performed a polinator exclusion experiment inal pots. The ex:\nperiment invlved two treatments pen polintion unbagzed) and\n'seltpolination toagged) (Esante et al, 2020). Before the onset of\n'bean flowering, we randomly selected 10 bean plants per pt and\nlabeled ther with marking tape. Five ofthe selected plants were\nUsed for open potnaton and the other five for sel polination.\nFor seltpolinaion, plants were bagged with polyethylene net\n(07x0.4mm width trom A to Z Texte Ld, Tanzania) (Elsante\netal, 2020; Perrot et al, 2019). The mesh prevented insets from\nsting the flowers, but allowed sunlight and aiow tothe bagged\n'bean plants (Bartomeus eta, 2024), In open polination treatment,\nthe bean flowers were continucusy accesible to insects, wind and\nautonomous self polation, We removedall the nets as soon asthe\ntowers wited and let the nbelled plants to mature until harvest\nDuring harvest, we removed experimental plants fom the fllds and\nstored them in bags (Bartomeus ota, 2074). tn each experiments\nplant, we recorded the trl st =the number of pad per plant and\nthe seed st as the numberof seed per pod. The quantity of yield\nwas measured 35 the weight (gram of acy bean seeds per ",
+      "counts": [
+        2,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_005_ocr.txt",
+      "source": "image_ocr",
+      "page": 5,
+      "visual_type": "figure",
+      "text_sample": "cover layer was imported ito QGIS to estimate the proportion of\nwoody cover within km (000m) radi around each agroforestryand,\nnon-agroforesty plot. The buffer size of thm rads cotresponds to\nthe predominant Right ranges of many insect plinaters,such as wld\nbees (Greenlea! etal, 2007; Zurbuchen eta, 2010,\n\n2.3.4 | Estimation of floral and overall\nplant resources\n\nFloral resources and overall plant resources inthis study referred to\nrnon-<rop plants res, shrubs and herb) and were represented by\n(2) fewer abundance. (2 lower richness. (2) overall plant abundance\nand) overallspecies richness in each lot. Fr trees and shrubs, the\n'overall abundance and species richness were obtained by record\nIng al species and counting ther individuals in each plot (Delaney\n1 al, 2020). Furthermore, thei Hower abundance was subjectively\nestinted using a seale of 1-4 a per Samnegied et al 2014), One\n(a) was given toa tree or shrub with <0 flowers while 2= 10-100\nflowers3=101-1000 lowers and-4=>1000 flowers. Subsequenty,\neach scale was translated ito an estimated average numero low-\ners with 15 flowers, 2=50 flowers. 3=500 flowers and 4=5000,\nowes (Samnegied eta, 2086). For example, we with less than\n10 lowers willbe piven ascale of 1 and ts estimated average num\nberaf flowers wil be S, Her ora resources and overall abundance\n'and species richness were estimated in subplots and then extrapo-\nlated for the whole plot. A total of 9 (tm) subplts were established\nIn each plot anal Howers,indvidals and speces of herb plants\nwere recorded. The flower richness was the total number of wood\nnd herbaceous plant species/taxa that were in bloom during the\ntime ofthe survey.\n\n24 | Dataanalysis\n\nAllstatistical analysis and plotting were performed in Rversion 42:3,\n(R Core Team, 2023), To evaluate whether our samples similarly ep\nresented the communities from which they were cllected (Chao\n£ Jost, 20121, we built sample sie-based accumulation curves and\nSample coverage-based curves using package INEXT (Hsieh t a,\n2014) Since our field data collection followed a sampling design with\nagroforestry and non-aproforestry plots being nested in pais: we\nsed linear mixed models (LMMS) and generalized near mixed mod-\n1s (GLMM) wth eitferentdstrbutions and link functions depend\nlng on the type of response variable. GLMMs with negative binoml\nAtrbution were used for insect polnator abundance and species\nrichness, while fr vstatlon rates, LMM wth Gaussian aeribu-\ntion on log-transformed data was used, For the numberof pods per\nplant, we used GLMM with Poisson distribution while LMMs with\n(Gaussian distribution on log-transformed data were used for number\nof seeds perpod and yield quantity. For each model we fst checked\nrmubcolinearty between Independent variables through valance\nInflation actors(VIFS using the i funetonin the R package ms\n\n'winery ony varables with VIF value below thee (3) were lcd\nIn the sobal/fll model (Zuur et al, 2010, Thereafter, we used the\n\"dredge function inthe MuMin R package (Barton 6 Barton, 2013),\nto select the best candidate models based on Akaike' information\ncriterion (AIC) (wth less than 2 deta (Burnham & Anderson, 2004).\nFal we performed model averaging ofthe candidate modes using\nthe model av function nthe MuMn R package. nthe cate where\n'there was oly one model with ess than 2 deta (AIC) after perform\nIng the 'rede we did not perform model averaging but considered\n'that model asthe final best model (Okol et a, 2018). The goodness\noffi ofall models was checked using the simulateResiduals function\nInthe DHARMa! package.\n\nInthe fist analysis, we tested the effect ofthe farming system\n(@levets, agroforestry and non-agroforesry and the landscape eve\n'woot cover aninsectpolinatorabundance.specesrchnessand vis\n'tation ate est hypathesis). We next assessed the potential mech\nanism underlying eiferences in abundance, species richness and\nVisitation rate of insect polinatrs between agroforestry and non\nagroforestry pots, using flower richness, flower abundance, over\nail plant richness and overall abundance 3' independent variables.\nWe frst teste these varlblesdfered between agroforestry and\n'non-agroforestry plots and found that all were significantly iter:\n'ent (Table $2), We then analysed thelr effets on polinator abun\ndance, species richness and visitation rate (second hypothesis) To\n'vsualediferences in polinatorcommurity composition between\n_agroforestryand non-aroforesty plots, we applied non-metric mul\n'icimensional scaling (NMOS) based onthe Bray-Curts dissimilarity\n'matrix using the function 'metaMOS in the R package Vegan (Dyoka\n'etal, 2022: Oksanen, 2015). Subsequently, we performed 3 malts\n'arate permutation analysis of variance (PERMANOVA; Anderson,\n2001) to test whether the composition ofthe patinator community\nifered significantly between agroforestry and non-agroforestry\nplots using the 'dons' function In the vegan package. To check\nwether the assumption of homogeneity of group dispersions (he\n'compositional varian",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_006_ocr.txt",
+      "source": "image_ocr",
+      "page": 6,
+      "visual_type": "figure",
+      "text_sample": "Insect polinatoes per plot was on average 73% higher than in 900-\nagroforestry plats and increased with increasing landecape-level\nwood cover (Figure 2A.8: Table 1). The best model that eval\nated the mechanisms underyin diferences in Insect pollinator\nabundance between agroforestry and non-agraforestry plots\nIncluded flower abundance and overall lant richness (Table $6)\nThe abundance of insect polinators increased with both the abun-\ndance of lowers and the overall richness ofthe plants ina plot\n(Figure 2,0; Table 2.\n\n3.2 | Insect pollinator richness\n\nInsect polinatrs that visited bean flowers belonged to 30 spe-\nles and seven families: Hymenoptera: Apidae (17 species,\nHymenoptera: Megachlldae (2 species, Hymenoptera: Vespidae\n(0 species, Lepidoptera: Hesperiidae (4 species), Lepidoptera:\nPieridae (2 species), Coleoptera: Meloidae (1 species) and Diotera\nSyiphidae (@ species) (Table $1), The sampling completeness\ncurves suggested that the common species were well covered\nbut that eater species were less well sampled (Figure Sth. The\n30 species were found in agroforestry plots and 12 of them in\nnon-agroforesry pots. The best madel forthe insect pollinator\nspecies richness included only the farming system (Table S4) with\n70% more species detected in agroforestry compared to non-\nsuroforestry plots (Figure 3A; Table 1). The best model that as\nsessed the mechanisms underlying aiferences in insect pollinator\n\nspecies richness between agroforestry and non-agroforestry\nplots included flower abundance, and the second best Included\nflower abundance and flower richness (Table $7, Model vera\nIng showed that flower abundance increased insect pollinator\nspecies rlehness, while flower richness had no significant effect,\n(Figure 38; Table 2,\n\n33 | Visitation rates\n\n'The best model forthe visitation rate included only the farm>\nlng system (Table $5, with agroforestry plots having 72% highee\nvisitation rates compared to non-aproforesty plots (Figure 4A:\nTable), The best model tha evaluated the potential mechanisms\n'underving the differences in visitation rate between agroforestry\nand non-agroferestry plots included only overall plant richness\n(Table 8) which positively affected the visitation rates (Figure 48;\nTable 2\n\n3.4 | Composition of the pollinator community\n\n'The PERMANOVA test indicated thatthe composition of the Insect,\npoliator community fered significantly between the agroforestry\nand non-aproforesty plats (p<0.003,R?'=0:20) Figure 5), Thus, the\n_rouping variable 'farming systems! only explains about 30% ofthe\n'otal varity inthe plinator community between agroforestry and\n\n4, : ®,\n\nFIGURE 2 (A) Meanabondance of\n\nInsect polinators that were recorded\nsting bean lowersin aprotorestry\n\n(95 21.85) and non-aproforestry (20\n\n£19) pots the error bars represent\n\n95% confidence intervals Different\nlabels 'a and b\" indicates a significant\nitference <0.05) between groups. Figure\n(B)ilustrates the relationship between\n'the abundance of insect pollinators\n\nand the woody cover atthe landscape\nlevel. Figures (Cand (0) neat the\ntelationship between the insect poinator\nabundance and estimated number\n\n'of flowers and overall lant richness.\nrespectively. ina plot.",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_007_ocr.txt",
+      "source": "image_ocr",
+      "page": 7,
+      "visual_type": "figure",
+      "text_sample": "TABLE 1 Theresutsof the model averaging and final models assessing the responses of insect plinator abundance. species richness\nand visitation rate tothe farming systems and andscape-level woody over.\n\nModel Variables\nInsect ponator Increase\nsence. Farming system fon-aproforesty)\nLandscape tevel wood cover\nInsect ploator Inercent\nSpecesrichness Farming system now agroforestry)\nVisaton rate Inercent\n\nFarming system non-agrotoestry)\n\nEstinatesestandorderor value pave REE\n2942089 3540 <0o1 072072\n-0342007 \"368 <0001\n0032001 335 <a001\n2992007 3800 <oo0tGAs/0as\n-osss01 472 ooo\n1732008 173 oon stort\n-0472007 70 oo\n\nNote: margial A? conditional R. No-apoforesry isthe reference evel forthe farming system.\n\nTABLE 2 The results ofthe final models acessng the mechanisms underlying diferences in insect polinator abundance, species richness\nand visitation ate between agroforestry and non-agroforestry farming systems.\n\nModel Variables [Estinatessstandarderror value valve\n\nInsect poinstor abundance Intercept 2873007 435s oot o7ya71\nFlower abundance 000220.00008 322 001\nOvert plant ebness (0.007:.0.002 a2 001\n\nInsect ponstor species Ietereept 9sszoate isa aon 08/085\n\netna Flower abundance 10.000220.00008, 3578 <o001\n\nFlower ennest oor7#s0013 sre 056s\n\nVisation rte letecept 0592007 71 <001 03/048\nOveral plant ricness 2011-00017 oa <0001\n\nNote, marginal RE, =condiiona\n\nFIGURE 3 (A)Meanspecesrktness (A), °\n\nof insect polinatrs that were recorded al a\n\n'siting bean flowers in agroforestry\n(03.37 238 and non-seroforestey (7897\n+£1.41) pots the eror bars represent\n395% confidence interval Different\nlabels\" and\" indeates significant\nAitference (<0.05) between groups. Fleure\n(B indicates the relationship between\nInsect poinator species richness and\nflower abundancein 3 pot.\n\nnse potter eas\ne235\nee\n\nre\n\non agroforestry pots. However, ths resi aly affected by the\nnoehomegenety ofthe group variances reveled by the PERMDISP\ntest (p<0.001), where there was a higher compestional variance\nbetween agroforestry plots than between non-aroforestry plots\nFurthermore allseciesfoundinthenon-aroforestry pots were also\nfound inthe agroforestry plats (Table $1). Therefor. tis dificult to\n<Gsentange to what extent the etferences detected by PERMANOVA,\nwore de to efeences In community composition of dferences a\ncompositional variation within farming systems.\n\n3.5 | Contribution of insect pollinators to\nbean yield\n\nIn both agroforestry and non-agroforesty plots, the unbageed\npolination treatment In which insects were allowed to access\n'bean flowers had the highest veld in terms of the number of pods\nper plant Figure 6A), seeds per pod (Figure 68) and yield quantity\n(Figure 6C), The best model fr the numberof pods per plant\n'cluded only the main effect ofthe farming system and pliation,",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_008_ocr.txt",
+      "source": "image_ocr",
+      "page": 8,
+      "visual_type": "figure",
+      "text_sample": "FIGURE 4 (A) Mean visitation rate\n'of nzec plinators in agroforestry (22\n|£0176) and non-agroforestry (1.8 2049)\n'lots the eror bars represent 95%\nconfidence intervals Diferen abel \"3\"\nand\" indicates a significant diference\n(0.05) between groups. Figure (8) shows\nthe reltionship between the visitation\n'ate of insect plinstors on bean flowers\nnd overal plant ehness in plots\n\npate)\nD Snag\nAedes Nan aattoshy os ee\n'Overa part ress\n1s (able $11) and both had a significant effect on yield quantity.\n'Seve #017\n\n\"15-10 05 00st\n\nFIGURE 5 Nonmetric mutidimensiona scaling NMOS)\n«coordination ofthe overall composition ofthe insect polinator\ncommunity in tw faring ston.\n\nhile the second best competing) model included aso ther nter-\naction (Table $9. The model averaging showed thatthe number\nof pods per plant was ony significantly influenced by the farming\nsystem and plination teatment and not the interaction between,\nthe two (Table 3. The number of pods was higher In agroforestry\ncompared to non-agroforestry plots and on unbagged plants com\npared to bagged plants (Figure 6A). For the number of seeds per\nod, the best mode included both farming systems, plination\ntreatment and the interaction between the two (Table S10). The\nmodel results revealed 2 significant fluence of both the farm-\nIng system (higher number of seeds in agroforestry than non:\nagroforestry plots pollination treatment higher number of seeds\nIn unbagaed than bagged plants) and their interaction (Table 3)\nThe difference n the number of seeds per pod between barged\nand unbagged plants was higher in the agroforestry plots com-\npared tothe non-agroforestry pts (Figure 68). Furthermore. the\nbest model for yield quantity included the farming system and\npolnaton treatment, but not the interaction between the two\n\n'The yield quantity was higher in agroforestry compared to non-\nagroforestry plots and on unbagged plants than in bagged plants\n(Figure 6\n\n4 | DISCUSSION\n\n'As expected, we found that the abundance, species richness and vis\nItation rate of insect polinators visting bean flowers were higher in\nagroforestry plots than in non-aroforestry plots and this esuited\nIn an increased number of seeds per pod when pollinators had ac-\n'cess to bean lowers. Tiss compeling evidence that agroforestry\n'an support a higher number of insect polinators and thus improve\npolination services compare to non- agroforestry farming systems,\nPrevious work has shown variable results on the efect of agrofor-\n'|stry on insect polinators and polination services. Several studies\nhave fund that agroforestry increases the diversity and abundance\nof insect polinators. and thus pollination services. (Bentrup\netal, 2019; Centeno-AWvarado eta, 2023: Varah et a, 2020) At\n'the same time, other studies found tht agroforestry id not affect\npolinator diversity (Krowiton et al, 2039; Tarigan et al, 2021) and\n'occasionally had lower polinato abundance than conventions\n'culture (Galbraith eta, 2020), Our resus support the argument\n\nthat agroforestry benefits insect polnatrs and thus imorovespol-\ntinton services.\n\n'When analysing the potential mechanisms underlying. the\npositive effects of agroforestry, we found that flower abun>\nance which was signfieantly higher In agroforestry than non\nagroforestry plots (Table $2) had a positive effect on insect\npolinator abundance and species richness (Figures 2C and 2). The\nflower abundance inthe apricuituraliandscape i often positively\ncorrelated with the abundance and richness of insect pollinators.\nFor example this pattern was observed when plots with enhanced\nWwildlower platings were compared with control plots (non-\nenhanced) in agricultural areas (Blaauw 6 Isan's, 2016; Campbell\ncal, 2029: Isbell tal, 2017 Suter etal. 2017). Likewise. sev:\n'era studies have reported strong local scale response of insect\npolinator abundance to flower abundance mediated by greater",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_009_ocr.txt",
+      "source": "image_ocr",
+      "page": 9,
+      "visual_type": "figure",
+      "text_sample": "FIGURE 6 Meanyeldpwomete: a) o\nfumberstpediperpintenmbe [a ——\nerscts erp xy) j i\nSeencnetdandtnnctn a 2 sos\nsertreseyantnonagctoiryncs. > oe i i Te\nTeemtanreswenmecnane Ff of fy : :\ninterval Different abs\" and 8\" il 7 out\nInsc ascnteece (005) H\nbetween groups while similar labels mean i 4 i\npellicle |\n\n,\n\nioe\n\nots\n\na] a\nCr\n\ngu\n\nwf\n\nic :\n\nis i\n\na\n\n:\n\nol\n\nTeeny nana\n\nTALE 3 Therese ofthe models for assessing the effect of polation treatment and farming ystems on bean yield nd thelr\ninteraction.\n\nModel 'Variables Estimates standorderrr valve pvalue RGR,\nPods perplant tect 2062007 7028 <0001. 078033\nFarming stem non aprooresty 0202007 ax oot\nPolinaton reste bagged 34208 4300\nFarming tem on apotresty 022032 om oss\n\nPinatonestmen orbs)\n\nSewts per pod interest aston oon asioat\nFarming system om spores) -0a72016 «0001\nPotistion reste bese) oso <o001\nFarming system on afore -os72022 oot\nPoon eaten bagged)\n\n'vnidquntty —ntept s7z088 zoos <0 soiaae\nFaun stem an poorest) \"8792098 927 «0001\nPotton rests tans) apo 4s. <0001\nFaring item on ators Bevery 077 ost\n\nPolinaton treatment unbassed)\n\nNote 8, = marginal A, xcondlons A. Nowapofoesry and unbagged are reference levels fot farming system andplinatic treatment\n\nplant richness (Hoptenmiller et al, 2014: Lichtenbere et a, 2037:\nScheper et al, 2015). We aso found thatthe overall plant rch:\nness significantly increased insect pollinator richness and visit\ntion rate, This suggests that agroforestry plats donot only support\npolinators through increased svallbity of floral resources, but\nalso by providing nest sites and shelter (Delaney et a. 2020:\nSchuldt et al, 2019). More specially, lant speces richness may\nsupport polinators (1) by providing a variety of nesting resources.\n\n(2) by providing floral resources over an extended period due to\n'non-synchronous flowering, (3) by providing a wide range of ml\n'rocimatic conditions that butfers extreme temperatures and of-\nfers shelter against rain and (8) by increasing the likelihood that,\nplant species are present that sre prefered by different poli\ntors (Schult eta, 2019: Vanbergen eta, 2020). This argument\n\\s supported by several previous studies showing that trees and\nshrubs in agroforestry plots provide addtional floral resources,",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_010_ocr.txt",
+      "source": "image_ocr",
+      "page": 10,
+      "visual_type": "figure",
+      "text_sample": "and nesting resources that support the growth and persistence\nof insect pollinators (Bentrup et al. 2019; CentenoAlvarado\net a, 2025; Kay etal, 2020).\n\nWe found that polinator abundance significantly increased\nWith the covet of trees and shrubs in the surrounding landscape\nThe significant postive effect of woody covers hely de to its\ncontribution to insect plinators' forage and/or nesting resources\n(Watson etal, 2013; Willams & Kremen, 2007) Similar resus\nere reported by Watson etl. (2011 in apple orchards, conlud-\nIng thatthe amount of forest are around the study sites increased\nthe abundance of polinators (wild bees Furthermore, a recent\nreview showed that woody cover increased the abundance of a=\nsect pollinators and crop pollination serviesinaprculturl areas\n[Uishen et al, 2023) For polinator species richness and visa\ntion rate, the best model did not include landseape-tevel woody\ncover but this could have been because the farming system and,\nlandscape-evel woody cover were nt enticely independent (gr0-\nforestry plots had higher proportions of wood cover inthe sur\nFounding landscape, Figure 52) In general, our work suggests that\nthe woody cover at the landscape scale supports pollinators Thus,\nconserving natural forests and coordinating agroforestry farms so\nthat they increase woody cover on the landscape scale can con:\ntribute to improved polination services\n\n\"The higher yield in the unbagged than the bogged plants in\nboth agroforestry and nan-agroforestry pts (bth inthe form\nof pods per plant, seeds per pod and seed weight/vield quan-\ntity) reinforces the role of insect pollinators in bean production,\n(Bartomeus etal, 2014; Douka eta. 2018; Esante et a. 2020)\nThere was furthermore a greater difference in the number of\nseeds per pod between the bagged and untagged flowers in the\nagroforestry than in the non agroforestry plots (Table 3: Figure 6)\nThis s most likely due to the higher abundance, species richness\nand visitation rates of flower vistors in agroforestry compared to\nron-agroforestry plots. This results in improved pollination ser-\nices either va the magnitude ofthe service. which linked to\npolinator abundance (Castle et al, 2019; Woodcock etal, 2019),\nand their visitation rate Bergamo eta 2016: Sagwe eta, 2022),\nor by the stability of services which Is more related to polina-\ntor lehness (Garibaldi eta, 2011: Hoe et al, 2008: Wintree\netal, 2018) To achieve a more complete picture of how agrafor-\nstr supports polation future work could consider including a\nhand pollination treatment to estimate the overall deficit in pol\nnation, as well asa treatment with finely woven bags that are\nImpermeable to wind Sagwe etal. 2022)\n\nEven without inet vistation there was higher yield in agrofor\nestry than in nom-agroforestry pots higher ill of baged lowers in\nagoforestry compared to non-agroforesty plots which implies that\nother factors apart from polation services maya be at ply. Fore\nample, sol feriltys often improved in agroforestry systems thrush\nritrogerfixing trees thot ae inteprated in agroforestry farms (Bates\nft al, 2088: Kuyah et al, 2016). Future work s needed to explore the\nditterent mechanisms by which agroforestry fects cop yield\n\nshould be noted that the cumulative insect polinator abun:\nance and species richness of 883 and 30 obtained in this study\n'as low, but this may at least partly be due to the short lowering\nperiod of the target cop (beans. Sampling completeness curves\nsuggested that common species were covered well but that\nspecies were missed to some extent. Pollnator communities ap:\npeared to difer between farming systems, but this was to some\n'extent confounded by the hith variation in community composi\ntion among agroforestry sites. Amor intensive sampling regime\nmight have better captured the diversity of less common polina\ntor taxa and could have helpe to disentangle differences in spe\nces composition\n\n5 | CONCLUSIONS\n\n'This study presents strong empirical evidence that agroforestry\nsystems can support greater polation services, due to higher\nInsect polinator abundance, richness and vistation rates than\n'non-agrforestry systems. Therefore, agroforestry can be an\nimportant strategy to conserve inseet pollinators, improve crop\nveld and positively impact the surrounding environment. We also\n{found that landscape-level woody cover. plant richness and tower\nabundance ae important for supporting polinators. Thus agro:\nforestry hel to be helpful to polinators as long ast increases\nflower abundance and diversity and willbe particularly useful fit\n{is coordinated so that the wood cover aleo increases at the ind\n'scape scale. In sub-Saharan Attica theres growing intrest in im\nplementing agroforestry as 2 sustainable agricultural system and\nrestoration method. This study provides solid evidence that agro\nforestry can benefit plinators and polination services and adds\nto the body of evidence supporting the adoption of agroforestry\nSharan Arica and elsewhere.\n\nAUTHOR CONTRIBUTIONS\nNanyika Kin",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_011_ocr.txt",
+      "source": "image_ocr",
+      "page": 11,
+      "visual_type": "figure",
+      "text_sample": "DATA AVAILABILITY STATEMENT\nData availabe via the Dryad Digital Repository: htps/doiore/10,\n5061 Adeyad 3495xsp4 Kingat etal, 2028,\n\norcio\nNonyka Kinga! @ httos://rc.rg/0000-0001-8725:9194\nuwa-Ach Tema ® https://oreid org/0009-0007-3874-8127\n'Agnes Sima ® tttos://orci.org/0000-0003-0810-6785,\n\n'Mattias Jonsson @ hnttp://orcid.org/0000-0002-8489-6099\n\nREFERENCES\n\n'Abou-Shira MF (2014 The foraing behaviour of honey bees. Ais\n'life: A review Veterindn! Meno, $91), 1-10. hits/'o\n'ory/1017221/7240.VETMED\n\nAnderson, M, 32001) Anew method for non-parametric mutate\nanaipsis of variance. stl Eon, 2632-46.\n\n'rnold, E1,Elsante Mend, PA. Tembo, LB. Ndakidemi,\nB.A. Gur GM. Darbysve, iA. Belin SR, & Stevenson,\nPC (2021) Beneticil insects are asocated with botanic rch\n'marin with ces on small fas. Sete Reports, 140, 1-11\n'pedo ort/101030/81598-021-94536-3\n\nBaris. €.Vatenca,V- Jonsson, M, Brauman. A, alia, K, Mortiner,\nPE, & Ohuba, 5. (2018 Conbution of ees to the conservation\nof boderty and ecosystem services in arcu andscapes\nInternation Jou of Bivesty Science Ecosystem Services ond\n'Monagement 14, 1-16 tps: org/10.1080/21515732 2017\ns299167\n\nBartomevs, , Potts, SG. St, b Vie 8. E, Woyclechowskl M. &\n'Krewonka, KM. (2014h Contribution of inset potinators to cep\neld and qualty varies with apical ntensfation. Pe, 2.\n4-20 htps://doora/10.7717peer 328\n\nBarton, K & Barton MK. (2013, Package MM' Version 1.18\n\nBeatrp, G. Hopwood, J. Adamson, N. L. & Vaughan, M. (2019,\n'Temperate agroforestry systems and insect poliators: review.\nForests 1018, 14-16 tps og/10:3390120110984\n\nBergamo, PJ. Rech A.R. rt, VLG. & Satna, M, (2018 Flower o-\nour and wsitation ates of Costs arabicus support the \"bee a0ld-\nance\" hypothesis for editing hummingbird polite tow\n'rs. Functional Elegy, 31S. 720-720. tps: /8oLoe/TO8331/\n1345-2635:12597\n\nBuauw. BR. & 20s, R. (2034) Flower plantings iactease wid bee\nShundioce ad the poration services provided to a poeation\nSependent cop. Jounal of Applied Ecloy. 5, 890-98. htos/\n'tlorg/10.1411/1365 266812257\n\nBurnham. K.P. & Anderson, 0. R (2008). Multimode! inference:\n'Understanding ANC and IC i mode selection Seilgcal Methods\nResearch, 332), 261-308 tps/ol.org/10.1177/0087124108\n2eneee\n\nCCapbel, 3. WY. Kien, 8 Grosky, 5M. Smithers. C. Daniel\n'Cx & Els, JD. (2019, Wisower plantings harbor increased a\nthiopod nes nd obundance within gears aceasta lds\n(USA) Ecosphere, 1010). 02890. htps/toor/A0.3002/es2.\n2090\n\n'Campbel}.W. Smithers Cleve, A Kimmel, ©. 8. Stanley Stat. C\n'Daniel, JC. & Els, 1. (2087). Tap nesting wasps ad bees\nIn aavcultre: comparison o sown wilflower and fw lots\nIn lori. Insects (4,107. tps//oL.o@/10.3390/insectstoa\n107\n\n'Cate, 0. Grass, |. & Westphal. (201) Frit quant and qulty\n'of strawberries benelt trom enhanced polinator abundance at\nhedgerows in agricultural landscapes. Agere, Eosstems ond\nEnvironment, 275(December, 2018), 14-22. htps//door/t0\n1016/1 agee201901.008,\n\nCenteno:ANvarad,D, Ariana Valentina L& Xavier A 2023) Fostering\npollination tough agroforestry: A ylbal review. Apiculire,\nEcosystems and Environment, 3510Marc, 108478, htps/Hdkore/\n1030%6/jagee 2023108478\n\n'Cha, &, & est L (20321 Coverage based rarefaction ad extrape\nlation: Standaraaing samples by completeness rather than size,\nclosy. 93112, 2535-2547,\n\n'chassen A Eardley, C.D. Memp, A, Peles, MK. Peters, RS. Sayan,\n'A &Setfan-Dewente (2020) Specization of plat-ponator\nlngeractions increases wth temperature t Mt Klima. Ecolgy\nand Evoution, 2019, 2182-2595 btips/Mdolory/101002/ece3\n6056\n\nCtinese, M, Martin, EA. Alan, M. A. Albrecht, M. Bartomeus.\nBommurca, R. CarvaiheWo, LG. Chaplivkrames, R. Gap V\nGarda. LA, Ghazout, J, Grab, H. Jonsson, M. Karp, DS.\nLetourneau, O-K_ Marin L. Poveda K. Rader R_ Smith, H. G.\n— Tachumi, M, (2019, global synthesis reveals thdiveriy:\nmediated benefits fr crop production. Science Adtonces, S10,\ncoor0121.\n\n'Dauber, Besar J.C. Gabel D, Kuna, W.E. Lamborn E, Mey,\n'B. Nien, A, Pots 5G. Roberts, SP. M. Sober, V, Settle,\nStetfan-Dewente. 1, Stout. .C. Tede,T Tcheulin T, Vivarel,\n1. 6 Petaniou. T. 2010) Effects of poten size and density 00\nower vitatin ad seed set of wi plants: A pan-European ap\nproach. Journal of Ecology, #8) 188-196, htps/olore/10,\n43111/,4365-2745 200701590\n\nDelaney. A Dembele, A. Nombre |, Gaane Litase, F, Marshal €,\n'Nana, A. Vickery, J, Tayeut, C, & Stout, J (2020) tocar\nscale wee and shrub aiversity improves poinaton services to\nShea tees tropical West Alvican garlands. Jouma of Applied\n\nclog. 578), 1504-1513, hitps//ooLore/10.1111/1365-266,\n13640\n\nDies LV, Viana, 8 Bommarce,R Bros 8, Armand. C. Cunningham,\nS.A. Gilet, HL, Lopes, V, Pes C.& Tal M (2014, What\novernments can do to safeguard plination services. Scene\n354(sat5), 1615.\n\nDDovka, C. Neanhou. 5. N Dournmen, FN Mare, A. Mout, M.\nTames.) 2018) Diversity loweringinscts andthe inact\nonyields ot Paseo gris (Fabaceae) a Youn (Cameroon.\nJournal of Aaricltar ond Cros. (0), 105-11. htps.//org/ 20\n52861/1032861/jae 412105111\n\n'yo U, B",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_013_ocr.txt",
+      "source": "image_ocr",
+      "page": 13,
+      "visual_type": "figure",
+      "text_sample": "Outhwaite, CL, MeCane, P. & Newbold, T. (2022) Agere\nand climate change are reshaping Insect biodiversity word-\n\n'wide, Noture, 60517908), 97-102. hitps//doiorr/102038/\n{AiSe6.022.04684\n\nPatilo-Robeta, 6.8, 6 Campos, M, 10.2014) Aspects ot landscape\n{and potinators what is important 1 bee conservation? Divert,\n'431, 158-175, htos//olrg/10 3590010158\n\nPaulino, C&S, Camel, LT. Almeida, NM. Santa Martiog, E. &\n'Castro, CC. 2023), Nesta influence of animal polation inthe\n'common bean Poses yulgris Fabaceae production and seed\nerminaton.Slntia Hercule, S8\\Aupust 112096, tos//\n'olors/101016/ siento. 2023.1120%6\n\nPerot, T. Gaba, $. Roncornl M.. Gautier, J L, Sinan, A. &\nBretagnol, V (2019 Experimental quantification of Insect pol\nination on suntower viel, reconcing plant and field sale et-\n'mates. Bosc and Applied Ecology, 34. 75-64. htps//dlor/10.\n{01s/jbase 2038 07005\n\nPots 5.6. Besneier, J.C. Kremen,C_ Neumann, P Schweiger, ©.\n'Kunin. W. (2010) Global polinator declines: Trends impacs and\n(vers Trends in Ecology & Even, 2518 345-383. Mps/eo-\n'ory/101016/jtree.201001.007\n\nPots 5.6. mperati Fonseca, V. Ngo, HT, Aizen. M.A. Besar,\n4.C. Breeze, T. Dicks LV, Garbld LA. Settle, &\nVanbergen, AJ, 2048) Safeguarding poinatrs and ther values\nteohuman well-being Notre, 540762) 220-229 htos:/doLora/\n101038/nature20508\n\nCote Team (2020. A lnguape and ervicnmet fr statist! com\nting R Foundation or Stattcl Computing p/w roe\neto!\n\nSagwe. RUN, Stellan dewenter., Peter M.K, Ltt. HLM, G6\n'Dubois. (20221 Polinator etfiiency of aocado (Persea omer\nana) flower sect vistors. Ecologia Solains and Exdence, 3.\n'12176, tp: idtore/10.1002/2600-891912178\n\nSamnezid, Ul Hambick, A, Lemessa, D. Nemomiss,S. & Hlander,\n(2010) Aneterogeneouslandscape does not uaraneehieh<tep\npollination Proceedings of the Royal Society B: Big! Slencs,\n2831838).20161472 tps I6iorg/101098/spb 20161672\n\n'Sincher Boy, F. & Wyedhuys. KA. G. (2019, Wordwide deine of\nthe enlomotaua: A review ofits divers. logical Conervation.\n25aiSeptenbver 2018), 8-77. tps/fdiore/t02016/; Biocon.\n'2o1901.020\n\nScheper, J. Bommarco. R, Holes, A. Potts, S.C. Reding, V.\nRoberts, 5. M. Rundlt. M. Smith. HG. Sttfn-Dewenter\n1, Wickens, J.B, Wickens, V. J, & Kien. ©, 2015) Local and\n\\andscape-level oral resources explain elects of wlower sins\n'on wil bees across four European courives.Jornl of Angie\nEcology. $215. 1165-1175. hitps/olorg/10.1111/1365-2668,\n12479\n\nSchepe.J, Molaschuh A. Kuss M, Potts 5.6. Runa M, Sith\nWG, & Kien, 0.2013). Environmental factors driving the >\nfectveness of European apremdianmental measuts In mit\nIng pinto loss~A metals Ecology eters, 16, 912-720,\nnpssido.orp 01/1218\n\nSculdt A. Ebeling. A. Kunz M, Stab, M, Gulmardes stench, C.\n'Bachan. Buchmana, N, Duka, W. Fenter . Forel, F\nrate. W., Herzog. LR Kien, A. Rosche.C. Schaller J. von\n'nein, G., Weigelt, A, Weiser, W. With, C.— Eisenhauer\n(2017, Mute plant dversity components rive contumer com\n'munities across ecosystems. Nature Communications, 10, 1460,\nIhipss/ideiorg/10.1038/43467-039-09440-8\n\nSia Neto, C-.M. , Santos LAC, de Sowa, W.G. Marti.\n10, Castro © Siva T. de Uma, AA. Cat FN, & de Souza, M\n'M0. 2021. Bees in agroforestry systems nthe Cerrado. Journal\nof Anicutrl Research, 621), 675-679 bitos://o\\ re/101080/\n'00218639.2001 1907977\n\nSela, Stenchy, K. Coulbaly, O, Pauy, A. Detobe, K Steffan:\n'Dewenter 1, Konate 5. Goetze, D, Poteml 6 LasenmaleK.\n(2028, Impact of human disturbance on bee polinator comme\nnisin savanna and agrcutralsitesin Burhna Faso, West Aca\nology ond Even, (1), 6827-898 po rg/10.1002/\ncee 197\n\nSutter LJeanneret. P, Baral, A.M. Bact. G. 6 Albrecht M (2017,\nEnhancing plant verity in apical andscapes promotes both\nrate bees and dominant crop-polrating bees though comple:\nmentary increase inky lal resources. Jounal of Aled Ecology\n54(), 1856-1064, tos/dotorg/10.3131/ 1365288412907\n\nTwin, §. Buchor, 0, Sega, 2, Azhir A, Ulva. A. Thea A. &\nay (202%) Agroforestry inside of alm plettion for enhanc\nIng bialersity-based exosystem functions syotoresuy inside\noil palm plantation for eahancing biodiversity based econystem\nfunetons. International Confrence on SastinbleArclture and\nFring System, 64, 032058, hp: org/20 088/1755-1315/\ns9artio12056,\n\nTinberake.T. & Morgan. (2018 Potinatin and international deve\n'omen: What do we Know. what oe the chotenges and whot move\n'can we do? (sue May). UK Colaboatve on Development scence\n\nTucker, EM, & Rehan. .M, (2017, Wild bee community assemblages\n2103s greta! landscapes. Journal of Agate! and Urban\nEniomolegy, 330, 77304, htps/Adoorg/10-3954/1528-5475-\n7\n\nUnyshen, M. Urban Mead, KR. Dery. & Rivers, J W. (2029)\nForests ae etaly important to globolpolinatordversty and\n'eshancepotiaton in adacet coos Bilas Reviews. 98 112\nMAL. ttps//doLorg/103331/oev12967\n\n\\anbergen. AJ, Aen, M.A. Cordeau,S, Gaba A. Garratt. M,\nP.O, Kovdes-Mostinash A, Lecuyer L, Neo, HT, Potts G_\nSete, J. Suimzea, £.& Young. JC. (2020) Tastermation of\nagricultural Indscapes in the Antvepocene: Nature's ",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_014_ocr.txt",
+      "source": "image_ocr",
+      "page": 14,
+      "visual_type": "figure",
+      "text_sample": "000\n\nZurbuchen: A. Landert L-Kiaber.1- Mller A. Hein, S. & Dom. 5.\n(2010, Maximum foraging ranges in satay bees: Only few Io\n'iia have the capability to cover long foraging stances.\nBilal Conservation. 18512010, 669-678. Mtps//deLorg/10-\n1016/}bocon 2007320003,\n\nZur A, leno. ©, & Ephick 5. (2010) A protocol or data ex\n'slration to avoid comin statisti! problems. Methods n Ecology\n(nd Evin, 2-14. hp or/ 30 39317 2064 280K 2009,\n'000%\n\nSUPPORTING INFORMATION\n'Aditional supporting information can be found online In the\nSupporting information section tthe end of this arte\n\n'Table St: (a) Hymenopteran vistors of bean Nlowers in agroforestry\nand nowagroforestry plots. (b) Coleopteran, Dipteran. and\nLepidoptera visitors of bean flowers in agroforestry and non-\nsurotorestry pots\n\nTable $2: GLMM model output testing the diference in Hower\nabundance, flower richness, plant richness, between the farming\nsystems. =marginal RR =condlona\n\n\"Table $3: Mode selection results based on AIC for insect potinator\nabundance.\n\nTable $4: Model selection results based on AIC fr insect pllator\nspecies richness.\n\n\"Table $5: Model selection results based on AIC for visitation ate.\n\"Table $6: Insect palinator Abundance\n\n\"Table $7: Insect potinaor Richness.\n\n\"Table $8: Insect polinator visitation rate.\n\nTable $9: Pods\n\n\"Table $10: Seeds per pods\n\nTable S14 ield quantity,\n\nFigure St: a) Sample size-based curves and (b) coverage-based\n'curves fo each farming system (Agroforestry and non-agroforestry\nsith 95% confidence intervals (shaded are)\n\nFigure $2: Mean landscapeevel_wood cover. surrounding\nazrolorestry and non aprforestey plots\n\nHow to clte this article: Kinga, N, Tem, RA. Stina, 8\nJonsson, M2024), Tropical agroforestry supports insect\npoliators and improves bean Viel, lourel of Applied Eclsy.\n(61, 1067-1080, itps//doion/10.1121/1365-2464.14629",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    }
+  ],
+  "vision_summaries": [
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_001_vision.json",
+      "source": "ollama_vision_image",
+      "page": 1,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_002_vision.json",
+      "source": "ollama_vision_image",
+      "page": 2,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_003_vision.json",
+      "source": "ollama_vision_image",
+      "page": 3,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_004_vision.json",
+      "source": "ollama_vision_image",
+      "page": 4,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_005_vision.json",
+      "source": "ollama_vision_image",
+      "page": 5,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_006_vision.json",
+      "source": "ollama_vision_image",
+      "page": 6,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_007_vision.json",
+      "source": "ollama_vision_image",
+      "page": 7,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_008_vision.json",
+      "source": "ollama_vision_image",
+      "page": 8,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_009_vision.json",
+      "source": "ollama_vision_image",
+      "page": 9,
+      "visual_type": "",
+      "locations": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ],
+      "coordinate_ranges": [
+        {
+          "col_1": "0.01",
+          "col_2": "0.67",
+          "col_3": 0.99
+        }
+      ],
+      "counts": {},
+      "tables": [
+        {
+          "caption": "",
+          "n_rows": 0,
+          "columns": [
+            {
+              "latitude": 0.01,
+              "longitude": 0.68
+            },
+            {
+              "latitude": 0.69,
+              "longitude": 0.81
+            },
+            "number of species in the sample:1"
+          ]
+        }
+      ],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_010_vision.json",
+      "source": "ollama_vision_image",
+      "page": 10,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_011_vision.json",
+      "source": "ollama_vision_image",
+      "page": 11,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_013_vision.json",
+      "source": "ollama_vision_image",
+      "page": 13,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_f3a47db217/image_extracted_data/page_014_vision.json",
+      "source": "ollama_vision_image",
+      "page": 14,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    }
+  ]
+}

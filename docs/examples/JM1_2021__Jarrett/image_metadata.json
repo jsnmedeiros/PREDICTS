@@ -1,0 +1,342 @@
+{
+  "source": "pdf_images_ocr_vision",
+  "exported_images": [
+    {
+      "page": 1,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_2fd8d0c939/pdf_images/page_001.jpg"
+    },
+    {
+      "page": 2,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_2fd8d0c939/pdf_images/page_002.jpg"
+    },
+    {
+      "page": 3,
+      "kind": "map",
+      "file": "downloaded_data/_tmp_2fd8d0c939/pdf_images/page_003.jpg"
+    },
+    {
+      "page": 4,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_2fd8d0c939/pdf_images/page_004.jpg"
+    },
+    {
+      "page": 5,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_2fd8d0c939/pdf_images/page_005.jpg"
+    },
+    {
+      "page": 7,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_2fd8d0c939/pdf_images/page_007.jpg"
+    },
+    {
+      "page": 8,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_2fd8d0c939/pdf_images/page_008.jpg"
+    },
+    {
+      "page": 9,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_2fd8d0c939/pdf_images/page_009.jpg"
+    },
+    {
+      "page": 10,
+      "kind": "figure",
+      "file": "downloaded_data/_tmp_2fd8d0c939/pdf_images/page_010.jpg"
+    }
+  ],
+  "ocr_summaries": [
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_001_ocr.txt",
+      "source": "image_ocr",
+      "page": 1,
+      "visual_type": "figure",
+      "text_sample": "rect tor uprates,\n\nBird communities in African cocoa agroforestry are diverse but\nlack specialized insectivores\n\nCrinan Jarrett'?® | Thomas B. Smith? | TabeT.R. Claire'? | Diogo F.FerreiraTM*@ |\nMelanie Tchoumbou\"* | MalangeN.F.Elikwo® | Jared Wolfe*\" | Kristin Brzeski®\" |\nAndreanna J.Welch® | Rachid Hanna'® | Luke L. Powell'?\n\n\"tuto ives, Anna Heath ad Compare Mec, Coleg o Meal Veter nde Since, Universo lagow, Glow\nUc \"Bidiesty native, Gamort MA-USA. Departmen of Ecology and Evolutionary Goloy and Cee for Tope Research, an inte ote\n\"Evtonmen and Sustaity river of alforna os Angles Ls Ange, Ca USA; earch Contre in ior and Gonatle Retoures\nLnivertyo Ports, Va, Prtupa Department of Avimal Boloy Vector dome Diseases aborstry tthe Appoed logy and Ely Research Unt,\nUniver chang, Oschang Cameroon 'Department of Miroogy a Parstsogy, Univeral of Ba, en Cameroon 'Cbg o Forest Resources\nad Eminent Sclence, Michigan Tednooptl Unive Houghton. Ml USA\"Deparnent of Bescee, Durham Unies, Othon UK an\nnernatonal astute of Tope Ake Yoound, Cameroon\n\nEat ian return 4, Forests are being converted to agriculture throughout the Afotoples, diving e-\n— lines insensitive rainorest ata such as understoreybieds. The ongoingexpansion\nUS rthan tse Gen of cocoa agriculture, a common smalscale faring commodity, has contributed\n(eta ie nage tothe os of 80% rainforest cover in some Arian countries. Acan cocoa farms\nSone eae APOE ELAR, may provide habitat for biodiversity, yet little is known about their suitability for\nsrc eUeS.,, | vertebrate fauna othe efecto farm management on animal communities.\n\n'nooo 19373,Ovsonet\" | 2, Here, we Fepot the fist in-depth investigation into avian diversity and commu:\nNom Seeinessceuctaberer2 | nity composton in Aican cocoa by assembling a dataset of 2.566 individ\n\nbirds caught across 83 sites over 30 years in Southern Cameroon, We compared\nbird diversity in mature forest and cocoa using measures of alpha, beta and gamma\ndiversity, and we investigated the effect of cocoa farm shade and forest cover on\nbird communities.\n\n3, Gamma diversity was higher in cocoa than forest, though alpha diversity was simi-\nlar indicating a higher dissimilarity (beta diversity) between cocaa farms. Cocoa\nfarms differed from forest in community composition, witha distinctive decrease\nin relative abundance of insectivores, forest specialists and antfolowers and an\nIncrease in frugivores.\n\n'4, Within cocoa farms, we found that farms with high shade cover in forested land-\nscapes resulted in higher relative abundance and richness of sensitive forest spe-\nies; shady farms contained up to five times the proportion of forest specialists\nthan sunny farms.\n\n5, Synthesis and applications. Sunny African cocoa farms were less able to support\nsensitive bird gullds compared with shaded farms in forested landscapes. Our\n\nHandling tor: Tomas et\n\nprovid te ool wks propery hed\n£ 2024 The Auer Jura of pled ley publahed by ohn Wey 6 Sens i on belo Bish Elo Secety\n\nTribe SAAT AT. 'wicyrinlivaryconlinanallpe | 1257",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_002_ocr.txt",
+      "source": "image_ocr",
+      "page": 2,
+      "visual_type": "figure",
+      "text_sample": "1230 | soul oped Esoey\n\nIARRETT\n\nfindings support the notion that certain ecological and dietary guilds, such as\nant-followers and forest specialists are disproportionately affected by land-use\n'change. In ight of the current push to increase cocoa production in sub-Saharan\nArica, our results provide policymakers opportunities for more wildife-friendly\n'cocoa schemes that maximize avian diversity.\n\nKevworDs\n\n'Alrican bird. agroforestry, cocoa, farm management, forest cover, forest specais, nsectivore\n\n1 | INTRODUCTION\n\n'Agricultural expansion is the main cause of terrestrial biodiversity\nloss worldwide (Newbold et al, 2015). The tropes, partiulelysub-\nSoharan Attica, hve the highest sk of biodiversity loss duet in\ned coverage of protected reas, low conservationspendingand igh\naaricultural growth (Kehoe et al, 2017). With agricultural demands\nojected to double inthe next decades (scharntke eta, 2012),\nthere san urgent need for strates that will combine agricultural\nproduction and biodversity conservation. Tade-offsenst between,\nagricultural production and biodiversity conservation, yet these\nims need not be mutually exchisve:hiphyield fod production nd\nhigh biodiversity are able to coexist in wopiealsmalholder agrofor-\netry systems, in which agricultural crops are grown among shade\ntwees (Clough et al, 201%; Perfecto & Vandermeer, 2020; Press\netal, 2007\n\nCocoa is the fastest expanding export-oriented crop inthe\n-Atrotropics (Ordway etal. 2017), riven by 3 booming market in\nEurope Squlecarni & Swinnen, 2018 Cocoa cultivation has caused\n'mass deforestation in countries such as ory Coast. where tis now\n'Town industry in fll sun monocultures because of ack of forest\nland (Maclea, 2017). In other countries such a Cameroon, the Sth\ntop exporter of cocoa worldwide. tis grown in tess intensive man\nnet usually under a thick forest canopy Rie & Greenberg, 2000),\nThough shortterm yields may be higher in fullsun plantations.\nshaded cocoa farms havea longer productive life pan and suffer\nlower pest burdens making long-term yields comparable Tcharnthe\netal, 2011 However. the Government af Cameroon aims to triple\n«c0c03 production by 2035 (Ordway eta, 2017), which may ead to\nclearing of forested land for menocutures and conversion of shade\nsown cocoa to sun monocultares (Andes et al, 2016; Sebeoth &\nHarvey. 2007.\n\nCocoa apoforestry systems often maintain a high diversity of\nrainforest shade trees that may resemble the rainforest theyre\nplaced (Bsseleun et al, 2013: Sonwa etal, 2007) Party due to\nthis, several studies have suggested that cocoa agroforestry sys\ntems contain considerably higher blodiversity than intensive cocoa\nplantations (Bhagwat ea, 2008; Bisseleus eta, 2009; Techarntke\ntal, 2011: Vergara & Badano, 2009). However, most stules on\nood are from the Neotropics and South-East Asian ther meta-\nanalysis, De Beenhouwer et (2013) highight 2 lack of research on\n\nthe capacity of Atfican cocoa agroecosystems to maintain blodver-\nsity. Specialy, we know litle regarding vertebrate crmmurites,\nand how they ae affected by farm management practices (Schroth\n{& Harvey, 2007: Sekerioga, 2012) The notable exceptions are\nWiltert eta. (2005) and Kupsch et al (2019). who surveyed birds\nacross a gradient af land-use intensiiation whieh inclded some\n«cocoa plots and found that although species richness did not e-\ncrease with increasing habitat modification, community composition\nwas slnicanty affected, with a decrease in abundance of laae\nbodied frugivores and terrestrial insectvores.\n\nFactors affecting animal diversity in cocoe agroforestry sys\nems occur at two spatial scales: fam level (025-5 Ha) and and\n'scape level. Within the fae, management actions such 28 shade\ntree removal and pruning wil affect an anima community, Inthe\nNeotropics, farms with dense, structurally diverse vegetation\nhave been shown to support a higher diversity of birds (Cassano\netal, 2009, ants (Piet etal, 2006) and amphibians (Dehewvels\nfetal. 2014) At a landscape scale, animals are affected by habitat\nconnectivity as has been shown In Braz where farms in forested\nareas support higher diversity of bids bats and frogs than farms\nIn disturbed non-forested landscapes (Cassano etal, 2009: Faria\ntal, 2006)\n\n'ids are good indieators of habitat quality (Kupsch et a, 2019),\nWith groups such a nsectiveres showing high sensitivity to habi-\ntat depradtion Karp etal, 201%: Powell etal, 2015: Stratford 6,\nStouffer, 2013: Tehoumbou et al, 2020; Wolfe etal, 2015). In\nthe tropics, many bird species depend stitly on microhabitas\noften only present in reine forest (forest speci; Stratford &\nStouter, 2013) Here we focus attention on two adtonal sensitive\nld of bids antfolowers and mixed flack species. Ant followers,\nae beds that pursue army ats consuming the invertebrates fished\nby the swarm (Peters & Okalo. 2009), Ant-folowers are vulnerable\nte habitat degradation and they ate often the ist guild to disappear\nWith habitat conversion (Peters etal, 2008; Peters & Okalo, 2009",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_003_ocr.txt",
+      "source": "image_ocr",
+      "page": 3,
+      "visual_type": "map",
+      "text_sample": "est cover Specially we asked the flowing questions) Are bird\ncommunities in cocoa farms les divers ws\nbird community compastion diferent between forest and cocoa?\n\ncocoa farms?\n\n2 | MATERIALS AND METHODS\n2: | Bird mist-net captures\n\nWie considered bird mistnet captures from Cameroonian cocoa\nfarms andmatue forest, and rom one mature forest site inFuator\n'Guinea, between 1990 and 2020(see Appendix St} These data were\n\nrange of projects, and therefore\nardized methodology or sampling etfort. However, the similares\nInthe overall approach made the data comparable: at each st, we\n\n0p 12 to 20 12 % 3 mmistnets (0-mm mesh fr 6-11 be per\nfay (-6:20 to 1290-1720; Jarrett etal, 2024; Sith etal, 2005)\nSects. The number of sampling days per site varied (Appendix St\n\nfort: Fo versity analyses we sampled a standardized number\n\nof captures and ites (n= 25\n\nsper habtat type. n= 30 captures\n\nerste) and b) fr community composition analyses, we considered\n'only eltve abundance and species richness of foraging gus, cl\nspecies ofeach foraging gull by total captures or species\n\nWe excluded individual bids that were not Mentitied to\nspecies level, except for the commonly caught genera Cringe,\nPhylastrephus and Terpiphone. The resulting database consisted\n\nof 9.566 birds captured across 89 sites (26 forest and 57 coco\nFigute 1: Appendix 51), We used the Handbook of the Birds ofthe\n'World (det Hoyo eta, 2019) to clasity each species aecorging to\nts primary food type, its foraging ull and whether it was forest,\nspecait: Species could bons to more than one category (ei\n'sectivorous and forest specialist: Appendix 2} Adtlonally, we de\nies QUCN, 2020)\n\nwhether they were geographically restricted tothe Congo fasn\narea (Appendix 52,\n\n'We considered sampling sites independent if they were sepa\n'ated by atleast 500 m, those separated by less were pooled. The\n\nmature forest sites were at east 1 km from forest eda\n\ncanopy and were\n\nsidered largely undisturbed by loging activ\niy Stes were cise into thee region: south, ectone and wet,\ncorresponding to distinct ecoreplons in Cameroon (Tamungang\netal, 2014), We assigned each sampling vist toa sean, either wet\n'oF dry, according to rainfall pattems ofthe caresponding region\n(Motus, 2008,\n\nSompig sites\nES Sroce |\n\nFIGURE 1 Map ofall mature forest (white) and cocoa black! sample sites actos Southern Cameroon and Northern Equatorial Guinea.\n'The bate map shows eMODIS Normalized Difference Vegetation Index (NDVI October 2018), a an indicator of vegetative land cover\naccessed from https//earywarning. uses. 604/)",
+      "counts": [
+        89,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_004_ocr.txt",
+      "source": "image_ocr",
+      "page": 4,
+      "visual_type": "figure",
+      "text_sample": "1240 | soural et oped Esoey\n\nIARRETT\n\n2.2 | Quantifying diversity\n\nWie quantified diversity sing Reeve et a's (2016) framework m=\nplemented in the package sows (Mitchell et al, 2020), which\nmeasures components of alpha, beta and gamma diversity over\n2 continuum of viewpoint parameters, q (for details see Alen\n'et al, 2019; Kirkpatik etal. 2088; Kumar Sarker etal, 2019)\nThe value of q determines the relative importance atributed to\nspecies of difering rarity, giving less importance to rae species\n35 aincreases (Appendix $3). Here. we used @\nthey align with commonly used diversity metrics (species rich\nness, Shannon entropy, Simpson diversity and Berger Parker di-\n'versity. The framework considers a metacommunity composed\n'of multiple subcommunities, each containing a numberof species\n(Appendix 3). From the framework we calculated, metacommu:\n\n'gamma diversity, subcommunity gamma diversity, subeom-\n'munity alpha diversity and epresentativeness of subcommunites\nwithin the metacommunity (a typeof beta diversity Appendix 4),\nRepresentativeness takes a value between 0 and 2: its smallest\nwhen species present in each subcommunity are not present ele-\n'where inthe metacommunity, and largest when all species Inthe\n'metacommunity are present inthe subcommunity (Appendix $3:\nReeve eta, 201)\n\nWie standardized number of sites n = 25 per habitat type) and\number of captures (n = 30 per site) for beta and gamma dver-\nsity measures. For alpha diversity, we standardized number of\ncaptures per ste (n = 0) but included al sites, as this measure\n'was calculated foreach site insolation and therefore wae not at-\nfected by the mumber of sites. We then repeated each analysis,\n50 times We excluded any sites below the capture threshold, We\nchose this number of indviuals a it allowed us to maximize the\nnumberof captures while preserving the greatest number of sites.\nDiversity measures displayed in our results section are an aver-\n_age across the iterations. To improve robustness of ou results for\nsubcommunity alpha, we interpolated to 30 captures and extrapo~\nlated to 200 captures using the package NEXT (Hsieh etl, 2016;\n'Appendix $3) We conducted allanaysesin version 3.6.3(R Core\nTeam, 2000)\n\n1.2and = 8\n\n2.3 | Shade and forest cover measurements\n\nWe invetinated the effects of forest cover on bid ina subset of\ncocoa farmssek(n = 28) for which we had canopy measurements.\nWe considered the flowing spat sales of forest cover: cover of\nthe farm itself (-1.5 Ha; henceforth shade cover and mean forest\ncover in 914,25 and 4 km radius surrounding the fxm (henceforth\nforest cover: Appendix 3), Shade cover was an indication of how in\ntensely the farm vas managed: traditional or shade farms preserved\n23 mostly ntact forest canopy, wil in intensive or fullsun farms,\nshade trees were cut exposing cocoa trees to sunlight Forest cover\nasa measure of how detraded the landscape was surrounding the\nfarm,\n\n'To measure shade cover, we took photographs at 10 locations\nIn each farm, spaced ut by 24 m and at minimum 50m fom frm\n'ge, We took photographs using a camera with a fisheye lens on\nan extendable pole (12 m). Using the software imaged (Schneider\ntal, 2012, we converted the photographs to black and white, and\nthen calculated the percentage of lack (vegetation in each photo:\n\nraph. The shade cover value used was a mean of the 10 pictures\n'To measure forest cove, we used the percent tee cover layer of\nthe MODIS Vegetation Continous Fields (MOD44B; Dimice\netal, 2011), whichis published yeariyand has aresluton of 250,\nWe downleaded the MOD488 layer corresponding to 2018 (birds\nwere captured 2017-2020), In QGIS 2.18.23 (QGIS Development\nTeam, 2018). we created 3 1.4, 25 and 4 km radus buffer around\neach frm and extracted the mean percentage tree cover trom the\nnels within the butfer (Appendix $3). Shade cover measurements\n'ange trom 19.6%in the mos intensively managed farm 098.7%in\nthe leas. and forest cover ranged from 20% in an urbanized aea to\n65.8%in a farm adlacent toa forest reserve\n\n24 | Data analysis\n\nWe used GLMMs witha binomial tribution t vestigate the it\nferences in bed community between fest and cocoa, and t in\n\nvestigate the effect of shade and forest cover on bied community\ncomposition in the subset of 28 forms for which we had canopy\ncover dita, We grouped visits toa site inthe same season and year\nInto one sample unt. We used relative abundance and relative spe\ndes richness as response varables to allow for varying sample size,\nFor the comparison between cocoa an forest full models contained\nan teraction term between season and habitat forest or coco}. a\nfixed ettect fr region and random factors for site and yar. For the\ncocoa shade and forest cover analyses full models contained fixed\ncetects for shade cover, forest cover and ueson,andrandom elfets\nfor site and yer. Here we present resus forthe largest butfer size\n(a km rads, which was overall the best predictor of bid commu\n\nrity composition (but see Appendix $3 for model selection afl\nr",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_005_ocr.txt",
+      "source": "image_ocr",
+      "page": 5,
+      "visual_type": "figure",
+      "text_sample": "Jounal Ape telogy | 1264\n\nFIGURE 2. Messutesf diversity\nvarying values of g(a) Metacommunity\narama, Subeommunity alpha\n(©)Subcommunity gamma and)\nSubcommunity representativeness(atype\nof beta dvesty see Reeve etal. 2016)\n\"Measures of gamma and beta aliversity\nwere cleulsted over n= 25 ses per\nhabitat type adn = 30 captures per\nsite, and alpha diversity was ealeulated\nforn= 30 captures per se. Shaded\neas present 95% confidence intervals\n'decved from the 50 iterations ofthe\n\nz\n\nMetacaneunty ganna erty\n\ni\ni\ni\n\nRelate abundance\n\nShade cocoa\n\nRolatve abundance\n\nReative abundance\n\ni )\n\n3\n\ni\n\nlp i\nH\n\né .\n\n&\n\nAE pow-foioners\n\ne Forest\nspecie\n\nFrugivores\n\nMixed-tlock\nspecies\n\n| a Nectarivores\n\nFIGURE 3 Relative abundance foraging guisn fullsun cocoa (20% shade cover. shady cocoa 0% shade cover and mature forest\nShaded bars and errr bars represent the fitted values and 95% confidence intervals rom the minimal adequate modes. Top photograph\n\nphoto by Bea Maas~used with permission\n\nforest 71.0, and at @ = 2 it was 12.8 in cocoa and 11.5 in forest.\nSubcemmunity alpha diversity was sina between cocoa and forest\nacross all values of: after 30 captures at @ =O cocoa reached 12.4\nSpecies and fvest reached 12.2 species (Figure 2b. Subcommunity\namma diversity was higher in cocoa than forest at low values ofa\nbt became similar as q increased (Figure 2c). At @ = 0, subcomm\nrity gamma in cocoa was 196.7 and in forest 100.2 Subcommunity\nrepresentativeness was consistently lower in cocoa than In forest\n'over ll values ofa a @ = Orepresentativeness in cocoa was 0.61\nand in forest 0.68 (Figure 28.\n\n3.2 | Community composition in cocoa\nplantations and mature forest\n\nBird communities in cocoa ad forest differed in their composition\n(Figure 8: Table 1; Appendix $5), Habitat was a significant vat\nable in explaining the elative abundance of insectivores, forest,\nspecialists, antfollowers and mixed-Hock species: these Erouns\nconstituted a smaller proportion ofall captures in cocoa farms\nthanin totes. The largest elfect size was forforest specialists that\n\n'made up 25% of captures in forest and 3% in cocoa. Frugvores",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_007_ocr.txt",
+      "source": "image_ocr",
+      "page": 7,
+      "visual_type": "figure",
+      "text_sample": "JARRETT eA\n\neurale oped oey | 1243\n\nconstituted a larger proportion of total captures in cocoa farms\nthan in forest, and occured in higher relative abundance in the\nwet season\n\nRelative species richness of insectivores, an fllowers,mixed-\nNock species and forest specialists was sanificantly higher in forest\nthan cocoa Table 1: Append 5), Relative species richness of feu\nvores and nectarvores was higher in cocoa farms. Fr mixed-lock\nSpecies and forest specialists the effect of season on relative spe-\nles richness depended on habitat these groups made up a ager\nfraction of all captures in the wet season (compared with the dry\nseason in cocoa, but the opposite was tren the forest,\n\n3.3. | Effect of farm shade and forest cover on bird\ncommunities\n\nfects of shade and forest cover on bid abundance varied between\nsls (Figures 3 and 4; Appendix $8). The only guild that decreased\n\nin relative abundance with increasing shade cover was fruaivores,\nfrom 22% in ful-sun farms to 24% inthe most shaded farms. Ant-\nfollowers increased in elative abundance with both shade an for-\nest cover: they constituted 0.2% of captures in sunny farms and 2%\nIn shady farms, and they increased rom 0.1% to 6% with erasing\nforest cover. Forest specialists increased in relative abundance aso\n\nFrughores\n\nwith shade and forest cover: shy fami had five times the relative\nabundance of forest specialist than fllun farms, and their relative\nabundance increased trom 0.7%in farms with minimum forest cover\n'to 7%in farms with high forest cover. Nether shade cover nor forest\ncover had significant effects on the relative abundance af inseet-\nvotes ectarivresor mined lock species.\n\n'Sade cove and forest cover ad no effect on the relative specles\nriches of rugvores,ectarivores,insectvores and mixed lock spe\nes Appendix $8 Reltve speciesrichnessof antllowers increased\nsignificantly with forest cover: from Sin farms wth lw forest cover\nte 18% in farms with igh forest cover Forest cover hada significant\ntect onthe relativerichnes of forest speci, increasing trom 2%\ntow forest cover to 19% at high forest cover\n\n4 | DISCUSSION\n\n'Our study isthe frst to specially examine Atlean cocoa fatms\n\nitt for birds, We found that sensitive guilds such as for\nest specialists and ant-olowers represented a larger propartion\n'of the community in shady farms compared with full-sun farms,\nand that these groupe occured at higher relative abundance io\n{arms with high forest cover. In the current elmate of agricultural\nIntensification. our findings highight the potential for farmland to\n\nah\n\n08\n\not\n\nRelative abundance\n\n00\n\n08\n\n06\n\noa\n\n02\n\nRelative\n\n00\n\n% Cover % Cover\n\n% Cover\n\nFIGURE 4 Effect of landscape forest cover on the rebative abundance of foraging sul. Thelin Indeates the effect ste predicted by\nthe minimal adequate model and the shading corresponds to the 95% Cls The asterisks indicate statistical sigiicance. The pont represents\nthe relative abundance of the corresponding foraging guld in mature forest, with associated Cs. The dots correspond tothe raw data",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_008_ocr.txt",
+      "source": "image_ocr",
+      "page": 8,
+      "visual_type": "figure",
+      "text_sample": "1244 | soural et oped Esoey\n\nIARRETT\n\nbbe managed in favour of avian communities, and we provide fur\nther evidence of the impartance of maintaining forested areas in\nthe landscape,\n\nWie found thatthe caceaarms bird assemblage comprised\n'more species than the forest assemblage. This could possibly be\n'due tothe variability of habitat characteristics in cocoa farms.\nwhich can range from ful-sun scrubby plantations to shaded\nfarms that are structurally sini to the forest Sonwa et al. 2007;\nTicharnke etal, 2011) Indeed the lower representativencss of\ncocoa farms indicates that they were more dissimilar between each\nother compared with forest sites, These findings support Sol\n«ta (2015), who report increased beta diversity between second\nary forest sites than between undisturbed forest sites. The authors\nargue thatthe higher betweensite beta diversity of disturbed for.\n'ests may attenuate species loss ata larger scale. However, though\ncocoa farms may contain moce species that are rate across the\nmetacommunity, these ar likely not forest- of rangesrestricted\nspecies (Appendix $21 Indeed, there is an overall tend towaeds\nIncreasing generalist species in disturbed forest landscapes (Rutt\n'et al, 2019), Therefore, whe cacas farms may pay a fle inthe\nconservation of certain bird guilds, we must aso prioritize protec-\non of undisturbed primary forests that provide habitat for spe-\nClallaed species that donot frequently occur in modified habitats\n{Stratford & Stouffer, 2013; Techarnthe eta, 2011)\n\n(Our results support Waltrt et al. (2005), who found that spe-\ncies richness in Aftotropical forest did net difer between mature\nand agroorest. However, other studies showed different patterns.\nFor example, Reltsma et a (2001) found lower alpha and gamma\n'diversity of bids In Costa Rican forest compared with managed\ncocoa, yet De Beenhouwer et al (2013) found an 11% decrease in\nbird species richness frm forest to agroforestry. importantly, the dl\nverity patterns we observed were affected by the value At higher\nvalues of @ gamma diversity became similar between forest and\ncocoa indicating that both habitats contained a similar numberof\n_bundant species. Clear examplesin forest were Fre-rested Alethe\n'Alethe cstonea and Yellowlored Brstlebil leds notatus, two for\nst specalst species that made up a considerable faction of the\ncommunity in almost all forest sites. Que results demonstrate how\nconclusions about diversity can change depending onthe measure:\niment parameters, We argue that using a range of metres and 4 val-\nes gives more detailed and useul information about a community\ndiversity\n\nThe broad dliferences in community composition that we\nfound between cocoa farms and forest are consistent with it:\nerature from across the topics. The shift fom forest to cocoa\nresults ina decrease in insectvores, forest specialists and ant\nfollowers and an increase in frugvotes and nectarvores in the\n'Neotropics (Faria eta. 2006: Rice & Greenberg. 2000) and Asia\n(Maas eal, 2016; Marsden et al, 2006), Our findings conteibute\ntoa growing recogrition that species loss in forested systems Is.\nlinked to certain ecological guilds. Throughout tropical reals, is\ntantly related species have evolutionary converged on similar be\nhaviour, suchas ant following and participating in mined-species\n\nHooks, which reduce thee esitoncy to forest oss and habitat det\n'dation Powell et al, 2015)\n\n'We found thatthe community composition of bieds in cocoa\nfarms was signiicantly affected by shade and forest cover, with\nan increased relative abundance of forest specialists, ant-followers\nand mixed-lock species in shaded farms with high forest cover.\nForest speciaits are closely ted to vegetation structure (Powell\netal, 2085; Stratford & Stouffer 2013) especially withthe under\nstorey, whichis entirely removed in intensive cocoa plantations\n(Kessler eta, 2005). Additional, habitat amount - propertion\nof forest in landscape is important in determining bird abundance\nand richness. and this effect may be more pronounced in understo=\nrey or forest specialist species (Carrara et al. 2015: De Camargo\netal, 2018), explaining the inereased relative abundance and d-\nversity ofthese bids with forest cover. Given the current rate of\nland-use change forest beds are under severe teat and wl ly\nundergo rapid species loss (Maas et al, 2009; Powell tal. 2015:\nSekercioglu, 2012)\n\n[Antfolower abundance is driven by the abundance of swarm-\nsiding amy ants (Peters etal, 2008; Peters & Oka, 2009). Ants\nae affected by farm management: Bissleua etal. (2009) found\nthat ant species richness was significantly higher In structurally\ndiverse lowintensity cocoa systems compared with intensive sys-\ntems. Adon, ants are affected by landscape-level processes,\n35 thee sensitivity to temperature tints ther ability to move be-\ntween habitat patches (Rizal et al, 2013). Therefore. shaded farms\nIn forested landscapes Ikely contain a community f ants tke that\nIn the forest. in turn supporting the ant-folo",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_009_ocr.txt",
+      "source": "image_ocr",
+      "page": 9,
+      "visual_type": "figure",
+      "text_sample": "JARRETT eA\n\neurale oped soey | 1245\n\nHutto, 2006), Future studies in Afrotropial cocoa should consider\ndemographic and morphological data to help estabish the value of\nsaroforesry sytem 3s bulfer habitat and wlitecotiors are\nPowell et 2021; Schroth etal, 2008).\n\n(ur study provides strong evidence that Alcan cocoa planta-\ntions canbe af value for conserving avian diversity, However, plan\ntations need appropriate management if habitat Isto be provided\nfor forest bird communities. Low intensity shaded cocoa not only\nprovides habitat for forest beds and other vulnerable tara but can\nalso produce high velds and farmer income, comparable to more\nlotensve systems, thanks to lower pest burdens longer produc-\ntivelife span of trees and lower input costs (Armengot et al, 2016;\nClough eta, 2011; char ot a. 2013) This dua function of,\ncocoa agroforestry systems allans with a and-shaving perspective,\nIn which agriculture Is managed 2 lw intensity and in favour of\nbiodiversity. However, our fests aio demonstrate that even the\nshaist cocoa farms are not equivalent to forest. and therefore we\nsegue that within a land- sharing scenario there must he ates af fot-\nlest preserved on the landscape. In concusion, to prevent extreme\nelorestation and biodiversity loss in ane of the words diversity\nhotspots. policymakers should atively encourage ecologically sus\ntalnable agricultural practices such as shaded cocoa agroforestry\nthat employs slence-based management\n\nACKNOWLEDGEMENTS,\nResearch in Cameroon was supported by National Geographic\nand Natlonal Science Foundation grants WA PIRE#1243524, DEB\n9726425 and RCEBP977072107B.S. and agranttolITA(R.M) bythe\n'German Federal Ministry of Economic Cooperation and Development\n(Contract no, 81193733), Research in Equatorial Guinea was sup-\nported by USFWS Grant FISAPOOSE! to OW, We are grateful to\n. Reeve 5. Mitchell and D. Haydon. We acknowledge all the re\n'archers involved in data calection and the owners ofthe cocoa\nfarms. We thank the governments ofthe Republic of Cameroon and\nEquatorial Gunes for permission to conduct the el esearch\n\nAUTHORS' CONTRIBUTIONS\nC.J, TBS. and LLP, concelved the ideas and designed the method\nology:CJ.T8S. LLP, TTRC. OFF. MT, MNFE, JW. and KS\ncollected the data; RH. and A.W. contributed to funding and\nlogistical support C.J analysed the data and le the writing ofthe\n'manuscript. All authors contribute critical tothe dats and gave\nfinal appeoval for pubeation,\n\nDATA AVAILABILITY STATEMENT\nData avaiable via the Figshare Diptal Repository hitps//dolorg/\n10,6084/msigshare 135263182 Uaret, Smith, ea. 2021)\n\n'orciD\ninon sarrett @ hxtos/redorg/0000-0002-7154-0149\nhttps://erci.or/0000-0003-2881-1860\nhtps//rcie ng/0000-0002-5725-0144\nLuke L Powel htts:/red.oe/0000-0002 2001-4982\n\nREFERENCES\n\n'Alen, L, Reeve, R, Nousek McGregor A, Vileampa 1. & MacLeod.\nR GOI), Are orchid bees wsell incators of the Impacts of\nhuman disturbance? Ecologia inators 109, 745-755, Mton/\norg/10,014/jecolnd 200802048\n\nAndes. C. Comes, M, Beek, A, Sehr, M, Rist, Jacob. J\n(2026, Cocoa in monoculture and. dynamic agroforestry, In E\nLetfouse (Ea, Sustainable agrature reviews (Vel. 19. pp. 121-\n153). Springe Intemational Publishing Switzerland Reps: /Soore/\n101007/978-94:007:5963.9\n\n'Armengot. Babies Andes, C. Mi J. & Scheider, M. (2026,\n{Caco agroforestry systems have higher Fetur on bor compared to\nfuttsun monocutues Agronomy fr Sstinble Development. 34)\npsd org/30.1007513593-016-0208-5\n\nagua A, Wis, KJ. Boks, MLB & Writer, RJ, (2008,\nAaroorestry: A rete for topical bodes? Trend in Eclegy &\n'olution 2315} 261-267 ipso. og/201016/.TREE 200801005\n\n'Sisscleus, D.H. 8. Masoup, A.D. & Vida S(2007) Biodiversity con\nservation, ecosystem functioning, ad economic incentives under\ncocoa agroforestry itescation Conservation Bly 2518) 1176-\n1984. tps:/so org/40.1131/51523-1739 200901220\n\n'Srooks, ME, Kristensen, K, van Benem, KJ. Magnusson, A. Ber\n'CW. Neisn, A. Skaug HJ. Macchi M. & Bole, B.M.(2017),\nnmi balances speed and hexbity among packages for 2e0-\nInflte geneazed near mixed modeling The R Journal, 92, 378\n400. htps:/doL.org/10.32614/R3 2017-068\n\nCarrara Aroyo-Rodriuer V. Vega Rivera), Schondube).E.De\nFreitas SM, & Fai, L (2015), Impact of landscape composition\nsndcontiguraienon ores specialist and generastbedspeiesinthe\nfeagmented Lacandona rainforest, Mesa. Bisa! Conserato,\n184, 197-424 tpe/fdiog/10 10467 tocon 201501.014\n\n(Cassano, R, Sevoth,G. Fai, Delabie. J. H.C. & Bede. (2009,\n'anéscape and farm scale management to enhance biodiversity\nanservation in the cocoa pradiing revi of southern Bahia,\nBrack Bedversty and Conservation, 181), 577-603. Mtps./iokore/\n101007/10531-008-9526-\n\n'ough. ¥, Barkmann, 1, urbana J. Keser M. Wanger TC.\n'Anshary, A. Bucher. Cuzz, D. Darras. K. Putra... Eas\nS. Popang R. Schmidt C. Schulze, © H, Seidl. O. Steffan\nDewenter Stench K Vil Weist M,.Tehaet, (2031)\nCombining high iolversity wth ig vets in topical grtorst.\nProceedings the National Academy of Sclences ofthe Unit",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_010_ocr.txt",
+      "source": "image_ocr",
+      "page": 10,
+      "visual_type": "figure",
+      "text_sample": "1246 | soural et oped Eesoey\n\nIARRETT\n\n\"el Hoyo, J Eliot. A, Sarat J, Chisti, D-AL & Kirwan, 6.2019)\nHandbook of the birds te word ave. Ly Eons.\n\nDimiclC. Carell M. Sohibeg Rin, D. Kel, M. & Townshend\nRG. (2012) MODA4B MODIS/Trra Vegetation Continous Feds\n'Year 3 Global 250m SIN Ge VOOS [Oat set NASA EOSDIS Land\nProcesses DAAC. htps//dlog/10:5087 MODIS/MODS88.008\n\nFaria, D. Laps, RR. Baumgarten. & Cetra, M2006) Bat and bie\nassemblages from forests and shade c2ca0 plantations In two\nCextrating landscapes in the Altanc Forest of southern Bahia,\nBras Bodenity and Conservation, 1512), 587-612. Mos /dot\nra/10100710591-005-2089-4\n\nGoode. £. Ding. PX. Maries, A.S.X. Walters M.& Robinson,\n5. (2015). The structure f minedspecis bid locks, and tee\nresponse to antropogente disturbance. with special reterence to\nEast Asia. Avon Reserch, il 18. hetps/fdLorg/201186/54065\n7915-0023-0\n\nile, TC. Ma, KH. & Chao, A, 2016) INEXT An R package for\nTnrefaction and extapolition of species diversity (Hil numbers.\nMethds in Exley and Ekin, 72, 1854-3255. Ntps/ fal\novg/103111/2081210% 12613\n\nUCN. 2020), The IUCN Red List of Uveotened species. Retrieved rom\ntps: acres org\n\nJarret, Powel Cle, TTR Tehoumbou. M. & Mel, 8, (2020,\nMout of overwintering Wood Warblers Phyoscopus sti in an\nannual perspective. Jounal of Onithley. 1.3. Mips/idt\nore/ioxo07st0s36021-018572\n\nJnrtt, C. Smith, T. 8. Chie, TT. R, Ferreira, 0. F, Wolfe. J.\n\"Fchounbou M, Elko, MNF rash K, Welch, A.J. Hana,\n£ Powel 2624), Data tom: Bed communities in Alrian cocoa\nagroforestry are diverse but ck speialzedinsectvores.Figshare\ntp: og/ 10.6084 m gare 135260802\n\nJohnson M.O.(2007) Measuring habitat quality A review. The Condor,\n1093. 489-504, htps:/idlog/201093/condor/109 3.489\n\nKarp, 0.5. Mendeohal C0. Sana RF, Chaumont.N. hich, PR,\nadly, EA. & Daly. C. 2013). Foes bles bid abundance\npest contro and cottee yield Ecology Letters. 1681, 1399-1347,\ntps/fdlorg/10 1381 /le 12173\n\nKarp,D.5. Zi. 6, Zook, Enh, PR & Daly. G.C. 2038) Resilence\n'and stably n Bd auld across tropa countryside. Proceedings\nOf the Navonat Academy of Sceees of the United Sates of America\n109152, 21134-21199 htps/4o.org/10.1073/pnas 1128276108,\n\nKehoe, L Romero'Mutoz, A, Polina. €, Exton L. Keett, Hy &\nKuenmerle (2017 Biodiversity ak under future cropland ex\nanion ad intentiation, Nature logy and Even, 18, 1129-\n1135, tts io orp/101098/61559-017-02343\n\nKessler, M. Kabler B.A. Gradsein, 5. R. Bach. K. Schall, M.\nPtopang,R. (20051. Tree very In primary forest and der\nfet land se systems in Cental Sulawesi Indonesia. Bodverity\n'ond Conservation, 143). 547-560, hitps/Idlorg/10.1007/1053,\n\nikotric, L, Mitchel, 5, & Pat, KJ: (2048), The metre matters\nWhen asesingdvesty: Atsesing lepidopteran species ehness\nInd diversity in two habeats under aiterent daturbance rege.\nology ond Evlton, 822) 11194-11142 htps:fdirg/10 1002\ncease\n\nuae Sarkar, S_ Reeve, R. Paul NK. & Mathopoutos, J (2019)\nModeling spatial biedversity In the words largest mangrove\necosystem The Bangiadesh undathans:Abaseine fr conservation\nDiversity and Distributions, 25, 729-742, Nips /da.orp/10413%/\n6132087\n\nKugsch, D- Vendras, E, Ocampo-Arz. C. Bair, P. Matombl, F\nIN, Bobo, KS. & Walter. M, (2020). High eal forest habitat\nthresholds of native bird communities In Alrotropiel agroter\nstr landscapes Blogial Conservation. 230, 20-28. Mts ok\nrp/10,014/ biecon2018.12001\n\nMaas, Karp, 0.5. Bumrungsi Duras. K- Gonthier, Huang 3\n'Lindel € A. Mane. J. Mestre, Michel NL. Morton €.8.\nestecto. I. Pipot. SM. keris. C. Hwa RM. Tylor.\n4, Thehante, T. Van Bae SA Whelan, C.J & Willams- Gln K\n(2018) Bes an bat predation service in tropical erst and aro:\nforestry landscapes. Beil Reviews 91, 108-1101. tps\norg/lOsforea7201\n\n'Maas 8. Putra. D-. Walter, M, Clough, Teharthe.T, & Schule,\n'CH. (2009) sin years othatitatmodfiation ina topical rainforest\nmala of Indonesia donot affect ted diversity but endemic forest\nSeles. Bologicel Consertion, 14213), 2665-2671, tps\n(or9/101016/ biocon 2009.08 018\n\nMaclean, 8 (2017-September 13. Chocolate inusty delves antorest,\nsate in Wwory CoxsfEnironmentThe Guardian. The Guardian,\nRevived trom tps:l/wor.thepuardan com/enveonment/2017/\nSep/13enocoate industry devs alnotestdssterin- wary coast\n\nMarien 5,2, Symes. CT & Mack AL (2008 The response of a New\n'Guinean aviuna to conversion of oes to smal scale apres,\n(0 629-640. Ntps:/ door / 101121 3874-919% 2005 00577\n\n'Michel, 5: N Reeve R. & White, T (2020) Pactage taverty (2.0,\nRetrieved from htos//'thub com/boydordiversty\n\n'Motus, E (2008, Climatic trends in Cameroon Implestins for air\ncealtral management. Climate Research, 90, 255-262. tps\norg/10.3354/c100255\n\nNewbold, T, Hudson LN Mil SLL, Cont S, Lenk, Sele,\nTRA. Berger. L. Bennett. D, J. Choimes. A. Callen, B03 3, De\nPama, A Diz. Echeverria Lendode, 8. Edgar M. 1, Feldman\n'A. Garon, M. Horton. MLK, Alhussein, T. Puri, A (2015),\nGlobal tect of Land use on lea teresa lodversy. Nate,\n520(7545) 45-50, tps./olorg/101038/natureD 4328\n\n'Ordway. ",
+      "counts": [
+        0,
+        0
+      ],
+      "coordinate_candidates": [
+        {
+          "raw_evidence": "ences ofthe United States of\n'Aimee, 10703}, 5786-5793, htps:/8oL0rg/01073/pns4 09054\n'5107\n\nPéronG.£ Crochet PA 2009) Edgectfectandsvuctureot mixed species\nied leks ian Alrttopal Iowan forest Journal of Orton,\n1403 585-399 hts /do.og/101007s10396-009-0376\n\nPeters, MK, Liare. 5S, 6 Kietar"
+        }
+      ]
+    }
+  ],
+  "vision_summaries": [
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_001_vision.json",
+      "source": "ollama_vision_image",
+      "page": 1,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_002_vision.json",
+      "source": "ollama_vision_image",
+      "page": 2,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_003_vision.json",
+      "source": "ollama_vision_image",
+      "page": 3,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_004_vision.json",
+      "source": "ollama_vision_image",
+      "page": 4,
+      "visual_type": "",
+      "locations": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ],
+      "coordinate_ranges": [
+        {
+          "col_1": "",
+          "col_2": "",
+          "col_3": "",
+          "col_4": ""
+        },
+        {
+          "value": ""
+        }
+      ],
+      "counts": {},
+      "tables": [
+        {
+          "caption": "",
+          "n_rows": 0,
+          "columns": [
+            {
+              "latitude": 0.12,
+              "longitude": 0.13
+            },
+            "latitude_decimal\":0.14,",
+            "longitude_decimal\":0.16},"
+          ]
+        }
+      ],
+      "plots": [
+        {
+          "caption": "",
+          "x_axis": "",
+          "y_axis": "",
+          "n_points": 2
+        },
+        {
+          "caption": "",
+          "x_axis": "",
+          "y_axis": "",
+          "n_points": 0
+        }
+      ]
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_005_vision.json",
+      "source": "ollama_vision_image",
+      "page": 5,
+      "visual_type": "",
+      "locations": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ],
+      "coordinate_ranges": [
+        {
+          "col_1": "0.01",
+          "col_2": "0.67",
+          "col_3": 0.99
+        }
+      ],
+      "counts": {},
+      "tables": [
+        {
+          "caption": "",
+          "n_rows": 3,
+          "columns": [
+            "value"
+          ]
+        }
+      ],
+      "plots": [
+        {
+          "caption": "",
+          "x_axis": "",
+          "y_axis": "",
+          "n_points": 3
+        }
+      ]
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_007_vision.json",
+      "source": "ollama_vision_image",
+      "page": 7,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_008_vision.json",
+      "source": "ollama_vision_image",
+      "page": 8,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_009_vision.json",
+      "source": "ollama_vision_image",
+      "page": 9,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    },
+    {
+      "file": "downloaded_data/_tmp_2fd8d0c939/image_extracted_data/page_010_vision.json",
+      "source": "ollama_vision_image",
+      "page": 10,
+      "visual_type": "other",
+      "locations": [],
+      "coordinate_ranges": [],
+      "counts": {},
+      "tables": [],
+      "plots": []
+    }
+  ]
+}

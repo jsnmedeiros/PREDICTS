@@ -1,0 +1,93 @@
+{
+  "source": "supplementary_downloads",
+  "downloaded_files": [
+    "downloaded_data/_tmp_f3a47db217/supplementary_files/10.5061_dryad.3tx95x6pd_dataset.zip"
+  ],
+  "summaries": [
+    {
+      "rows": 120,
+      "columns": [
+        "Plot ID",
+        "PairID",
+        "Habitat type",
+        "Pollination treatment",
+        "Plant ID in a plot",
+        "Pods",
+        "Number of seed per pod",
+        "Yield quantity (g)"
+      ],
+      "lat_cols": [],
+      "lon_cols": [],
+      "species_cols": [],
+      "site_cols": [
+        "Plot ID",
+        "Plant ID in a plot"
+      ],
+      "date_cols": [],
+      "unique_sites": 12,
+      "file": "/home/joana/Documents/PREDICTS_NHM/Test/downloaded_data/_tmp_f3a47db217/extracted_data/Data_Kingazi_et_al._unzipped/Data/Bean yield data.csv",
+      "sample_csv": "downloaded_data/_tmp_f3a47db217/extracted_data/Bean_yield_data_sample.csv"
+    },
+    {
+      "rows": 32,
+      "columns": [
+        "Farming system",
+        "PairID",
+        "PlotID",
+        "Flower visitors abundance (Insect pollinator abundance)",
+        "Flower visitors richness (Insect pollinator richness)",
+        "Visitation rate",
+        "Wood cover",
+        "Flower richness",
+        "Flower abundance (x10)",
+        "Overall plant richness",
+        "Overall plant abundance"
+      ],
+      "lat_cols": [],
+      "lon_cols": [],
+      "species_cols": [],
+      "site_cols": [],
+      "date_cols": [],
+      "file": "/home/joana/Documents/PREDICTS_NHM/Test/downloaded_data/_tmp_f3a47db217/extracted_data/Data_Kingazi_et_al._unzipped/Data/Insect pollinator data.csv",
+      "sample_csv": "downloaded_data/_tmp_f3a47db217/extracted_data/Insect_pollinator_data_sample.csv"
+    },
+    {
+      "rows": 32,
+      "columns": [
+        "Plot id",
+        "Habitat",
+        "Amegilla calens",
+        "Amegilla zonata",
+        "Anthophora vestita",
+        "Apis mellifera",
+        "Belenois creona ",
+        "Borbo cinnara",
+        "Senaspis macquart",
+        "Hypotrigona gribodoi",
+        "Ischiodon aegyptius",
+        "Lithurgus pullatus ",
+        "Meliponula ferruginea",
+        "Pachymelus festivus",
+        "Phytomia varians",
+        "Synagris analis",
+        "Xylocopa caffra",
+        "Xylocopa calens",
+        "Xylocopa erythrina",
+        "Xylocopa flavorufa",
+        "Xylocopa lugubris",
+        "Xylocopa nigrita",
+        "Xylocopa scioensis"
+      ],
+      "lat_cols": [],
+      "lon_cols": [],
+      "species_cols": [],
+      "site_cols": [
+        "Plot id"
+      ],
+      "date_cols": [],
+      "unique_sites": 32,
+      "file": "/home/joana/Documents/PREDICTS_NHM/Test/downloaded_data/_tmp_f3a47db217/extracted_data/Data_Kingazi_et_al._unzipped/Data/NMDS_Data.csv",
+      "sample_csv": "downloaded_data/_tmp_f3a47db217/extracted_data/NMDS_Data_sample.csv"
+    }
+  ]
+}
