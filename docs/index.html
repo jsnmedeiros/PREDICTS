@@ -96,6 +96,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#why-this-example-matters" id="toc-why-this-example-matters" class="nav-link" data-scroll-target="#why-this-example-matters">Why this example matters</a></li>
   <li><a href="#extracted-metadata-summary" id="toc-extracted-metadata-summary" class="nav-link" data-scroll-target="#extracted-metadata-summary">Extracted metadata summary</a></li>
+  <li><a href="#imagemap-evidence" id="toc-imagemap-evidence" class="nav-link" data-scroll-target="#imagemap-evidence">Image/map evidence</a></li>
   <li><a href="#qc-points" id="toc-qc-points" class="nav-link" data-scroll-target="#qc-points">QC points</a></li>
   </ul></li>
   <li><a href="#example-2-kingazi-et-al.-2024" id="toc-example-2-kingazi-et-al.-2024" class="nav-link" data-scroll-target="#example-2-kingazi-et-al.-2024">Example 2: Kingazi et al.&nbsp;2024</a>
@@ -103,6 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#why-this-example-matters-1" id="toc-why-this-example-matters-1" class="nav-link" data-scroll-target="#why-this-example-matters-1">Why this example matters</a></li>
   <li><a href="#extracted-metadata-summary-1" id="toc-extracted-metadata-summary-1" class="nav-link" data-scroll-target="#extracted-metadata-summary-1">Extracted metadata summary</a></li>
   <li><a href="#dryad-archive-evidence" id="toc-dryad-archive-evidence" class="nav-link" data-scroll-target="#dryad-archive-evidence">Dryad archive evidence</a></li>
+  <li><a href="#imagemap-evidence-1" id="toc-imagemap-evidence-1" class="nav-link" data-scroll-target="#imagemap-evidence-1">Image/map evidence</a></li>
   <li><a href="#important-site-count-interpretation" id="toc-important-site-count-interpretation" class="nav-link" data-scroll-target="#important-site-count-interpretation">Important site-count interpretation</a></li>
   </ul></li>
   <li><a href="#filled-pv07-form-example" id="toc-filled-pv07-form-example" class="nav-link" data-scroll-target="#filled-pv07-form-example">Filled PV07 form example</a></li>
@@ -440,6 +442,12 @@ filled PDF form generated per paper
 </tbody>
 </table>
 </section>
+<section id="imagemap-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="imagemap-evidence">Image/map evidence</h2>
+<p>The pipeline exported page images because the paper contains figures and map-like visual evidence. These images are stored so the user can audit what OCR/vision saw.</p>
+<p><img src="assets/jarrett_page3.jpg" class="img-fluid" alt="Exported page image from Jarrett et al. showing the study context and figure evidence."></p>
+<p><img src="assets/jarrett_page4.jpg" class="img-fluid" alt="Exported page image from Jarrett et al. used as visual/OCR evidence."></p>
+</section>
 <section id="qc-points" class="level2">
 <h2 class="anchored" data-anchor-id="qc-points">QC points</h2>
 <table class="caption-top table">
@@ -555,6 +563,13 @@ filled PDF form generated per paper
 <li><code>NMDS_Data.csv</code></li>
 </ul>
 <p>The downloader must save the ZIP, unzip it, and parse the CSVs inside. A shallow downloader will incorrectly report zero usable data files.</p>
+</section>
+<section id="imagemap-evidence-1" class="level2">
+<h2 class="anchored" data-anchor-id="imagemap-evidence-1">Image/map evidence</h2>
+<p>Page 3 contains the study map and example plot photographs. This is particularly useful for location context and for checking whether the extraction should treat the study as a single study area or multiple plots.</p>
+<p><img src="assets/kingazi_page3.jpg" class="img-fluid" alt="Kingazi et al. page 3 with study map and example agroforestry/non-agroforestry plots."></p>
+<p>Page 4 contains methods text about the paired 50 × 50 m plots, the March–May 2022 monitoring period, and sampling details.</p>
+<p><img src="assets/kingazi_page4.jpg" class="img-fluid" alt="Kingazi et al. page 4 with experimental design and pollinator sampling methods."></p>
 </section>
 <section id="important-site-count-interpretation" class="level2">
 <h2 class="anchored" data-anchor-id="important-site-count-interpretation">Important site-count interpretation</h2>
