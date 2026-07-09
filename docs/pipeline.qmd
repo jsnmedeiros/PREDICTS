@@ -183,6 +183,14 @@ Jarrett tests whether the pipeline can use large repository CSV files and handle
 | Repository evidence | `CaptureDataset.csv`, `CocoaFarmTreeCover.csv`, `BirdCharacteristics.csv` |
 | Date evidence | repository year column, 1990–2020 |
 
+## Image/map evidence
+
+The pipeline exported page images because the paper contains figures and map-like visual evidence. These images are stored so the user can audit what OCR/vision saw.
+
+![](assets/jarrett_page3.jpg){fig-alt="Exported page image from Jarrett et al. showing the study context and figure evidence."}
+
+![](assets/jarrett_page4.jpg){fig-alt="Exported page image from Jarrett et al. used as visual/OCR evidence."}
+
 ## QC points
 
 | Issue | Interpretation | Action |
@@ -223,6 +231,16 @@ Kingazi has a Dryad data page with one ZIP. Inside that ZIP are the usable CSV f
 - `NMDS_Data.csv`
 
 The downloader must save the ZIP, unzip it, and parse the CSVs inside. A shallow downloader will incorrectly report zero usable data files.
+
+## Image/map evidence
+
+Page 3 contains the study map and example plot photographs. This is particularly useful for location context and for checking whether the extraction should treat the study as a single study area or multiple plots.
+
+![](assets/kingazi_page3.jpg){fig-alt="Kingazi et al. page 3 with study map and example agroforestry/non-agroforestry plots."}
+
+Page 4 contains methods text about the paired 50 × 50 m plots, the March–May 2022 monitoring period, and sampling details.
+
+![](assets/kingazi_page4.jpg){fig-alt="Kingazi et al. page 4 with experimental design and pollinator sampling methods."}
 
 ## Important site-count interpretation
 
