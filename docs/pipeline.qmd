@@ -20,7 +20,7 @@ execute:
 
 This repository documents a reproducible pipeline for extracting metadata from ecological papers and preparing the information needed to populate the PREDICTS PV07 form. The pipeline is designed for auditability rather than blind automation: every filled field should be traceable to a source such as the main PDF text, a Docling table, OCR/vision evidence, or downloaded repository data.
 
-The current script is `predicts_form_fixed_dryad.py`. It was tested here with two Journal of Applied Ecology papers:
+The current script is `predicts_form.py`. It was tested here with 58 papers. 2 of them as example below:
 
 - **Jarrett et al. (2021)** — bird communities in African cocoa agroforestry.
 - **Kingazi et al. (2024)** — tropical agroforestry, insect pollinators and bean yield.
@@ -29,7 +29,7 @@ These examples are useful because they test different failure modes: Jarrett use
 
 # Why this pipeline is needed
 
-PREDICTS metadata extraction is difficult because ecological papers rarely report all PV07 fields in one clean table. Important information may be split across the title page, abstract, Methods, maps, table captions, supplementary files, data availability statements and repository ZIP files. A robust workflow therefore needs to combine deterministic rules, repository download logic, table parsing, image evidence and cautious LLM fallback.
+PREDICTS metadata extraction is difficult as ecological papers rarely report all PREDICTS fields in one clean table. Important information may be split across the title page, abstract, Methods, maps, table captions, supplementary files, data availability statements and repository ZIP files. A robust workflow therefore needs to combine deterministic rules, repository download logic, table parsing, image evidence and cautious LLM fallback.
 
 # Pipeline overview
 
@@ -64,13 +64,13 @@ The script prints an eleven-step audit trail:
 
 ## Output folders
 
-Each paper receives a paper-specific output directory. Important files include:
+Each paper receives a paper-specific output directory. Later versions will incorporate an option to download desired papers from https links. Important files include:
 
 | Output | Description |
 |---|---|
 | `text_metadata.json` | Page-aware PDF text extraction and text-derived metadata. |
 | `doi_metadata.json` | DOI and citation extraction. |
-| `pdf_tables/` | Docling-exported tables as CSV, XLSX and HTML. |
+| `pdf_tables/` | Docling-exported tables as CSV, XLSX and/or HTML. |
 | `supplementary_files/` | Files downloaded from repositories or publisher supplementary links. |
 | `extracted_data/` | Parsed and sampled tables from downloaded files and unzipped archives. |
 | `pdf_images/` | Exported page images selected for OCR/vision. |
@@ -293,7 +293,7 @@ extracted_data/
 
 | Issue | Why it matters | Recommended action |
 |---|---|---|
-| Final metadata says `number_of_sites = 2`, but the Methods report 16 paired agroforestry/non-agroforestry plots, i.e. 32 plots, and the downloaded data uses 32 plot IDs. | `2` likely came from the two treatment types rather than the number of sites/plots. | Add a rule that recognises paired plot designs: `16 pairs × 2 treatments = 32 plots/sites`, while recording treatment count separately. |
+| Final metadata said `number_of_sites = 2`, but the Methods report 16 paired agroforestry/non-agroforestry plots, i.e. 32 plots, and the downloaded data uses 32 plot IDs. | `2` likely came from the two treatment types rather than the number of sites/plots. | Add a rule that recognises paired plot designs: `16 pairs × 2 treatments = 32 plots/sites`, while recording treatment count separately. |
 | The paper uses pollinator visits, species richness and visitation rates, but PV07 needs abundance metric/unit and sampling effort unit. | These are related but not identical. | Use `abundance`, `individuals`, and `plot`/observation effort consistently, with comments on the 10-min observations and five 1 m² subplots. |
 | The Dryad landing page contains a ZIP, and the ZIP contains another ZIP plus README. | A shallow downloader will report zero usable supplementary files. | Always recursively unzip archives and parse CSVs inside nested ZIP files. |
 
@@ -338,15 +338,3 @@ find ../Papers2Test -iname "*.pdf" | while read paper; do
   python predicts_form_fixed_dryad.py     --paper "$paper"     --form PREDICTS_Form_v07.pdf     --compiler-first Joana     --compiler-last Medeiros     --compiler-id JM1     --compiler-email j.medeiros@pgr.reading.ac.uk     --download-dir ./downloaded_data     --model gemma3:4b     --vision-model moondream     --vision-max-pages 15     --max-ocr-pages 15
  done
 ```
-
-# What to show on the GitHub Pages site
-
-A useful GitHub Pages version should show both the final outputs and the evidence trail:
-
-- pipeline diagram or stage list;
-- one table summarising all output files;
-- one table per example with final PV07 fields;
-- one table per example with downloaded data files and row/column summaries;
-- page images for maps/figures used as evidence;
-- QC flags showing where the script still needs human review;
-- links to the filled PDF, metadata JSON and evidence workbook.

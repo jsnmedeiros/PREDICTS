@@ -132,7 +132,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#suggested-validation-rules-before-filling-pv07" id="toc-suggested-validation-rules-before-filling-pv07" class="nav-link" data-scroll-target="#suggested-validation-rules-before-filling-pv07">Suggested validation rules before filling PV07</a></li>
   <li><a href="#recommended-next-improvements" id="toc-recommended-next-improvements" class="nav-link" data-scroll-target="#recommended-next-improvements">Recommended next improvements</a></li>
   <li><a href="#minimal-command-line-example" id="toc-minimal-command-line-example" class="nav-link" data-scroll-target="#minimal-command-line-example">Minimal command-line example</a></li>
-  <li><a href="#what-to-show-on-the-github-pages-site" id="toc-what-to-show-on-the-github-pages-site" class="nav-link" data-scroll-target="#what-to-show-on-the-github-pages-site">What to show on the GitHub Pages site</a></li>
   </ul>
 </nav>
 </div>
@@ -163,7 +162,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>This repository documents a reproducible pipeline for extracting metadata from ecological papers and preparing the information needed to populate the PREDICTS PV07 form. The pipeline is designed for auditability rather than blind automation: every filled field should be traceable to a source such as the main PDF text, a Docling table, OCR/vision evidence, or downloaded repository data.</p>
-<p>The current script is <code>predicts_form_fixed_dryad.py</code>. It was tested here with two Journal of Applied Ecology papers:</p>
+<p>The current script is <code>predicts_form.py</code>. It was tested here with 58 papers. 2 of them as example below:</p>
 <ul>
 <li><strong>Jarrett et al.&nbsp;(2021)</strong> — bird communities in African cocoa agroforestry.</li>
 <li><strong>Kingazi et al.&nbsp;(2024)</strong> — tropical agroforestry, insect pollinators and bean yield.</li>
@@ -172,7 +171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="why-this-pipeline-is-needed" class="level1">
 <h1>Why this pipeline is needed</h1>
-<p>PREDICTS metadata extraction is difficult because ecological papers rarely report all PV07 fields in one clean table. Important information may be split across the title page, abstract, Methods, maps, table captions, supplementary files, data availability statements and repository ZIP files. A robust workflow therefore needs to combine deterministic rules, repository download logic, table parsing, image evidence and cautious LLM fallback.</p>
+<p>PREDICTS metadata extraction is difficult as ecological papers rarely report all PREDICTS fields in one clean table. Important information may be split across the title page, abstract, Methods, maps, table captions, supplementary files, data availability statements and repository ZIP files. A robust workflow therefore needs to combine deterministic rules, repository download logic, table parsing, image evidence and cautious LLM fallback.</p>
 </section>
 <section id="pipeline-overview" class="level1">
 <h1>Pipeline overview</h1>
@@ -244,7 +243,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="output-folders" class="level2">
 <h2 class="anchored" data-anchor-id="output-folders">Output folders</h2>
-<p>Each paper receives a paper-specific output directory. Important files include:</p>
+<p>Each paper receives a paper-specific output directory. Later versions will incorporate an option to download desired papers from https links. Important files include:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -267,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td><code>pdf_tables/</code></td>
-<td>Docling-exported tables as CSV, XLSX and HTML.</td>
+<td>Docling-exported tables as CSV, XLSX and/or HTML.</td>
 </tr>
 <tr class="even">
 <td><code>supplementary_files/</code></td>
@@ -1163,7 +1162,7 @@ extracted_data/
 </thead>
 <tbody>
 <tr class="odd">
-<td>Final metadata says <code>number_of_sites = 2</code>, but the Methods report 16 paired agroforestry/non-agroforestry plots, i.e.&nbsp;32 plots, and the downloaded data uses 32 plot IDs.</td>
+<td>Final metadata said <code>number_of_sites = 2</code>, but the Methods report 16 paired agroforestry/non-agroforestry plots, i.e.&nbsp;32 plots, and the downloaded data uses 32 plot IDs.</td>
 <td><code>2</code> likely came from the two treatment types rather than the number of sites/plots.</td>
 <td>Add a rule that recognises paired plot designs: <code>16 pairs × 2 treatments = 32 plots/sites</code>, while recording treatment count separately.</td>
 </tr>
@@ -1301,19 +1300,6 @@ extracted_data/
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ../Papers2Test <span class="at">-iname</span> <span class="st">"*.pdf"</span> <span class="kw">|</span> <span class="cf">while</span> <span class="bu">read</span> <span class="va">paper</span><span class="kw">;</span> <span class="cf">do</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">python</span> predicts_form_fixed_dryad.py     <span class="at">--paper</span> <span class="st">"</span><span class="va">$paper</span><span class="st">"</span>     <span class="at">--form</span> PREDICTS_Form_v07.pdf     <span class="at">--compiler-first</span> Joana     <span class="at">--compiler-last</span> Medeiros     <span class="at">--compiler-id</span> JM1     <span class="at">--compiler-email</span> j.medeiros@pgr.reading.ac.uk     <span class="at">--download-dir</span> ./downloaded_data     <span class="at">--model</span> gemma3:4b     <span class="at">--vision-model</span> moondream     <span class="at">--vision-max-pages</span> 15     <span class="at">--max-ocr-pages</span> 15</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="what-to-show-on-the-github-pages-site" class="level1">
-<h1>What to show on the GitHub Pages site</h1>
-<p>A useful GitHub Pages version should show both the final outputs and the evidence trail:</p>
-<ul>
-<li>pipeline diagram or stage list;</li>
-<li>one table summarising all output files;</li>
-<li>one table per example with final PV07 fields;</li>
-<li>one table per example with downloaded data files and row/column summaries;</li>
-<li>page images for maps/figures used as evidence;</li>
-<li>QC flags showing where the script still needs human review;</li>
-<li>links to the filled PDF, metadata JSON and evidence workbook.</li>
-</ul>
 </section>
 
 </main>
