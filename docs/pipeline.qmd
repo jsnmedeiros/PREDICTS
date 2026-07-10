@@ -291,11 +291,12 @@ This distinction is important: the pipeline should not mistake the two treatment
 
 # Recommended next steps
 
-1. Add `qc_flags` to `master_metadata.json` for site/species/date/coordinate conflicts.
-2. Add `site_count_source`, `species_count_source` and `date_source` fields.
-3. Add a compact HTML report per paper showing final metadata, evidence files and QC flags.
-4. Add unit tests for repository download functions using known Dryad, Figshare, Zenodo, EIDC and OSF examples.
-5. Agree with the NHM/PREDICTS team how paired designs should be recorded in PV07: paired replicate count, plot count, or separate studies.
+1. Create a summary table with countries, taxon, land use comparison. This would be a intermediate step before using computational power to fill in Pdf and Excel forms (Sara)
+2. Add `qc_flags` to `master_metadata.json` for site/species/date/coordinate conflicts.
+3. Add `site_count_source`, `species_count_source` and `date_source` fields.
+4. Add a compact HTML report per paper showing final metadata, evidence files and QC flags.
+5. Add unit tests for repository download functions using known Dryad, Figshare, Zenodo, EIDC and OSF examples.
+6. Agree with the NHM/PREDICTS team how paired designs should be recorded in PV07: paired replicate count, plot count, or separate studies.
 
 # Minimal command-line example
 
