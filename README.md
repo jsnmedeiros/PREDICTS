@@ -11,3 +11,6 @@ This project automatically extracts metadata from ecological papers for the PRED
 5. Download repository data
 6. Extract metadata
 7. Fill the PREDICTS form
+
+## Website 
+For more information please go to https://jsnmedeiros.github.io/PREDICTS/
