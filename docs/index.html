@@ -111,6 +111,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#cross-example-comparison" id="toc-cross-example-comparison" class="nav-link" data-scroll-target="#cross-example-comparison">Cross-example comparison</a></li>
   <li><a href="#validation-rules-before-filling-pv07" id="toc-validation-rules-before-filling-pv07" class="nav-link" data-scroll-target="#validation-rules-before-filling-pv07">Validation rules before filling PV07</a></li>
   <li><a href="#known-issues-and-fixes-in-progress" id="toc-known-issues-and-fixes-in-progress" class="nav-link" data-scroll-target="#known-issues-and-fixes-in-progress">Known issues and fixes in progress</a></li>
+  <li><a href="#summary-table-example" id="toc-summary-table-example" class="nav-link" data-scroll-target="#summary-table-example">Summary table example</a>
+  <ul class="collapse">
+  <li><a href="#paper-summary" id="toc-paper-summary" class="nav-link" data-scroll-target="#paper-summary">Paper summary</a></li>
+  <li><a href="#study-details" id="toc-study-details" class="nav-link" data-scroll-target="#study-details">Study details</a></li>
+  <li><a href="#review-flags" id="toc-review-flags" class="nav-link" data-scroll-target="#review-flags">Review flags</a></li>
+  </ul></li>
   <li><a href="#recommended-next-steps" id="toc-recommended-next-steps" class="nav-link" data-scroll-target="#recommended-next-steps">Recommended next steps</a></li>
   <li><a href="#minimal-command-line-example" id="toc-minimal-command-line-example" class="nav-link" data-scroll-target="#minimal-command-line-example">Minimal command-line example</a></li>
   </ul>
@@ -723,10 +729,30 @@ filled PDF form generated per paper
 </tbody>
 </table>
 </section>
+<section id="summary-table-example" class="level1">
+<h1>Summary table example</h1>
+<p>This is an example of the automatically generated summary workbook. The pipeline produces three tables:</p>
+<ol type="1">
+<li>Paper summary</li>
+<li>Study details</li>
+<li>Review flags</li>
+</ol>
+<section id="paper-summary" class="level2">
+<h2 class="anchored" data-anchor-id="paper-summary">Paper summary</h2>
+<p><img src="examples/summary_table/1.png" class="img-fluid" style="width:100.0%" alt="Paper summary table"></p>
+</section>
+<section id="study-details" class="level2">
+<h2 class="anchored" data-anchor-id="study-details">Study details</h2>
+<p><img src="examples/summary_table/2.png" class="img-fluid" style="width:100.0%" alt="Study details table"></p>
+</section>
+<section id="review-flags" class="level2">
+<h2 class="anchored" data-anchor-id="review-flags">Review flags</h2>
+<p><img src="examples/summary_table/3.png" class="img-fluid" style="width:100.0%" alt="Review flags table"></p>
+</section>
+</section>
 <section id="recommended-next-steps" class="level1">
 <h1>Recommended next steps</h1>
 <ol type="1">
-<li>Create a summary table with countries, taxon, land use comparison. This would be a intermediate step before using computational power to fill in Pdf and Excel forms (Sara)</li>
 <li>Add <code>qc_flags</code> to <code>master_metadata.json</code> for site/species/date/coordinate conflicts.</li>
 <li>Add <code>site_count_source</code>, <code>species_count_source</code> and <code>date_source</code> fields.</li>
 <li>Add a compact HTML report per paper showing final metadata, evidence files and QC flags.</li>

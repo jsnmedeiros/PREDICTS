@@ -289,16 +289,36 @@ This distinction is important: the pipeline should not mistake the two treatment
 | Repository-derived species counts can conflict with PDF-derived counts | Needs explicit QC flags and source-priority rules |
 | Multi-country or multi-study papers may need splitting | Needs human validation and future study-splitting logic |
 
+# Summary table example
+
+This is an example of the automatically generated summary workbook. The pipeline
+produces three tables:
+
+1. Paper summary
+2. Study details
+3. Review flags
+
+## Paper summary
+
+![](examples/summary_table/1.png){fig-alt="Paper summary table" width=100%}
+
+## Study details
+
+![](examples/summary_table/2.png){fig-alt="Study details table" width=100%}
+
+## Review flags
+
+![](examples/summary_table/3.png){fig-alt="Review flags table" width=100%}
+
 # Recommended next steps
 
-1. Create a summary table with countries, taxon, land use comparison. This would be a intermediate step before using computational power to fill in Pdf and Excel forms (Sara)
-2. Add `qc_flags` to `master_metadata.json` for site/species/date/coordinate conflicts.
-3. Add `site_count_source`, `species_count_source` and `date_source` fields.
-4. Add a compact HTML report per paper showing final metadata, evidence files and QC flags.
-5. Add unit tests for repository download functions using known Dryad, Figshare, Zenodo, EIDC and OSF examples.
-6. Agree with the NHM/PREDICTS team how paired designs should be recorded in PV07: paired replicate count, plot count, or separate studies.
-7. Try parallel runs.
-8. If it needs human download, being able to continue where the script left off, much like a "wrfrstrt".
+1. Add `qc_flags` to `master_metadata.json` for site/species/date/coordinate conflicts.
+2. Add `site_count_source`, `species_count_source` and `date_source` fields.
+3. Add a compact HTML report per paper showing final metadata, evidence files and QC flags.
+4. Add unit tests for repository download functions using known Dryad, Figshare, Zenodo, EIDC and OSF examples.
+5. Agree with the NHM/PREDICTS team how paired designs should be recorded in PV07: paired replicate count, plot count, or separate studies.
+6. Try parallel runs.
+7. If it needs human download, being able to continue where the script left off, much like a "wrfrstrt".
 
 # Minimal command-line example
 
