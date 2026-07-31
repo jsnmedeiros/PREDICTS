@@ -36,7 +36,7 @@ pillow
 pytesseract
 selenium
 
-### External (non-pip) dependencies
+### External (non-pip) dependencies - LiNuX
 
 - **Ollama** — required for the LLM metadata fallback (`--model`) and vision-based
   image/map/plot analysis (`--vision-model`). Not on PyPI; install separately and
@@ -54,7 +54,7 @@ selenium
   downloads that need a real browser (e.g. Dryad share links). Selenium ≥4.6
   auto-manages the matching driver, so just having the browser installed is enough.
 
-### Windows notes
+### External (non-pip) dependencies - Windows 
 
 - **Ollama**: native Windows installer available from ollama.com — installs as a
   background service, so no separate `ollama serve` step; just `ollama pull <model>`.
