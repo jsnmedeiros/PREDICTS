@@ -1,0 +1,10 @@
+pandas
+pdfplumber
+pypdf
+openpyxl
+requests
+pymupdf
+docling
+pillow
+pytesseract
+selenium
